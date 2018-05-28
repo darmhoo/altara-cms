@@ -1,10 +1,3 @@
-// window.jQuery = window.$ = require('jquery');
-// try {
-//     // window.$ = window.jQuery = require('jquery');
-//     window.Popper = require('popper.js').default; // default is very important.
-//    require('bootstrap');
-// } catch (e) {}
-
 window.$ = window.jQuery = require('jquery');
 window.Popper = require('popper.js').default; // default is very important.
 require('bootstrap');

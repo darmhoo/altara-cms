@@ -24,6 +24,17 @@
       <script src="js/html5shiv.min.js"></script>
       <script src="js/respond.min.js"></script>
     <![endif]-->
+
+     <style>
+           html, body {
+                background-color: #fff;
+                color: #003366;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 100;
+                height: 100vh;
+                margin: 0;
+}
+     </style>
     </head>
 <body>
 <div id="root">
@@ -51,4 +62,5 @@
 <script src="{{mix('/js/jquery.dataTables.min.js')}}"></script>
 <script src="{{mix('/js/fullcalendar.min.js')}}"></script>
 <script src="{{mix('/js/light-bootstrap-dashboard790f.js')}}"></script>
+
 </html>

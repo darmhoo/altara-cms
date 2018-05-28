@@ -1,15 +1,15 @@
 <template>
-   <!-- <div class="top-left logo"> <img src="assets/altara_logo.png" alt=""></div> -->
+   
         <div class="flex-center position-ref full-height">
+          <div class="top-left logo"> <img src="/images/altara_logo.png" width="268" height= "100" alt=""></div>
             <div class="content">
                 <div class="title m-b-md">
                     Altara 1.0
                 </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Catalog</a>
+            <div class="links">
+                  	<router-link to="/catalog">Catalog</router-link>
                     <a href="http://altaracredit.com">Website</a>
-                    <a href="https://laravel-news.com">CMS</a>
+                    <router-link to="/cms">CMS</router-link>
             </div>
         </div>
         </div>
@@ -56,7 +56,7 @@ export default {
   font-size: 84px;
 }
 
-.links > a {
+.links > a , .links > router-link {
   color: #003366;
   padding: 0 25px;
   font-size: 12px;
