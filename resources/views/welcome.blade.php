@@ -24,6 +24,17 @@
       <script src="js/html5shiv.min.js"></script>
       <script src="js/respond.min.js"></script>
     <![endif]-->
+
+     <style>
+           html, body {
+                background-color: #fff;
+                color: #003366;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 100;
+                height: 100vh;
+                margin: 0;
+}
+     </style>
     </head>
 <body>
 <div id="root">
@@ -31,15 +42,16 @@
 </body>
 
 
+<script src="{{mix('/js/app.js')}}"></script>
 <script src="{{mix('/js/jquery.3.2.1.min.js')}}"></script>
 <script src="{{mix('/js/popper.min.js')}}"></script>
 <script src="{{mix('/js/bootstrap.min.js')}}"></script>
-<script src="{{mix('/js/app.js')}}"></script>
 <script src="{{mix('/js/bootstrap-switch.js')}}"></script>
 <script src="{{mix('/js/chartist.min.js')}}"></script>
 <script src="{{mix('/js/bootstrap-notify.js')}}"></script>
 <script src="{{mix('/js/jquery.sharrre.js')}}"></script>
 <script src="{{mix('/js/jquery-jvectormap.js')}}"></script>
+<script src="{{mix('/js/moment.min.js')}}"></script>
 <script src="{{mix('/js/bootstrap-datetimepicker.js')}}"></script>
 <script src="{{mix('/js/sweetalert2.min.js')}}"></script>
 <script src="{{mix('/js/bootstrap-tagsinput.js')}}"></script>
@@ -51,4 +63,5 @@
 <script src="{{mix('/js/jquery.dataTables.min.js')}}"></script>
 <script src="{{mix('/js/fullcalendar.min.js')}}"></script>
 <script src="{{mix('/js/light-bootstrap-dashboard790f.js')}}"></script>
+
 </html>

@@ -10,21 +10,18 @@ let mix = require('laravel-mix');
  | file for the application as well as bundling up all the JS files.
  |
  */
-
-// mix.js('resources/assets/js/app.js', 'public/js')
-//    .sass('resources/assets/sass/app.scss', 'public/css');
-
 mix
+
+.js('resources/assets/js/app.js', 'public/js')
 .js('node_modules/assets/js/core/jquery.3.2.1.min.js','public/js')
 .js('node_modules/assets/js/core/popper.min.js','public/js')
 .js('node_modules/assets/js/core/bootstrap.min.js','public/js')
-.js('resources/assets/js/app.js', 'public/js')
 .js('node_modules/assets/js/plugins/bootstrap-switch.js','public/js')
 .js('node_modules/assets/js/plugins/chartist.min.js','public/js')
 .js('node_modules/assets/js/plugins/bootstrap-notify.js','public/js')
 .js('node_modules/assets/js/plugins/jquery.sharrre.js','public/js')
 .js('node_modules/assets/js/plugins/jquery-jvectormap.js','public/js')
-// .js('node_modules/moment/min/moment.min.js','public/js')
+.js('node_modules/moment/min/moment.min.js','public/js')
 .js('node_modules/assets/js/plugins/bootstrap-datetimepicker.js','public/js')
 .js('node_modules/assets/js/plugins/sweetalert2.min.js','public/js')
 .js('node_modules/assets/js/plugins/bootstrap-tagsinput.js','public/js')
@@ -42,14 +39,9 @@ mix.styles(['node_modules/assets/css/light-bootstrap-dashboard790f.css?v=2.0.1',
 'node_modules/assets/font-awesome/latest/css/font-awesome.min.css'], 'public/css/all.css');
 
 
-// mix.webpackConfig({ node: { jquery: 'empty', moment:'empty'}})
-// mix.autoload({
-//     jquery: [ '$', 'jQuery', 'jquery'],
-//     DataTable: 'datatables.net-bs'
-// });
-// mix.extract([
-//     'datatables.net', 'datatables.net-bs','datatables.net-bs4'
-// ], 'public/js');
+mix.autoload({
+    jquery: ['$', 'window.jQuery',"jQuery","window.$","jquery","window.jquery"]
+});
 
 mix.version();
 
