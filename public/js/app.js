@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -109,11 +109,403 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    mounted: function mounted() {
-        console.log('Component mounted.');
-    }
+  mounted: function mounted() {
+    console.log("Component mounted.");
+  }
 });
 
 /***/ }),
@@ -123,6 +515,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -253,6 +651,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -4294,6 +4704,21 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1788b11c\",\"scoped\":false,\"hasInlineConfig\":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/assets/js/views/Catalog.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.info\n{\n    padding: 5px;\n    border-radius: 0 0 5px 5px;\n    margin-top: 1px;\n}\n\n/* .info:hover {\n  \n} */\n.card-body:hover{\n      background-color: #E0F2FF;\n}\n.price\n{\n    /*width: 50%;*/\n    float: left;\n    margin-top: 3px;\n}\n.price h5\n{\n    line-height: 15px;\n    margin: 0;\n    font-size:16px;\n}\n.tag-price h5{\nline-height: 15px;\n    margin: 0;\n    font-size:14px;\n    font-weight:normal\n}\n.price-text-color\n{\n    color: #20A1FF;\n}\n.info .rating\n{\n    color: #777;\n}\n.rating\n{\n    /*width: 50%;*/\n    float: left;\n    font-size: 17px;\n    text-align: right;\n    line-height: 52px;\n    margin-bottom: 10px;\n    height: 52px;\n}\n.separator\n{\n    border-top: 1px solid #E1E1E1;\n}\n.clear-left\n{\n    clear: left;\n}\n.separator p\n{\n    line-height: 20px;\n    margin-bottom: 0;\n    margin-top: 10px;\n    text-align: center;\n}\n.separator p i\n{\n    margin-right: 5px;\n}\n.btn-add\n{\n    width: 50%;\n    float: left;\n}\n.btn-add\n{\n    border-right: 1px solid #E1E1E1;\n}\n.btn-details\n{\n    width: 50%;\n    float: left;\n    padding-left: 10px;\n}\n\n", ""]);
+
+// exports
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-264cb249\",\"scoped\":false,\"hasInlineConfig\":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/assets/js/views/LandingPage.vue":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4302,7 +4727,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "\n.full-height {\r\n  height: 100vh;\n}\n.flex-center {\r\n  -webkit-box-align: center;\r\n      -ms-flex-align: center;\r\n          align-items: center;\r\n  display: -webkit-box;\r\n  display: -ms-flexbox;\r\n  display: flex;\r\n  -webkit-box-pack: center;\r\n      -ms-flex-pack: center;\r\n          justify-content: center;\n}\n.position-ref {\r\n  position: relative;\n}\n.top-right {\r\n  position: absolute;\r\n  right: 10px;\r\n  top: 18px;\n}\n.content {\r\n  text-align: center;\n}\n.title {\r\n  font-size: 84px;\n}\n.links > a , .links > router-link {\r\n  color: #003366;\r\n  padding: 0 25px;\r\n  font-size: 12px;\r\n  font-weight: 600;\r\n  letter-spacing: 0.1rem;\r\n  text-decoration: none;\r\n  text-transform: uppercase;\n}\n.m-b-md {\r\n  margin-bottom: 30px;\n}\r\n", ""]);
+exports.push([module.i, "\n.flex-center {\r\n  -webkit-box-align: center;\r\n      -ms-flex-align: center;\r\n          align-items: center;\r\n  display: -webkit-box;\r\n  display: -ms-flexbox;\r\n  display: flex;\r\n  -webkit-box-pack: center;\r\n      -ms-flex-pack: center;\r\n          justify-content: center;\n}\n.position-ref {\r\n  position: relative;\n}\n.top-right {\r\n  position: absolute;\r\n  right: 10px;\r\n  top: 18px;\n}\n.content {\r\n  text-align: center;\n}\n.title {\r\n  font-size: 84px;\n}\n.links > a , .links > router-link {\r\n  color: #003366;\r\n  padding: 0 25px;\r\n  font-size: 12px;\r\n  font-weight: 600;\r\n  letter-spacing: 0.1rem;\r\n  text-decoration: none;\r\n  text-transform: uppercase;\n}\n.m-b-md {\r\n  margin-bottom: 30px;\n}\r\n", ""]);
 
 // exports
 
@@ -17874,21 +18299,695 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "row justify-content-center" }, [
-        _c("div", { staticClass: "col-md-8" }, [
-          _c("div", { staticClass: "card card-default" }, [
-            _c("div", { staticClass: "card-header" }, [
-              _vm._v("Example Component")
+    return _c("div", [
+      _c("nav", { staticClass: "navbar navbar-expand-lg " }, [
+        _c("div", { staticClass: "container-fluid" }, [
+          _c("div", { staticClass: "logo navbar-brand" }, [
+            _c(
+              "a",
+              {
+                staticClass: "photo logo-mini",
+                attrs: { href: "http://www.altaracredit/" }
+              },
+              [
+                _c("img", {
+                  attrs: {
+                    src: "/images/altara_logo.png",
+                    width: "134",
+                    height: "50",
+                    alt: ""
+                  }
+                })
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "navbar-collapse justify-content-end" }, [
+            _c("ul", { staticClass: "nav navbar-nav " }, [
+              _c(
+                "form",
+                {
+                  staticClass: "navbar-form navbar-search-form",
+                  attrs: { role: "search" }
+                },
+                [
+                  _c("div", { staticClass: "input-group" }, [
+                    _c("i", { staticClass: "nc-icon nc-zoom-split" }),
+                    _vm._v(" "),
+                    _c("input", {
+                      staticClass: "form-control",
+                      attrs: {
+                        type: "text",
+                        value: "",
+                        placeholder: "Search..."
+                      }
+                    })
+                  ])
+                ]
+              )
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "card-body" }, [
-              _vm._v(
-                "\n                    I'm an example component.\n                "
-              )
+            _c("ul", { staticClass: "navbar-nav" }, [
+              _c("li", { staticClass: "nav-item" }, [
+                _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
+                  _c("i", { staticClass: "nc-icon nc-planet" }),
+                  _vm._v("Liked item\r\n                                ")
+                ])
+              ]),
+              _vm._v(" "),
+              _c("li", { staticClass: "nav-item" }, [
+                _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
+                  _c("i", { staticClass: "nc-icon nc-cart" }),
+                  _vm._v(" Cart\r\n                                ")
+                ])
+              ])
             ])
           ])
         ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "container-fluid" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-md-3" }, [
+            _c("p", { staticClass: "lead" }, [_vm._v("Product Category")]),
+            _vm._v(" "),
+            _c("div", { attrs: { id: "sidebar" } }, [
+              _c("div", { staticClass: "list-group" }, [
+                _c(
+                  "a",
+                  { staticClass: "list-group-item", attrs: { href: "#menu1" } },
+                  [
+                    _c("i", { staticClass: "fa fa-dashboard" }),
+                    _vm._v("  \r\n                "),
+                    _c("span", { staticClass: "hidden-sm-down" }, [
+                      _vm._v("Deep Freezer")
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  {
+                    staticClass: "list-group-item",
+                    attrs: {
+                      href: "#menu2",
+                      "data-toggle": "collapse",
+                      "data-parent": "#sidebar"
+                    }
+                  },
+                  [
+                    _c("i", { staticClass: "fa fa-user" }),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "hidden-sm-down" }, [
+                      _vm._v("Refridgerator "),
+                      _c("i", { staticClass: "fa fa-caret-down" }),
+                      _vm._v(" ")
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c("div", { staticClass: "collapse", attrs: { id: "menu2" } }, [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "list-group-item",
+                      attrs: {
+                        href: "#menu2sub1",
+                        "data-toggle": "collapse",
+                        "aria-expanded": "false"
+                      }
+                    },
+                    [
+                      _vm._v("Sub 1 "),
+                      _c("i", { staticClass: "fa fa-caret-down" })
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "collapse", attrs: { id: "menu2sub1" } },
+                    [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "list-group-item",
+                          attrs: { href: "#", "data-parent": "#menu2sub1" }
+                        },
+                        [_vm._v("Sub 1 a")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "a",
+                        {
+                          staticClass: "list-group-item",
+                          attrs: { href: "#", "data-parent": "#menu2sub1" }
+                        },
+                        [_vm._v("Sub 1 b")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "a",
+                        {
+                          staticClass: "list-group-item",
+                          attrs: { href: "#", "data-parent": "#menu2sub1" }
+                        },
+                        [_vm._v("Sub 1 c")]
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "a",
+                    {
+                      staticClass: "list-group-item",
+                      attrs: { href: "#", "data-parent": "#menu2" }
+                    },
+                    [_vm._v("Sub 2")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "a",
+                    {
+                      staticClass: "list-group-item",
+                      attrs: { href: "#", "data-parent": "#menu2" }
+                    },
+                    [_vm._v("Sub 3")]
+                  )
+                ]),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  { staticClass: "list-group-item", attrs: { href: "#menu3" } },
+                  [
+                    _c("i", { staticClass: "fa fa-list" }),
+                    _vm._v("  \r\n                "),
+                    _c("span", { staticClass: "hidden-sm-down" }, [
+                      _vm._v("Generating Set")
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  { staticClass: "list-group-item", attrs: { href: "#menu4" } },
+                  [
+                    _c("i", { staticClass: "fa fa-list-alt" }),
+                    _vm._v("  \r\n                "),
+                    _c("span", { staticClass: "hidden-sm-down" }, [
+                      _vm._v("Television")
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  { staticClass: "list-group-item", attrs: { href: "#menu5" } },
+                  [
+                    _c("i", { staticClass: "fa fa-list-alt" }),
+                    _vm._v("  \r\n                "),
+                    _c("span", { staticClass: "hidden-sm-down" }, [
+                      _vm._v("Mobile Phone")
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  { staticClass: "list-group-item", attrs: { href: "#menu5" } },
+                  [
+                    _c("i", { staticClass: "fa fa-list-alt" }),
+                    _vm._v("  \r\n                "),
+                    _c("span", { staticClass: "hidden-sm-down" }, [
+                      _vm._v("Sewing Machine")
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  { staticClass: "list-group-item", attrs: { href: "#menu5" } },
+                  [
+                    _c("i", { staticClass: "fa fa-list-alt" }),
+                    _vm._v("  \r\n                "),
+                    _c("span", { staticClass: "hidden-sm-down" }, [
+                      _vm._v("Water Dispenser")
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  { staticClass: "list-group-item", attrs: { href: "#menu5" } },
+                  [
+                    _c("i", { staticClass: "fa fa-list-alt" }),
+                    _vm._v("  \r\n                "),
+                    _c("span", { staticClass: "hidden-sm-down" }, [
+                      _vm._v("Home Theater")
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  { staticClass: "list-group-item", attrs: { href: "#menu5" } },
+                  [
+                    _c("i", { staticClass: "fa fa-list-alt" }),
+                    _vm._v("  \r\n                "),
+                    _c("span", { staticClass: "hidden-sm-down" }, [
+                      _vm._v("Industrial Fan")
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  { staticClass: "list-group-item", attrs: { href: "#menu5" } },
+                  [
+                    _c("i", { staticClass: "fa fa-list-alt" }),
+                    _vm._v("  \r\n                "),
+                    _c("span", { staticClass: "hidden-sm-down" }, [
+                      _vm._v("Air Conditioner")
+                    ])
+                  ]
+                )
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-9" }, [
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col-lg-4 col-sm-6 portfolio-item" }, [
+                _c("div", { staticClass: "card h-100" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _c("img", {
+                      staticClass: "card-img-top",
+                      attrs: { src: "/images/phone/zero4-min.png", alt: "" }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "card-body" }, [
+                    _c("h4", { staticClass: "card-text" }, [
+                      _vm._v(
+                        "\r\n                Infinix Zero 4\r\n              "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("hr"),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "info" }, [
+                      _c("div", { staticClass: "row" }, [
+                        _c("div", { staticClass: "tag-price col-md-8" }, [
+                          _c("h5", [_vm._v("First Installment")])
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "price col-md-4" }, [
+                          _c("h5", { staticClass: "price-text-color" }, [
+                            _vm._v(
+                              "\r\n                                        $99.99"
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "row" }, [
+                        _c("div", { staticClass: "tag-price col-md-8" }, [
+                          _c("h5", [_vm._v("Monthly Repaymentt")])
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "price col-md-4" }, [
+                          _c("h5", { staticClass: "price-text-color" }, [
+                            _vm._v(
+                              "\r\n                                        $99.99"
+                            )
+                          ])
+                        ])
+                      ])
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-lg-4 col-sm-6 portfolio-item" }, [
+                _c("div", { staticClass: "card h-100" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _c("img", {
+                      staticClass: "card-img-top",
+                      attrs: { src: "/images/phone/zero4-min.png", alt: "" }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "card-body" }, [
+                    _c("h4", { staticClass: "card-text" }, [
+                      _vm._v(
+                        "\r\n                Infinix Zero 4\r\n              "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("hr"),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "info" }, [
+                      _c("div", { staticClass: "row" }, [
+                        _c("div", { staticClass: "tag-price col-md-8" }, [
+                          _c("h5", [_vm._v("First Installment")])
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "price col-md-4" }, [
+                          _c("h5", { staticClass: "price-text-color" }, [
+                            _vm._v(
+                              "\r\n                                        $99.99"
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "row" }, [
+                        _c("div", { staticClass: "tag-price col-md-8" }, [
+                          _c("h5", [_vm._v("Monthly Repaymentt")])
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "price col-md-4" }, [
+                          _c("h5", { staticClass: "price-text-color" }, [
+                            _vm._v(
+                              "\r\n                                        $99.99"
+                            )
+                          ])
+                        ])
+                      ])
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-lg-4 col-sm-6 portfolio-item" }, [
+                _c("div", { staticClass: "card h-100" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _c("img", {
+                      staticClass: "card-img-top",
+                      attrs: { src: "/images/phone/zero4-min.png", alt: "" }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "card-body" }, [
+                    _c("h4", { staticClass: "card-text" }, [
+                      _vm._v(
+                        "\r\n                Infinix Zero 4\r\n              "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("hr"),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "info" }, [
+                      _c("div", { staticClass: "row" }, [
+                        _c("div", { staticClass: "tag-price col-md-8" }, [
+                          _c("h5", [_vm._v("First Installment")])
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "price col-md-4" }, [
+                          _c("h5", { staticClass: "price-text-color" }, [
+                            _vm._v(
+                              "\r\n                                        $99.99"
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "row" }, [
+                        _c("div", { staticClass: "tag-price col-md-8" }, [
+                          _c("h5", [_vm._v("Monthly Repaymentt")])
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "price col-md-4" }, [
+                          _c("h5", { staticClass: "price-text-color" }, [
+                            _vm._v(
+                              "\r\n                                        $99.99"
+                            )
+                          ])
+                        ])
+                      ])
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-lg-4 col-sm-6 portfolio-item" }, [
+                _c("div", { staticClass: "card h-100" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _c("img", {
+                      staticClass: "card-img-top",
+                      attrs: { src: "/images/phone/zero4-min.png", alt: "" }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "card-body" }, [
+                    _c("h4", { staticClass: "card-text" }, [
+                      _vm._v(
+                        "\r\n                Infinix Zero 4\r\n              "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("hr"),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "info" }, [
+                      _c("div", { staticClass: "row" }, [
+                        _c("div", { staticClass: "tag-price col-md-8" }, [
+                          _c("h5", [_vm._v("First Installment")])
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "price col-md-4" }, [
+                          _c("h5", { staticClass: "price-text-color" }, [
+                            _vm._v(
+                              "\r\n                                        $99.99"
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "row" }, [
+                        _c("div", { staticClass: "tag-price col-md-8" }, [
+                          _c("h5", [_vm._v("Monthly Repaymentt")])
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "price col-md-4" }, [
+                          _c("h5", { staticClass: "price-text-color" }, [
+                            _vm._v(
+                              "\r\n                                        $99.99"
+                            )
+                          ])
+                        ])
+                      ])
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-lg-4 col-sm-6 portfolio-item" }, [
+                _c("div", { staticClass: "card h-100" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _c("img", {
+                      staticClass: "card-img-top",
+                      attrs: { src: "/images/phone/zero4-min.png", alt: "" }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "card-body" }, [
+                    _c("h4", { staticClass: "card-text" }, [
+                      _vm._v(
+                        "\r\n                Infinix Zero 4\r\n              "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("hr"),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "info" }, [
+                      _c("div", { staticClass: "row" }, [
+                        _c("div", { staticClass: "tag-price col-md-8" }, [
+                          _c("h5", [_vm._v("First Installment")])
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "price col-md-4" }, [
+                          _c("h5", { staticClass: "price-text-color" }, [
+                            _vm._v(
+                              "\r\n                                        $99.99"
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "row" }, [
+                        _c("div", { staticClass: "tag-price col-md-8" }, [
+                          _c("h5", [_vm._v("Monthly Repaymentt")])
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "price col-md-4" }, [
+                          _c("h5", { staticClass: "price-text-color" }, [
+                            _vm._v(
+                              "\r\n                                        $99.99"
+                            )
+                          ])
+                        ])
+                      ])
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-lg-4 col-sm-6 portfolio-item" }, [
+                _c("div", { staticClass: "card h-100" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _c("img", {
+                      staticClass: "card-img-top",
+                      attrs: { src: "/images/phone/zero4-min.png", alt: "" }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "card-body" }, [
+                    _c("h4", { staticClass: "card-text" }, [
+                      _vm._v(
+                        "\r\n                Infinix Zero 4\r\n              "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("hr"),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "info" }, [
+                      _c("div", { staticClass: "row" }, [
+                        _c("div", { staticClass: "tag-price col-md-8" }, [
+                          _c("h5", [_vm._v("First Installment")])
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "price col-md-4" }, [
+                          _c("h5", { staticClass: "price-text-color" }, [
+                            _vm._v(
+                              "\r\n                                        $99.99"
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "row" }, [
+                        _c("div", { staticClass: "tag-price col-md-8" }, [
+                          _c("h5", [_vm._v("Monthly Repaymentt")])
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "price col-md-4" }, [
+                          _c("h5", { staticClass: "price-text-color" }, [
+                            _vm._v(
+                              "\r\n                                        $99.99"
+                            )
+                          ])
+                        ])
+                      ])
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-lg-4 col-sm-6 portfolio-item" }, [
+                _c("div", { staticClass: "card h-100" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _c("img", {
+                      staticClass: "card-img-top",
+                      attrs: { src: "/images/phone/zero4-min.png", alt: "" }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "card-body" }, [
+                    _c("h4", { staticClass: "card-text" }, [
+                      _vm._v(
+                        "\r\n                Infinix Zero 4\r\n              "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("hr"),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "info" }, [
+                      _c("div", { staticClass: "row" }, [
+                        _c("div", { staticClass: "tag-price col-md-8" }, [
+                          _c("h5", [_vm._v("First Installment")])
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "price col-md-4" }, [
+                          _c("h5", { staticClass: "price-text-color" }, [
+                            _vm._v(
+                              "\r\n                                        $99.99"
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "row" }, [
+                        _c("div", { staticClass: "tag-price col-md-8" }, [
+                          _c("h5", [_vm._v("Monthly Repaymentt")])
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "price col-md-4" }, [
+                          _c("h5", { staticClass: "price-text-color" }, [
+                            _vm._v(
+                              "\r\n                                        $99.99"
+                            )
+                          ])
+                        ])
+                      ])
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-lg-4 col-sm-6 portfolio-item" }, [
+                _c("div", { staticClass: "card h-100" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _c("img", {
+                      staticClass: "card-img-top",
+                      attrs: { src: "/images/phone/zero4-min.png", alt: "" }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "card-body" }, [
+                    _c("h4", { staticClass: "card-text" }, [
+                      _vm._v(
+                        "\r\n                Infinix Zero 4\r\n              "
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("hr"),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "info" }, [
+                      _c("div", { staticClass: "row" }, [
+                        _c("div", { staticClass: "tag-price col-md-8" }, [
+                          _c("h5", [_vm._v("First Installment")])
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "price col-md-4" }, [
+                          _c("h5", { staticClass: "price-text-color" }, [
+                            _vm._v(
+                              "\r\n                                        $99.99"
+                            )
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "row" }, [
+                        _c("div", { staticClass: "tag-price col-md-8" }, [
+                          _c("h5", [_vm._v("Monthly Repaymentt")])
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "price col-md-4" }, [
+                          _c("h5", { staticClass: "price-text-color" }, [
+                            _vm._v(
+                              "\r\n                                        $99.99"
+                            )
+                          ])
+                        ])
+                      ])
+                    ])
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("hr")
       ])
     ])
   }
@@ -17911,28 +19010,32 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "flex-center position-ref full-height" }, [
+  return _c("div", { staticClass: "container" }, [
     _vm._m(0),
     _vm._v(" "),
-    _c("div", { staticClass: "content" }, [
-      _c("div", { staticClass: "title m-b-md" }, [
-        _vm._v("\n            Altara 1.0\n        ")
-      ]),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "links" },
-        [
-          _c("router-link", { attrs: { to: "/catalog" } }, [_vm._v("Catalog")]),
-          _vm._v(" "),
-          _c("a", { attrs: { href: "http://altaracredit.com" } }, [
-            _vm._v("Website")
-          ]),
-          _vm._v(" "),
-          _c("router-link", { attrs: { to: "/cms" } }, [_vm._v("CMS")])
-        ],
-        1
-      )
+    _c("div", { staticClass: "flex-center position-ref full-height" }, [
+      _c("div", { staticClass: "content" }, [
+        _c("div", { staticClass: "title m-b-md" }, [
+          _vm._v("\n                 Altara 1.0\n             ")
+        ]),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "links" },
+          [
+            _c("router-link", { attrs: { to: "/catalog" } }, [
+              _vm._v("Catalog")
+            ]),
+            _vm._v(" "),
+            _c("a", { attrs: { href: "http://altaracredit.com" } }, [
+              _vm._v("Website")
+            ]),
+            _vm._v(" "),
+            _c("router-link", { attrs: { to: "/cms" } }, [_vm._v("CMS")])
+          ],
+          1
+        )
+      ])
     ])
   ])
 }
@@ -17941,15 +19044,24 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "top-left logo" }, [
-      _c("img", {
-        attrs: {
-          src: "/images/altara_logo.png",
-          width: "268",
-          height: "100",
-          alt: ""
-        }
-      })
+    return _c("div", { staticClass: "logo" }, [
+      _c(
+        "a",
+        {
+          staticClass: "photo logo-mini",
+          attrs: { href: "http://www.creative-tim.com/" }
+        },
+        [
+          _c("img", {
+            attrs: {
+              src: "/images/altara_logo.png",
+              width: "134",
+              height: "50",
+              alt: ""
+            }
+          })
+        ]
+      )
     ])
   }
 ]
@@ -18351,13 +19463,62 @@ var staticRenderFns = [
                               ]),
                               _vm._v(" "),
                               _c("div", { staticClass: "form-group" }, [
-                                _c("input", {
-                                  staticClass: "form-control",
-                                  attrs: {
-                                    type: "email",
-                                    placeholder: "Company"
-                                  }
-                                })
+                                _c(
+                                  "select",
+                                  {
+                                    attrs: {
+                                      name: "cities",
+                                      "data-title": "Single Select",
+                                      "data-style": "btn-default btn-outline",
+                                      "data-menu-style": "dropdown-blue"
+                                    }
+                                  },
+                                  [
+                                    _c("option", { attrs: { value: "id" } }, [
+                                      _vm._v("Shop Floor Assistant")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("option", { attrs: { value: "ms" } }, [
+                                      _vm._v("Direct Sales Agent")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("option", { attrs: { value: "ca" } }, [
+                                      _vm._v("Direct Sales Lead")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("option", { attrs: { value: "da" } }, [
+                                      _vm._v("Product Manager")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("option", { attrs: { value: "de" } }, [
+                                      _vm._v("Operation Lead")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("option", { attrs: { value: "en" } }, [
+                                      _vm._v("President")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("option", { attrs: { value: "es" } }, [
+                                      _vm._v("General Manager")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("option", { attrs: { value: "da" } }, [
+                                      _vm._v("Software Developer")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("option", { attrs: { value: "de" } }, [
+                                      _vm._v("Software Engineering Lead")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("option", { attrs: { value: "en" } }, [
+                                      _vm._v("Shop Operation Lead")
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("option", { attrs: { value: "es" } }, [
+                                      _vm._v("Collection Lead")
+                                    ])
+                                  ]
+                                )
                               ]),
                               _vm._v(" "),
                               _c("div", { staticClass: "form-group" }, [
@@ -21071,6 +22232,33 @@ if (inBrowser && window.Vue) {
 
 /* harmony default export */ __webpack_exports__["a"] = (VueRouter);
 
+
+/***/ }),
+
+/***/ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1788b11c\",\"scoped\":false,\"hasInlineConfig\":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/assets/js/views/Catalog.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__("./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1788b11c\",\"scoped\":false,\"hasInlineConfig\":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/assets/js/views/Catalog.vue");
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("0e98fb20", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1788b11c\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Catalog.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1788b11c\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Catalog.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
 
 /***/ }),
 
@@ -32412,15 +33600,18 @@ module.exports = Component.exports
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__("./node_modules/vue/dist/vue.common.js");
+/* WEBPACK VAR INJECTION */(function(__webpack_provided_window_dot_jQuery, __webpack_provided_window_dot_$) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__("./node_modules/vue/dist/vue.common.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__App_vue__ = __webpack_require__("./resources/assets/js/App.vue");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__App_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__App_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__router__ = __webpack_require__("./resources/assets/js/router/index.js");
-window.$ = window.jQuery = __webpack_require__("./node_modules/jquery/dist/jquery.js");
-window.Popper = __webpack_require__("./node_modules/popper.js/dist/esm/popper.js").default; // default is very important.
-__webpack_require__("./node_modules/bootstrap/dist/js/bootstrap.js");
+// window.$ = window.jQuery = require('jquery');
+// window.Popper = require('popper.js').default; // default is very important.
+// require('bootstrap');
 
+__webpack_provided_window_dot_$ = __webpack_provided_window_dot_jQuery = __webpack_require__("./node_modules/jquery/dist/jquery.js"); // <-- main, not 'slim'
+window.Popper = __webpack_require__("./node_modules/popper.js/dist/esm/popper.js").default;
+__webpack_require__("./node_modules/bootstrap/dist/js/bootstrap.js");
 
 
 
@@ -32431,6 +33622,7 @@ var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
 	components: { App: __WEBPACK_IMPORTED_MODULE_1__App_vue___default.a },
 	router: __WEBPACK_IMPORTED_MODULE_2__router__["a" /* default */]
 });
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/jquery/dist/jquery.js"), __webpack_require__("./node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
 
@@ -32471,6 +33663,10 @@ var router = new __WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]({
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__("./node_modules/vue-style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1788b11c\",\"scoped\":false,\"hasInlineConfig\":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/assets/js/views/Catalog.vue")
+}
 var normalizeComponent = __webpack_require__("./node_modules/vue-loader/lib/component-normalizer.js")
 /* script */
 var __vue_script__ = __webpack_require__("./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]],\"plugins\":[\"transform-object-rest-spread\",[\"transform-runtime\",{\"polyfill\":false,\"helpers\":false}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/views/Catalog.vue")
@@ -32479,7 +33675,7 @@ var __vue_template__ = __webpack_require__("./node_modules/vue-loader/lib/templa
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
-var __vue_styles__ = null
+var __vue_styles__ = injectStyle
 /* scopeId */
 var __vue_scopeId__ = null
 /* moduleIdentifier (server only) */
@@ -32663,10 +33859,18 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 3:
+/***/ "./resources/assets/sass/app.scss":
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ 0:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__("./resources/assets/js/app.js");
+__webpack_require__("./resources/assets/js/app.js");
+module.exports = __webpack_require__("./resources/assets/sass/app.scss");
 
 
 /***/ })

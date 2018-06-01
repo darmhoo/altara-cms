@@ -1,7 +1,12 @@
 <template>
-   
+   <div class="container">
+                <div class="logo">
+                    <a href="http://www.creative-tim.com/" class="photo logo-mini">
+                         <img src="/images/altara_logo.png" width="134" height= "50" alt="">
+                    </a>
+                </div>
         <div class="flex-center position-ref full-height">
-          <div class="top-left logo"> <img src="/images/altara_logo.png" width="268" height= "100" alt=""></div>
+
             <div class="content">
                 <div class="title m-b-md">
                     Altara 1.0
@@ -13,6 +18,7 @@
             </div>
         </div>
         </div>
+   </div>
 </template>
 <script type="text/javascript">
 export default {
@@ -27,10 +33,6 @@ export default {
 };
 </script>
 <style>
-
-.full-height {
-  height: 100vh;
-}
 
 .flex-center {
   align-items: center;

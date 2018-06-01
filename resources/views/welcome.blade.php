@@ -42,15 +42,16 @@
 </body>
 
 
+<script src="{{mix('/js/app.js')}}"></script>
 <script src="{{mix('/js/jquery.3.2.1.min.js')}}"></script>
 <script src="{{mix('/js/popper.min.js')}}"></script>
 <script src="{{mix('/js/bootstrap.min.js')}}"></script>
-<script src="{{mix('/js/app.js')}}"></script>
 <script src="{{mix('/js/bootstrap-switch.js')}}"></script>
 <script src="{{mix('/js/chartist.min.js')}}"></script>
 <script src="{{mix('/js/bootstrap-notify.js')}}"></script>
 <script src="{{mix('/js/jquery.sharrre.js')}}"></script>
 <script src="{{mix('/js/jquery-jvectormap.js')}}"></script>
+<script src="{{mix('/js/moment.min.js')}}"></script>
 <script src="{{mix('/js/bootstrap-datetimepicker.js')}}"></script>
 <script src="{{mix('/js/sweetalert2.min.js')}}"></script>
 <script src="{{mix('/js/bootstrap-tagsinput.js')}}"></script>

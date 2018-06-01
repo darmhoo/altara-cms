@@ -57,7 +57,19 @@
                                                     <input type="email" placeholder="Your Last Name" class="form-control">
                                                 </div>
                                                 <div class="form-group">
-                                                    <input type="email" placeholder="Company" class="form-control">
+                                                     <select name="cities" data-title="Single Select" data-style="btn-default btn-outline" data-menu-style="dropdown-blue">
+                                                        <option value="id">Shop Floor Assistant</option>
+                                                        <option value="ms">Direct Sales Agent</option>
+                                                        <option value="ca">Direct Sales Lead</option>
+                                                        <option value="da">Product Manager</option>
+                                                        <option value="de">Operation Lead</option>
+                                                        <option value="en">President</option>
+                                                        <option value="es">General Manager</option>
+                                                        <option value="da">Software Developer</option>
+                                                        <option value="de">Software Engineering Lead</option>
+                                                        <option value="en">Shop Operation Lead</option>
+                                                        <option value="es">Collection Lead</option>
+                                                    </select>
                                                 </div>
                                                 <div class="form-group">
                                                     <input type="email" placeholder="Enter email" class="form-control">

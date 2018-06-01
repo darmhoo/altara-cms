@@ -68,7 +68,7 @@
 /***/ "./node_modules/assets/js/plugins/jquery-jvectormap.js":
 /***/ (function(module, exports, __webpack_require__) {
 
-var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
+/* WEBPACK VAR INJECTION */(function(jQuery, $) {var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
  * jVectorMap version 2.0.4
  *
  * Copyright 2011-2014, Kirill Lebedev
@@ -4254,6 +4254,7 @@ $.fn.vectorMap('addMap', 'world_mill_en', {
     },
     "width": 900.0
 });
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__("./node_modules/jquery/dist/jquery.js"), __webpack_require__("./node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
 
