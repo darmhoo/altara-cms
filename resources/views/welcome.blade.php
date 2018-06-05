@@ -29,7 +29,7 @@
            html, body {
                 background-color: #fff;
                 color: #003366;
-                font-family: 'Montserrat', sans-serif;
+                font-family: 'Lato', sans-serif;
                 font-weight: 100;
                 height: 100vh;
                 margin: 0;

@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import LandingPage from '../views/LandingPage.vue'
-import Login from '../views/Login.vue'
-import Register from '../views/Register.vue'
+import Login from '../views/Auth/Login.vue'
+import Register from '../views/Auth/Register.vue'
 import Catalog from '../views/Catalog.vue'
 
 Vue.use(VueRouter)

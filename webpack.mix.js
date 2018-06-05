@@ -38,12 +38,14 @@ mix.styles(['node_modules/assets/css/light-bootstrap-dashboard790f.css?v=2.0.1',
 'node_modules/assets/css/bootstrap.min.css',
 'node_modules/assets/font-awesome/latest/css/font-awesome.min.css'], 'public/css/all.css');
 
+mix.options({ processCssUrls: false });
 
-mix.autoload({
-    jquery: ['$', 'window.jQuery',"jQuery","window.$","jquery","window.jquery"]
-});
 
-mix.version();
+// mix.autoload({
+//     jquery: ['$', 'window.jQuery',"jQuery","window.$","jquery","window.jquery"]
+// });
+
+// mix.version();
 
 
 // <!--   Core JS Files   -->

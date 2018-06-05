@@ -99,7 +99,7 @@
               <div class="row">
         <div class="col-lg-4 col-sm-6 portfolio-item">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="/images/phone/zero4-min.png" alt=""></a>
+            <a href="#" data-toggle="modal" data-target="#myModal1"><img class="card-img-top" src="/images/phone/aircondition-mini.png" alt=""></a>
             <div class="card-body">
               <h4 class="card-text">
                 Infinix Zero 4
@@ -135,7 +135,7 @@
         </div>
         <div class="col-lg-4 col-sm-6 portfolio-item">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="/images/phone/zero4-min.png" alt=""></a>
+            <a href="#" data-toggle="modal" data-target="#myModal1"><img class="card-img-top" src="/images/phone/zero4-min.png" alt=""></a>
             <div class="card-body">
               <h4 class="card-text">
                 Infinix Zero 4
@@ -171,7 +171,7 @@
         </div>
         <div class="col-lg-4 col-sm-6 portfolio-item">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="/images/phone/zero4-min.png" alt=""></a>
+            <a href="#" data-toggle="modal" data-target="#myModal1"><img class="card-img-top" src="/images/phone/zero4-min.png" alt=""></a>
             <div class="card-body">
               <h4 class="card-text">
                 Infinix Zero 4
@@ -207,7 +207,7 @@
         </div>
         <div class="col-lg-4 col-sm-6 portfolio-item">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="/images/phone/zero4-min.png" alt=""></a>
+            <a href="#" data-toggle="modal" data-target="#myModal1"><img class="card-img-top" src="/images/phone/zero4-min.png" alt=""></a>
             <div class="card-body">
               <h4 class="card-text">
                 Infinix Zero 4
@@ -243,7 +243,7 @@
         </div>
         <div class="col-lg-4 col-sm-6 portfolio-item">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="/images/phone/zero4-min.png" alt=""></a>
+            <a href="#" data-toggle="modal" data-target="#myModal1"><img class="card-img-top" src="/images/phone/zero4-min.png" alt=""></a>
             <div class="card-body">
               <h4 class="card-text">
                 Infinix Zero 4
@@ -279,7 +279,7 @@
         </div>
         <div class="col-lg-4 col-sm-6 portfolio-item">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="/images/phone/zero4-min.png" alt=""></a>
+            <a href="#" data-toggle="modal" data-target="#myModal1"><img class="card-img-top" src="/images/phone/zero4-min.png" alt=""></a>
             <div class="card-body">
               <h4 class="card-text">
                 Infinix Zero 4
@@ -315,7 +315,7 @@
         </div>
         <div class="col-lg-4 col-sm-6 portfolio-item">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="/images/phone/zero4-min.png" alt=""></a>
+            <a href="#" data-toggle="modal" data-target="#myModal1"><img class="card-img-top" src="/images/phone/zero4-min.png" alt=""></a>
             <div class="card-body">
               <h4 class="card-text">
                 Infinix Zero 4
@@ -351,7 +351,7 @@
         </div>
         <div class="col-lg-4 col-sm-6 portfolio-item">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="/images/phone/zero4-min.png" alt=""></a>
+            <a href="#" data-toggle="modal" data-target="#myModal1"><img class="card-img-top" src="/images/phone/zero4-min.png" alt=""></a>
             <div class="card-body">
               <h4 class="card-text">
                 Infinix Zero 4
@@ -385,7 +385,81 @@
             </div>
           </div>
         </div>
+      <!-- Mini Modal -->
+                    <div class="modal fade modal modal-primary" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header justify-content-center">
+                                    <div class="modal-profile">
+                                        <i class="nc-icon nc-bulb-63"></i>
+                                    </div>
+                                </div>
+                                <div class="modal-body">
+  <div class="container-fluid">
+    <div class="row">
+
+      <!-- Project One -->
+      <div class="row">
+        <div class="col-md-7">
+          <a href="#">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="/images/phone/zero4-min.png" alt="">
+          </a>
+        </div>
+        <div class="col-md-5">
+            <div class="row">
+<h3>Infinix Zero 4</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
+
+            </div>
+            <div class="row">
+<div class="info">
+                            <div class="row">
+                                <div class="tag-price col-md-8">
+                                      <h5>First Installment</h5> 
+                                </div>
+                                 <div class="price col-md-4">
+                                    <h5 class="price-text-color">
+                                        $99.99</h5>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="tag-price col-md-8">
+                                      <h5>Monthly Repaymentt</h5> 
+                                </div>
+                                 <div class="price col-md-4">
+                                    <h5 class="price-text-color">
+                                        $99.99</h5>
+                                </div>
+                            </div>
+              </div>
+            </div>
+            <div class="row">
+<h4>Product Specification</h4>
+<ul>
+    <li>Lorem ipsum dolor sit amet, consectetur</li>
+    <li>Lorem ipsum dolor sit amet, consectetur</li>
+    <li>Lorem ipsum dolor sit amet, consectetur</li>
+    <li>Lorem ipsum dolor sit amet, consectetur</li>
+    <li>Lorem ipsum dolor sit amet, consectetur</li>
+</ul>
+            </div>
+          
+          
+        </div>
+      </div>
+      <!-- /.row -->
+    </div>
     
+  </div>
+</div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-link btn-simple">Back</button>
+                                    <button type="button" class="btn btn-link btn-simple" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  End Modal -->
         </div>
     
     </div>
@@ -512,5 +586,11 @@ line-height: 15px;
     float: left;
     padding-left: 10px;
 }
+.modal-lg{
+    max-width:80%;
+}
 
+.list-group a{
+color:#003366 !important;
+}
 </style>

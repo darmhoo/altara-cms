@@ -1,11 +1,6 @@
-// window.$ = window.jQuery = require('jquery');
-// window.Popper = require('popper.js').default; // default is very important.
-// require('bootstrap');
-
 window.$ = window.jQuery = require('jquery'); // <-- main, not 'slim'
 window.Popper = require('popper.js').default;
 require('bootstrap');
-
 
 import Vue from 'vue'
 import App from './App.vue'

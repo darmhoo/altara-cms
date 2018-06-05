@@ -108,10 +108,41 @@
     </div>
 </template>
 
-<script>
+<script type="text/javascript">
+    import Flash from '../../helpers/flash'
+    import { post } from '../../helpers/api'
     export default {
-        mounted() {
-            console.log('Component mounted.')
+        data() {
+            return {
+                form: {
+                    name: '',
+                    email: '',
+                    password: '',
+                    password_confirmation: ''
+                },
+                error: {},
+                isProcessing: false
+            }
+        },
+        methods: {
+            register() {
+                this.isProcessing = true
+                this.error = {}
+                post('api/register', this.form)
+                    .then((res) => {
+                        if(res.data.registered) {
+                            Flash.setSuccess('Congratulations! You have now successfully registered.')
+                            this.$router.push('/login')
+                        }
+                        this.isProcessing = false
+                    })
+                    .catch((err) => {
+                        if(err.response.status === 422) {
+                            this.error = err.response.data
+                        }
+                        this.isProcessing = false
+                    })
+            }
         }
     }
 </script>
