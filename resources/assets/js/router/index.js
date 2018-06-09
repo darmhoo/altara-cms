@@ -1,0 +1,22 @@
+import Vue from 'vue'
+import VueRouter from 'vue-router'
+import LandingPage from '../views/LandingPage.vue'
+import Login from '../views/Auth/Login.vue'
+import Register from '../views/Auth/Register.vue'
+import Catalog from '../views/Catalog/Index.vue'
+import Create from '../views/Catalog/Create.vue'
+
+Vue.use(VueRouter)
+
+const router = new VueRouter({
+    mode: 'history',
+    routes: [
+        { path: '/', component: LandingPage },
+        { path: '/login', component: Login, meta: { mode: 'login' } },
+        { path: '/register', component: Register, meta: { mode: 'register' } },
+        { path: '/catalog', component: Catalog, meta: { mode: 'catalog' } },
+        { path: '/product/create', component: Create }
+    ]
+})
+
+export default router
