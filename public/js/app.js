@@ -1638,20 +1638,201 @@ module.exports = {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__store_auth__ = __webpack_require__("./resources/assets/js/store/auth.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__helpers_flash__ = __webpack_require__("./resources/assets/js/helpers/flash.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__helpers_api__ = __webpack_require__("./resources/assets/js/helpers/api.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_Sidebar_vue__ = __webpack_require__("./resources/assets/js/components/Sidebar.vue");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_Sidebar_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_Sidebar_vue__);
+var _components$data$crea;
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
 
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = (_components$data$crea = {
+	components: {
+		Sidebar: __WEBPACK_IMPORTED_MODULE_3__components_Sidebar_vue___default.a
+	},
+	data: function data() {
+		return {
+			view: '',
+			authState: __WEBPACK_IMPORTED_MODULE_0__store_auth__["a" /* default */].state,
+			flash: __WEBPACK_IMPORTED_MODULE_1__helpers_flash__["a" /* default */].state
+		};
+	},
+	created: function created() {
+		if (this.$route.meta.mode === 'catalog') {
+			this.view = 'catalog';
+		}
+		// if(this.$route.meta.mode === 'login') {
+		// 	this.view = 'login';
+		//   }
+		// if(this.$route.meta.mode === 'register') {
+		// 	this.view = 'register';
+		// 	}
+	}
+}, _defineProperty(_components$data$crea, 'data', function data() {
+	return {};
+}), _defineProperty(_components$data$crea, 'computed', {
+	auth: function auth() {
+		if (this.authState.api_token) {
+			return true;
+		}
+		return false;
+	},
+	guest: function guest() {
+		return !this.auth;
+	}
+}), _defineProperty(_components$data$crea, 'methods', {
+	logout: function logout() {
+		var _this = this;
+
+		Object(__WEBPACK_IMPORTED_MODULE_2__helpers_api__["a" /* post */])('/api/logout').then(function (res) {
+			if (res.data.done) {
+				// remove token
+				__WEBPACK_IMPORTED_MODULE_0__store_auth__["a" /* default */].remove();
+				__WEBPACK_IMPORTED_MODULE_1__helpers_flash__["a" /* default */].setSuccess('You have successfully logged out.');
+				_this.$router.push('/login');
+			}
+		});
+	}
+}), _components$data$crea);
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]],\"plugins\":[\"transform-object-rest-spread\",[\"transform-runtime\",{\"polyfill\":false,\"helpers\":false}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/components/Sidebar.vue":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  components: {},
-  created: function created() {},
-  data: function data() {
-    return {};
-  },
-
-  computed: {},
-  methods: {}
+  mounted: function mounted() {
+    console.log("Component mounted.");
+  }
 });
 
 /***/ }),
@@ -1942,11 +2123,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]],\"plugins\":[\"transform-object-rest-spread\",[\"transform-runtime\",{\"polyfill\":false,\"helpers\":false}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/views/Catalog.vue":
+/***/ "./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]],\"plugins\":[\"transform-object-rest-spread\",[\"transform-runtime\",{\"polyfill\":false,\"helpers\":false}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/views/Catalog/Create.vue":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_Sidebar_vue__ = __webpack_require__("./resources/assets/js/components/Sidebar.vue");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_Sidebar_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_Sidebar_vue__);
 //
 //
 //
@@ -2041,170 +2224,26 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    components: {
+        Sidebar: __WEBPACK_IMPORTED_MODULE_0__components_Sidebar_vue___default.a
+    },
+    mounted: function mounted() {
+        console.log('Component mounted.');
+    }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]],\"plugins\":[\"transform-object-rest-spread\",[\"transform-runtime\",{\"polyfill\":false,\"helpers\":false}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/views/Catalog/Index.vue":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_Sidebar_vue__ = __webpack_require__("./resources/assets/js/components/Sidebar.vue");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_Sidebar_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_Sidebar_vue__);
 //
 //
 //
@@ -2430,7 +2469,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 
+
 /* harmony default export */ __webpack_exports__["default"] = ({
+  components: {
+    Sidebar: __WEBPACK_IMPORTED_MODULE_0__components_Sidebar_vue___default.a
+  },
   mounted: function mounted() {
     console.log("Component mounted.");
   }
@@ -6415,7 +6458,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1788b11c\",\"scoped\":false,\"hasInlineConfig\":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/assets/js/views/Catalog.vue":
+/***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-00467796\",\"scoped\":false,\"hasInlineConfig\":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/assets/js/components/Sidebar.vue":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/css-base.js")(false);
@@ -6423,7 +6466,22 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "\n.info\n{\n    padding: 5px;\n    border-radius: 0 0 5px 5px;\n    margin-top: 1px;\n}\n\n/* .info:hover {\n  \n} */\n.card-body:hover{\n      background-color: #E0F2FF;\n}\n.price\n{\n    /*width: 50%;*/\n    float: left;\n    margin-top: 3px;\n}\n.price h5\n{\n    line-height: 15px;\n    margin: 0;\n    font-size:16px;\n}\n.tag-price h5{\nline-height: 15px;\n    margin: 0;\n    font-size:14px;\n    font-weight:normal\n}\n.price-text-color\n{\n    color: #20A1FF;\n}\n.info .rating\n{\n    color: #777;\n}\n.rating\n{\n    /*width: 50%;*/\n    float: left;\n    font-size: 17px;\n    text-align: right;\n    line-height: 52px;\n    margin-bottom: 10px;\n    height: 52px;\n}\n.separator\n{\n    border-top: 1px solid #E1E1E1;\n}\n.clear-left\n{\n    clear: left;\n}\n.separator p\n{\n    line-height: 20px;\n    margin-bottom: 0;\n    margin-top: 10px;\n    text-align: center;\n}\n.separator p i\n{\n    margin-right: 5px;\n}\n.btn-add\n{\n    width: 50%;\n    float: left;\n}\n.btn-add\n{\n    border-right: 1px solid #E1E1E1;\n}\n.btn-details\n{\n    width: 50%;\n    float: left;\n    padding-left: 10px;\n}\n.modal-lg{\n    max-width:80%;\n}\n.list-group a{\ncolor:#003366 !important;\n}\n", ""]);
+exports.push([module.i, "\na.list-group-item{\n    color:  #fff !important;\n    background-color: #003366 !important;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1c9cf40c\",\"scoped\":false,\"hasInlineConfig\":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/assets/js/views/Catalog/Create.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.btn-file {\r\n    position: relative;\r\n    overflow: hidden;\n}\n.btn-file input[type=file] {\r\n    position: absolute;\r\n    top: 0;\r\n    right: 0;\r\n    min-width: 100%;\r\n    min-height: 100%;\r\n    font-size: 100px;\r\n    text-align: right;\r\n    filter: alpha(opacity=0);\r\n    opacity: 0;\r\n    outline: none;\r\n    background: white;\r\n    cursor: inherit;\r\n    display: block;\n}\n#img-upload{\r\n    width: 100%;\n}\r\n", ""]);
 
 // exports
 
@@ -6439,6 +6497,21 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 // module
 exports.push([module.i, "\n.flex-center {\r\n  -webkit-box-align: center;\r\n      -ms-flex-align: center;\r\n          align-items: center;\r\n  display: -webkit-box;\r\n  display: -ms-flexbox;\r\n  display: flex;\r\n  -webkit-box-pack: center;\r\n      -ms-flex-pack: center;\r\n          justify-content: center;\n}\n.position-ref {\r\n  position: relative;\n}\n.top-right {\r\n  position: absolute;\r\n  right: 10px;\r\n  top: 18px;\n}\n.content {\r\n  text-align: center;\n}\n.title {\r\n  font-size: 84px;\n}\n.links > a , .links > router-link {\r\n  color: #003366;\r\n  padding: 0 25px;\r\n  font-size: 12px;\r\n  font-weight: 600;\r\n  letter-spacing: 0.1rem;\r\n  text-decoration: none;\r\n  text-transform: uppercase;\n}\n.m-b-md {\r\n  margin-bottom: 30px;\n}\r\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7454161c\",\"scoped\":false,\"hasInlineConfig\":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/assets/js/views/Catalog/Index.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.info\n{\n    padding: 5px;\n    border-radius: 0 0 5px 5px;\n    margin-top: 1px;\n}\n\n/* .info:hover {\n  \n} */\n.card-body:hover{\n      background-color: #E0F2FF;\n}\n.price\n{\n    /*width: 50%;*/\n    float: left;\n    margin-top: 3px;\n}\n.price h5\n{\n    line-height: 15px;\n    margin: 0;\n    font-size:16px;\n}\n.tag-price h5{\nline-height: 15px;\n    margin: 0;\n    font-size:14px;\n    font-weight:normal\n}\n.price-text-color\n{\n    color: #20A1FF;\n}\n.info .rating\n{\n    color: #777;\n}\n.rating\n{\n    /*width: 50%;*/\n    float: left;\n    font-size: 17px;\n    text-align: right;\n    line-height: 52px;\n    margin-bottom: 10px;\n    height: 52px;\n}\n.separator\n{\n    border-top: 1px solid #E1E1E1;\n}\n.clear-left\n{\n    clear: left;\n}\n.separator p\n{\n    line-height: 20px;\n    margin-bottom: 0;\n    margin-top: 10px;\n    text-align: center;\n}\n.separator p i\n{\n    margin-right: 5px;\n}\n.btn-add\n{\n    width: 50%;\n    float: left;\n}\n.btn-add\n{\n    border-right: 1px solid #E1E1E1;\n}\n.btn-details\n{\n    width: 50%;\n    float: left;\n    padding-left: 10px;\n}\n.modal-lg{\n    max-width:80%;\n}\n\n\n", ""]);
 
 // exports
 
@@ -20024,6 +20097,156 @@ module.exports = function normalizeComponent (
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-00467796\",\"hasScoped\":false,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/Sidebar.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-md-3" }, [
+      _c("div", { attrs: { id: "sidebar" } }, [
+        _c("div", { staticClass: "list-group" }, [
+          _c(
+            "a",
+            {
+              staticClass: "list-group-item",
+              attrs: {
+                href: "#menu1",
+                "data-toggle": "collapse",
+                "data-parent": "#sidebar"
+              }
+            },
+            [
+              _c("i", { staticClass: "fa fa-dashboard" }, [_vm._v("    ")]),
+              _vm._v(" "),
+              _c("span", {}, [
+                _vm._v("Product Category "),
+                _c("i", { staticClass: "fa fa-caret-down" })
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          _c("div", { staticClass: "collapse", attrs: { id: "menu1" } }, [
+            _c(
+              "a",
+              { staticClass: "list-group-item", attrs: { href: "#menu3" } },
+              [
+                _c("i", { staticClass: "fa fa-list" }),
+                _vm._v("  \n                "),
+                _c("span", { staticClass: "hidden-sm-down" }, [
+                  _vm._v("Generating Set")
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              { staticClass: "list-group-item", attrs: { href: "#menu4" } },
+              [
+                _c("i", { staticClass: "fa fa-list-alt" }),
+                _vm._v("  \n                "),
+                _c("span", { staticClass: "hidden-sm-down" }, [
+                  _vm._v("Television")
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              { staticClass: "list-group-item", attrs: { href: "#menu5" } },
+              [
+                _c("i", { staticClass: "fa fa-list-alt" }),
+                _vm._v("  \n                "),
+                _c("span", { staticClass: "hidden-sm-down" }, [
+                  _vm._v("Mobile Phone")
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              { staticClass: "list-group-item", attrs: { href: "#menu5" } },
+              [
+                _c("i", { staticClass: "fa fa-list-alt" }),
+                _vm._v("  \n                "),
+                _c("span", { staticClass: "hidden-sm-down" }, [
+                  _vm._v("Sewing Machine")
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              { staticClass: "list-group-item", attrs: { href: "#menu5" } },
+              [
+                _c("i", { staticClass: "fa fa-list-alt" }),
+                _vm._v("  \n                "),
+                _c("span", { staticClass: "hidden-sm-down" }, [
+                  _vm._v("Water Dispenser")
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              { staticClass: "list-group-item", attrs: { href: "#menu5" } },
+              [
+                _c("i", { staticClass: "fa fa-list-alt" }),
+                _vm._v("  \n                "),
+                _c("span", { staticClass: "hidden-sm-down" }, [
+                  _vm._v("Home Theater")
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              { staticClass: "list-group-item", attrs: { href: "#menu5" } },
+              [
+                _c("i", { staticClass: "fa fa-list-alt" }),
+                _vm._v("  \n                "),
+                _c("span", { staticClass: "hidden-sm-down" }, [
+                  _vm._v("Industrial Fan")
+                ])
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              { staticClass: "list-group-item", attrs: { href: "#menu5" } },
+              [
+                _c("i", { staticClass: "fa fa-list-alt" }),
+                _vm._v("  \n                "),
+                _c("span", { staticClass: "hidden-sm-down" }, [
+                  _vm._v("Air Conditioner")
+                ])
+              ]
+            )
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-00467796", module.exports)
+  }
+}
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-026db962\",\"hasScoped\":false,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/views/Auth/Login.vue":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20031,190 +20254,101 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "wrapper wrapper-full-page" }, [
-    _c(
-      "nav",
-      {
-        staticClass:
-          "navbar navbar-expand-lg navbar-transparent navbar-absolute"
-      },
-      [
-        _c("div", { staticClass: "container" }, [
-          _vm._m(0),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "collapse navbar-collapse justify-content-end",
-              attrs: { id: "navbar" }
-            },
-            [
-              _c("ul", { staticClass: "navbar-nav" }, [
-                _c(
-                  "li",
-                  { staticClass: "nav-item" },
-                  [
-                    _c(
-                      "router-link",
-                      { staticClass: "nav-link", attrs: { to: "/catalog" } },
-                      [
-                        _c("i", { staticClass: "nc-icon nc-chart-pie-35" }),
-                        _vm._v(" Catalog\n                            ")
-                      ]
-                    )
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _vm._m(1)
-              ])
-            ]
-          )
-        ])
-      ]
-    ),
-    _vm._v(" "),
-    _vm._m(2),
-    _vm._v(" "),
-    _vm._m(3)
-  ])
+  return _vm._m(0)
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "navbar-wrapper" }, [
+    return _c("div", { staticClass: "wrapper wrapper-full-page" }, [
       _c(
-        "a",
+        "div",
         {
-          staticClass: "navbar-brand",
-          attrs: { href: "www.altaracredit.com" }
-        },
-        [_vm._v("Altara")]
-      ),
-      _vm._v(" "),
-      _c(
-        "button",
-        {
-          staticClass: "navbar-toggler navbar-toggler-right",
+          staticClass: "full-page  section-image",
           attrs: {
-            type: "button",
-            "data-toggle": "collapse",
-            "aria-controls": "navigation-index",
-            "aria-expanded": "false",
-            "aria-label": "Toggle navigation"
+            "data-color": "black",
+            "data-image": "../../assets/img/full-screen-image-2.jpg"
           }
         },
         [
-          _c("span", { staticClass: "navbar-toggler-bar burger-lines" }),
-          _vm._v(" "),
-          _c("span", { staticClass: "navbar-toggler-bar burger-lines" }),
-          _vm._v(" "),
-          _c("span", { staticClass: "navbar-toggler-bar burger-lines" })
-        ]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", { staticClass: "nav-item " }, [
-      _c(
-        "a",
-        { staticClass: "nav-link", attrs: { href: "www.altaracredit.com" } },
-        [
-          _c("i", { staticClass: "nc-icon nc-badge" }),
-          _vm._v(" Website\n                        ")
-        ]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticClass: "full-page  section-image",
-        attrs: {
-          "data-color": "black",
-          "data-image": "../../assets/img/full-screen-image-2.jpg"
-        }
-      },
-      [
-        _c("div", { staticClass: "content" }, [
-          _c("div", { staticClass: "container" }, [
-            _c("div", { staticClass: "col-md-4 col-sm-6 ml-auto mr-auto" }, [
-              _c(
-                "form",
-                { staticClass: "form", attrs: { method: "", action: "#" } },
-                [
-                  _c("div", { staticClass: "card card-login card-hidden" }, [
-                    _c("div", { staticClass: "card-header " }, [
-                      _c("h3", { staticClass: "header text-center" }, [
-                        _vm._v("Login")
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "card-body " }, [
-                      _c("div", { staticClass: "card-body" }, [
-                        _c("div", { staticClass: "form-group" }, [
-                          _c("label", [_vm._v("Email address")]),
-                          _vm._v(" "),
-                          _c("input", {
-                            staticClass: "form-control",
-                            attrs: { type: "email", placeholder: "Enter email" }
-                          })
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "form-group" }, [
-                          _c("label", [_vm._v("Password")]),
-                          _vm._v(" "),
-                          _c("input", {
-                            staticClass: "form-control",
-                            attrs: { type: "password", placeholder: "Password" }
-                          })
+          _c("div", { staticClass: "content" }, [
+            _c("div", { staticClass: "container" }, [
+              _c("div", { staticClass: "col-md-4 col-sm-6 ml-auto mr-auto" }, [
+                _c(
+                  "form",
+                  { staticClass: "form", attrs: { method: "", action: "#" } },
+                  [
+                    _c("div", { staticClass: "card card-login card-hidden" }, [
+                      _c("div", { staticClass: "card-header " }, [
+                        _c("h3", { staticClass: "header text-center" }, [
+                          _vm._v("Login")
                         ])
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "card-footer ml-auto mr-auto" }, [
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "card-body " }, [
+                        _c("div", { staticClass: "card-body" }, [
+                          _c("div", { staticClass: "form-group" }, [
+                            _c("label", [_vm._v("Email address")]),
+                            _vm._v(" "),
+                            _c("input", {
+                              staticClass: "form-control",
+                              attrs: {
+                                type: "email",
+                                placeholder: "Enter email"
+                              }
+                            })
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "form-group" }, [
+                            _c("label", [_vm._v("Password")]),
+                            _vm._v(" "),
+                            _c("input", {
+                              staticClass: "form-control",
+                              attrs: {
+                                type: "password",
+                                placeholder: "Password"
+                              }
+                            })
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
                       _c(
-                        "button",
-                        {
-                          staticClass: "btn btn-warning btn-wd",
-                          attrs: { type: "submit" }
-                        },
-                        [_vm._v("Login")]
+                        "div",
+                        { staticClass: "card-footer ml-auto mr-auto" },
+                        [
+                          _c(
+                            "button",
+                            {
+                              staticClass: "btn btn-warning btn-wd",
+                              attrs: { type: "submit" }
+                            },
+                            [_vm._v("Login")]
+                          )
+                        ]
                       )
                     ])
-                  ])
-                ]
-              )
+                  ]
+                )
+              ])
             ])
           ])
-        ])
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "footer" }, [
-      _c("div", { staticClass: "container" }, [
-        _c("nav", { staticClass: "fixed-bottom" }, [
-          _c("p", { staticClass: "copyright text-center" }, [
-            _vm._v(
-              "\n                    ©\n                    2018\n                   \n                    "
-            ),
-            _c("a", { attrs: { href: "http://www.altaracredit.com/" } }, [
-              _vm._v("Altara")
-            ]),
-            _vm._v(", Buy now, Pay small small\n                ")
+        ]
+      ),
+      _vm._v(" "),
+      _c("div", { staticClass: "footer" }, [
+        _c("div", { staticClass: "container" }, [
+          _c("nav", { staticClass: "fixed-bottom" }, [
+            _c("p", { staticClass: "copyright text-center" }, [
+              _vm._v(
+                "\n                    ©\n                    2018\n                   \n                    "
+              ),
+              _c("a", { attrs: { href: "http://www.altaracredit.com/" } }, [
+                _vm._v("Altara")
+              ]),
+              _vm._v(", Buy now, Pay small small\n                ")
+            ])
           ])
         ])
       ])
@@ -20232,970 +20366,175 @@ if (false) {
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-1788b11c\",\"hasScoped\":false,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/views/Catalog.vue":
+/***/ "./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-1c9cf40c\",\"hasScoped\":false,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/views/Catalog/Create.vue":
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "container-fluid" }, [
+    _c(
+      "div",
+      { staticClass: "row" },
+      [_c("sidebar"), _vm._v(" "), _vm._m(0)],
+      1
+    )
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [
-      _c("nav", { staticClass: "navbar navbar-expand-lg " }, [
-        _c("div", { staticClass: "container-fluid" }, [
-          _c("div", { staticClass: "logo navbar-brand" }, [
-            _c(
-              "a",
-              {
-                staticClass: "photo logo-mini",
-                attrs: { href: "http://www.altaracredit/" }
-              },
-              [
-                _c("img", {
-                  attrs: {
-                    src: "/images/altara_logo.png",
-                    width: "134",
-                    height: "50",
-                    alt: ""
-                  }
-                })
-              ]
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "navbar-collapse justify-content-end" }, [
-            _c("ul", { staticClass: "nav navbar-nav " }, [
-              _c(
-                "form",
-                {
-                  staticClass: "navbar-form navbar-search-form",
-                  attrs: { role: "search" }
-                },
-                [
+    return _c("div", { staticClass: "col-md-9" }, [
+      _c("div", { staticClass: "card horizontal-form" }, [
+        _c("div", { staticClass: "card-header " }, [
+          _c("h4", { staticClass: "card-title" }, [
+            _vm._v("Product Description and Information")
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "card-body " }, [
+          _c("form", { staticClass: "form-horizontal" }, [
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col-md-8" }, [
+                _c("div", { staticClass: "form-group" }, [
+                  _c("div", { staticClass: "row" }, [
+                    _c("label", { staticClass: "col-md-3 control-label" }, [
+                      _vm._v("Product Name")
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-9" }, [
+                      _c("input", {
+                        staticClass: "form-control",
+                        attrs: { type: "text", placeholder: "Product name" }
+                      })
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group" }, [
+                  _c("div", { staticClass: "row" }, [
+                    _c("label", { staticClass: "col-md-3 control-label" }, [
+                      _vm._v("Product Make")
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-9" }, [
+                      _c("input", {
+                        staticClass: "form-control",
+                        attrs: { type: "text", placeholder: "Password" }
+                      })
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group" }, [
+                  _c("div", { staticClass: "row" }, [
+                    _c("label", { staticClass: "col-md-3 control-label" }, [
+                      _vm._v("Product Price")
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-9" }, [
+                      _c("input", {
+                        staticClass: "form-control",
+                        attrs: { type: "number", placeholder: "Product Price" }
+                      })
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group" }, [
+                  _c("div", { staticClass: "row" }, [
+                    _c("label", { staticClass: "col-md-3 control-label" }, [
+                      _vm._v("Down Payment")
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-9" }, [
+                      _c("input", {
+                        staticClass: "form-control",
+                        attrs: { type: "number", placeholder: "Down Payment" }
+                      })
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group" }, [
+                  _c("div", { staticClass: "row" }, [
+                    _c("label", { staticClass: "col-md-3 control-label" }, [
+                      _vm._v("Bi-weekly Payment Payment")
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-9" }, [
+                      _c("input", {
+                        staticClass: "form-control",
+                        attrs: {
+                          type: "number",
+                          placeholder: "Bi-weekly Payment Payment"
+                        }
+                      })
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group" }, [
+                  _c("div", { staticClass: "row" }, [
+                    _c("label", { staticClass: "col-md-3 control-label" }, [
+                      _vm._v("Features/Description")
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-9" }, [
+                      _c("input", {
+                        staticClass: "form-control",
+                        attrs: {
+                          type: "number",
+                          placeholder: "Bi-weekly Payment Payment"
+                        }
+                      })
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-md-4" }, [
+                _c("div", { staticClass: "form-group" }, [
+                  _c("label", [_vm._v("Upload Image")]),
+                  _vm._v(" "),
                   _c("div", { staticClass: "input-group" }, [
-                    _c("i", { staticClass: "nc-icon nc-zoom-split" }),
+                    _c("span", { staticClass: "input-group-btn" }, [
+                      _c("span", { staticClass: "btn btn-default btn-file" }, [
+                        _vm._v(
+                          "\n                                                            Browse… "
+                        ),
+                        _c("input", { attrs: { type: "file", id: "imgInp" } })
+                      ])
+                    ]),
                     _vm._v(" "),
                     _c("input", {
                       staticClass: "form-control",
-                      attrs: {
-                        type: "text",
-                        value: "",
-                        placeholder: "Search..."
-                      }
+                      attrs: { type: "text", readonly: "" }
                     })
-                  ])
-                ]
-              )
-            ]),
-            _vm._v(" "),
-            _c("ul", { staticClass: "navbar-nav" }, [
-              _c("li", { staticClass: "nav-item" }, [
-                _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
-                  _c("i", { staticClass: "nc-icon nc-planet" }),
-                  _vm._v("Liked item\r\n                                ")
-                ])
-              ]),
-              _vm._v(" "),
-              _c("li", { staticClass: "nav-item" }, [
-                _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
-                  _c("i", { staticClass: "nc-icon nc-cart" }),
-                  _vm._v(" Cart\r\n                                ")
+                  ]),
+                  _vm._v(" "),
+                  _c("img", { attrs: { id: "img-upload" } })
                 ])
               ])
-            ])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "container-fluid" }, [
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-md-3" }, [
-            _c("p", { staticClass: "lead" }, [_vm._v("Product Category")]),
-            _vm._v(" "),
-            _c("div", { attrs: { id: "sidebar" } }, [
-              _c("div", { staticClass: "list-group" }, [
-                _c(
-                  "a",
-                  { staticClass: "list-group-item", attrs: { href: "#menu1" } },
-                  [
-                    _c("i", { staticClass: "fa fa-dashboard" }),
-                    _vm._v("  \r\n                "),
-                    _c("span", { staticClass: "hidden-sm-down" }, [
-                      _vm._v("Deep Freezer")
-                    ])
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  {
-                    staticClass: "list-group-item",
-                    attrs: {
-                      href: "#menu2",
-                      "data-toggle": "collapse",
-                      "data-parent": "#sidebar"
-                    }
-                  },
-                  [
-                    _c("i", { staticClass: "fa fa-user" }),
-                    _vm._v(" "),
-                    _c("span", { staticClass: "hidden-sm-down" }, [
-                      _vm._v("Refridgerator "),
-                      _c("i", { staticClass: "fa fa-caret-down" }),
-                      _vm._v(" ")
-                    ])
-                  ]
-                ),
-                _vm._v(" "),
-                _c("div", { staticClass: "collapse", attrs: { id: "menu2" } }, [
-                  _c(
-                    "a",
-                    {
-                      staticClass: "list-group-item",
-                      attrs: {
-                        href: "#menu2sub1",
-                        "data-toggle": "collapse",
-                        "aria-expanded": "false"
-                      }
-                    },
-                    [
-                      _vm._v("Sub 1 "),
-                      _c("i", { staticClass: "fa fa-caret-down" })
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "collapse", attrs: { id: "menu2sub1" } },
-                    [
-                      _c(
-                        "a",
-                        {
-                          staticClass: "list-group-item",
-                          attrs: { href: "#", "data-parent": "#menu2sub1" }
-                        },
-                        [_vm._v("Sub 1 a")]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "a",
-                        {
-                          staticClass: "list-group-item",
-                          attrs: { href: "#", "data-parent": "#menu2sub1" }
-                        },
-                        [_vm._v("Sub 1 b")]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "a",
-                        {
-                          staticClass: "list-group-item",
-                          attrs: { href: "#", "data-parent": "#menu2sub1" }
-                        },
-                        [_vm._v("Sub 1 c")]
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "a",
-                    {
-                      staticClass: "list-group-item",
-                      attrs: { href: "#", "data-parent": "#menu2" }
-                    },
-                    [_vm._v("Sub 2")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "a",
-                    {
-                      staticClass: "list-group-item",
-                      attrs: { href: "#", "data-parent": "#menu2" }
-                    },
-                    [_vm._v("Sub 3")]
-                  )
-                ]),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  { staticClass: "list-group-item", attrs: { href: "#menu3" } },
-                  [
-                    _c("i", { staticClass: "fa fa-list" }),
-                    _vm._v("  \r\n                "),
-                    _c("span", { staticClass: "hidden-sm-down" }, [
-                      _vm._v("Generating Set")
-                    ])
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  { staticClass: "list-group-item", attrs: { href: "#menu4" } },
-                  [
-                    _c("i", { staticClass: "fa fa-list-alt" }),
-                    _vm._v("  \r\n                "),
-                    _c("span", { staticClass: "hidden-sm-down" }, [
-                      _vm._v("Television")
-                    ])
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  { staticClass: "list-group-item", attrs: { href: "#menu5" } },
-                  [
-                    _c("i", { staticClass: "fa fa-list-alt" }),
-                    _vm._v("  \r\n                "),
-                    _c("span", { staticClass: "hidden-sm-down" }, [
-                      _vm._v("Mobile Phone")
-                    ])
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  { staticClass: "list-group-item", attrs: { href: "#menu5" } },
-                  [
-                    _c("i", { staticClass: "fa fa-list-alt" }),
-                    _vm._v("  \r\n                "),
-                    _c("span", { staticClass: "hidden-sm-down" }, [
-                      _vm._v("Sewing Machine")
-                    ])
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  { staticClass: "list-group-item", attrs: { href: "#menu5" } },
-                  [
-                    _c("i", { staticClass: "fa fa-list-alt" }),
-                    _vm._v("  \r\n                "),
-                    _c("span", { staticClass: "hidden-sm-down" }, [
-                      _vm._v("Water Dispenser")
-                    ])
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  { staticClass: "list-group-item", attrs: { href: "#menu5" } },
-                  [
-                    _c("i", { staticClass: "fa fa-list-alt" }),
-                    _vm._v("  \r\n                "),
-                    _c("span", { staticClass: "hidden-sm-down" }, [
-                      _vm._v("Home Theater")
-                    ])
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  { staticClass: "list-group-item", attrs: { href: "#menu5" } },
-                  [
-                    _c("i", { staticClass: "fa fa-list-alt" }),
-                    _vm._v("  \r\n                "),
-                    _c("span", { staticClass: "hidden-sm-down" }, [
-                      _vm._v("Industrial Fan")
-                    ])
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  { staticClass: "list-group-item", attrs: { href: "#menu5" } },
-                  [
-                    _c("i", { staticClass: "fa fa-list-alt" }),
-                    _vm._v("  \r\n                "),
-                    _c("span", { staticClass: "hidden-sm-down" }, [
-                      _vm._v("Air Conditioner")
-                    ])
-                  ]
-                )
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-9" }, [
-            _c("div", { staticClass: "row" }, [
-              _c("div", { staticClass: "col-lg-4 col-sm-6 portfolio-item" }, [
-                _c("div", { staticClass: "card h-100" }, [
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        href: "#",
-                        "data-toggle": "modal",
-                        "data-target": "#myModal1"
-                      }
-                    },
-                    [
-                      _c("img", {
-                        staticClass: "card-img-top",
-                        attrs: {
-                          src: "/images/phone/aircondition-mini.png",
-                          alt: ""
-                        }
-                      })
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "card-body" }, [
-                    _c("h4", { staticClass: "card-text" }, [
-                      _vm._v(
-                        "\r\n                Infinix Zero 4\r\n              "
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("hr"),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "info" }, [
-                      _c("div", { staticClass: "row" }, [
-                        _c("div", { staticClass: "tag-price col-md-8" }, [
-                          _c("h5", [_vm._v("First Installment")])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "price col-md-4" }, [
-                          _c("h5", { staticClass: "price-text-color" }, [
-                            _vm._v(
-                              "\r\n                                        $99.99"
-                            )
-                          ])
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "row" }, [
-                        _c("div", { staticClass: "tag-price col-md-8" }, [
-                          _c("h5", [_vm._v("Monthly Repaymentt")])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "price col-md-4" }, [
-                          _c("h5", { staticClass: "price-text-color" }, [
-                            _vm._v(
-                              "\r\n                                        $99.99"
-                            )
-                          ])
-                        ])
-                      ])
-                    ])
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col-lg-4 col-sm-6 portfolio-item" }, [
-                _c("div", { staticClass: "card h-100" }, [
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        href: "#",
-                        "data-toggle": "modal",
-                        "data-target": "#myModal1"
-                      }
-                    },
-                    [
-                      _c("img", {
-                        staticClass: "card-img-top",
-                        attrs: { src: "/images/phone/zero4-min.png", alt: "" }
-                      })
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "card-body" }, [
-                    _c("h4", { staticClass: "card-text" }, [
-                      _vm._v(
-                        "\r\n                Infinix Zero 4\r\n              "
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("hr"),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "info" }, [
-                      _c("div", { staticClass: "row" }, [
-                        _c("div", { staticClass: "tag-price col-md-8" }, [
-                          _c("h5", [_vm._v("First Installment")])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "price col-md-4" }, [
-                          _c("h5", { staticClass: "price-text-color" }, [
-                            _vm._v(
-                              "\r\n                                        $99.99"
-                            )
-                          ])
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "row" }, [
-                        _c("div", { staticClass: "tag-price col-md-8" }, [
-                          _c("h5", [_vm._v("Monthly Repaymentt")])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "price col-md-4" }, [
-                          _c("h5", { staticClass: "price-text-color" }, [
-                            _vm._v(
-                              "\r\n                                        $99.99"
-                            )
-                          ])
-                        ])
-                      ])
-                    ])
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col-lg-4 col-sm-6 portfolio-item" }, [
-                _c("div", { staticClass: "card h-100" }, [
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        href: "#",
-                        "data-toggle": "modal",
-                        "data-target": "#myModal1"
-                      }
-                    },
-                    [
-                      _c("img", {
-                        staticClass: "card-img-top",
-                        attrs: { src: "/images/phone/zero4-min.png", alt: "" }
-                      })
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "card-body" }, [
-                    _c("h4", { staticClass: "card-text" }, [
-                      _vm._v(
-                        "\r\n                Infinix Zero 4\r\n              "
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("hr"),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "info" }, [
-                      _c("div", { staticClass: "row" }, [
-                        _c("div", { staticClass: "tag-price col-md-8" }, [
-                          _c("h5", [_vm._v("First Installment")])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "price col-md-4" }, [
-                          _c("h5", { staticClass: "price-text-color" }, [
-                            _vm._v(
-                              "\r\n                                        $99.99"
-                            )
-                          ])
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "row" }, [
-                        _c("div", { staticClass: "tag-price col-md-8" }, [
-                          _c("h5", [_vm._v("Monthly Repaymentt")])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "price col-md-4" }, [
-                          _c("h5", { staticClass: "price-text-color" }, [
-                            _vm._v(
-                              "\r\n                                        $99.99"
-                            )
-                          ])
-                        ])
-                      ])
-                    ])
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col-lg-4 col-sm-6 portfolio-item" }, [
-                _c("div", { staticClass: "card h-100" }, [
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        href: "#",
-                        "data-toggle": "modal",
-                        "data-target": "#myModal1"
-                      }
-                    },
-                    [
-                      _c("img", {
-                        staticClass: "card-img-top",
-                        attrs: { src: "/images/phone/zero4-min.png", alt: "" }
-                      })
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "card-body" }, [
-                    _c("h4", { staticClass: "card-text" }, [
-                      _vm._v(
-                        "\r\n                Infinix Zero 4\r\n              "
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("hr"),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "info" }, [
-                      _c("div", { staticClass: "row" }, [
-                        _c("div", { staticClass: "tag-price col-md-8" }, [
-                          _c("h5", [_vm._v("First Installment")])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "price col-md-4" }, [
-                          _c("h5", { staticClass: "price-text-color" }, [
-                            _vm._v(
-                              "\r\n                                        $99.99"
-                            )
-                          ])
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "row" }, [
-                        _c("div", { staticClass: "tag-price col-md-8" }, [
-                          _c("h5", [_vm._v("Monthly Repaymentt")])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "price col-md-4" }, [
-                          _c("h5", { staticClass: "price-text-color" }, [
-                            _vm._v(
-                              "\r\n                                        $99.99"
-                            )
-                          ])
-                        ])
-                      ])
-                    ])
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col-lg-4 col-sm-6 portfolio-item" }, [
-                _c("div", { staticClass: "card h-100" }, [
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        href: "#",
-                        "data-toggle": "modal",
-                        "data-target": "#myModal1"
-                      }
-                    },
-                    [
-                      _c("img", {
-                        staticClass: "card-img-top",
-                        attrs: { src: "/images/phone/zero4-min.png", alt: "" }
-                      })
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "card-body" }, [
-                    _c("h4", { staticClass: "card-text" }, [
-                      _vm._v(
-                        "\r\n                Infinix Zero 4\r\n              "
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("hr"),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "info" }, [
-                      _c("div", { staticClass: "row" }, [
-                        _c("div", { staticClass: "tag-price col-md-8" }, [
-                          _c("h5", [_vm._v("First Installment")])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "price col-md-4" }, [
-                          _c("h5", { staticClass: "price-text-color" }, [
-                            _vm._v(
-                              "\r\n                                        $99.99"
-                            )
-                          ])
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "row" }, [
-                        _c("div", { staticClass: "tag-price col-md-8" }, [
-                          _c("h5", [_vm._v("Monthly Repaymentt")])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "price col-md-4" }, [
-                          _c("h5", { staticClass: "price-text-color" }, [
-                            _vm._v(
-                              "\r\n                                        $99.99"
-                            )
-                          ])
-                        ])
-                      ])
-                    ])
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col-lg-4 col-sm-6 portfolio-item" }, [
-                _c("div", { staticClass: "card h-100" }, [
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        href: "#",
-                        "data-toggle": "modal",
-                        "data-target": "#myModal1"
-                      }
-                    },
-                    [
-                      _c("img", {
-                        staticClass: "card-img-top",
-                        attrs: { src: "/images/phone/zero4-min.png", alt: "" }
-                      })
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "card-body" }, [
-                    _c("h4", { staticClass: "card-text" }, [
-                      _vm._v(
-                        "\r\n                Infinix Zero 4\r\n              "
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("hr"),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "info" }, [
-                      _c("div", { staticClass: "row" }, [
-                        _c("div", { staticClass: "tag-price col-md-8" }, [
-                          _c("h5", [_vm._v("First Installment")])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "price col-md-4" }, [
-                          _c("h5", { staticClass: "price-text-color" }, [
-                            _vm._v(
-                              "\r\n                                        $99.99"
-                            )
-                          ])
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "row" }, [
-                        _c("div", { staticClass: "tag-price col-md-8" }, [
-                          _c("h5", [_vm._v("Monthly Repaymentt")])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "price col-md-4" }, [
-                          _c("h5", { staticClass: "price-text-color" }, [
-                            _vm._v(
-                              "\r\n                                        $99.99"
-                            )
-                          ])
-                        ])
-                      ])
-                    ])
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col-lg-4 col-sm-6 portfolio-item" }, [
-                _c("div", { staticClass: "card h-100" }, [
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        href: "#",
-                        "data-toggle": "modal",
-                        "data-target": "#myModal1"
-                      }
-                    },
-                    [
-                      _c("img", {
-                        staticClass: "card-img-top",
-                        attrs: { src: "/images/phone/zero4-min.png", alt: "" }
-                      })
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "card-body" }, [
-                    _c("h4", { staticClass: "card-text" }, [
-                      _vm._v(
-                        "\r\n                Infinix Zero 4\r\n              "
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("hr"),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "info" }, [
-                      _c("div", { staticClass: "row" }, [
-                        _c("div", { staticClass: "tag-price col-md-8" }, [
-                          _c("h5", [_vm._v("First Installment")])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "price col-md-4" }, [
-                          _c("h5", { staticClass: "price-text-color" }, [
-                            _vm._v(
-                              "\r\n                                        $99.99"
-                            )
-                          ])
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "row" }, [
-                        _c("div", { staticClass: "tag-price col-md-8" }, [
-                          _c("h5", [_vm._v("Monthly Repaymentt")])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "price col-md-4" }, [
-                          _c("h5", { staticClass: "price-text-color" }, [
-                            _vm._v(
-                              "\r\n                                        $99.99"
-                            )
-                          ])
-                        ])
-                      ])
-                    ])
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col-lg-4 col-sm-6 portfolio-item" }, [
-                _c("div", { staticClass: "card h-100" }, [
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        href: "#",
-                        "data-toggle": "modal",
-                        "data-target": "#myModal1"
-                      }
-                    },
-                    [
-                      _c("img", {
-                        staticClass: "card-img-top",
-                        attrs: { src: "/images/phone/zero4-min.png", alt: "" }
-                      })
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "card-body" }, [
-                    _c("h4", { staticClass: "card-text" }, [
-                      _vm._v(
-                        "\r\n                Infinix Zero 4\r\n              "
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("hr"),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "info" }, [
-                      _c("div", { staticClass: "row" }, [
-                        _c("div", { staticClass: "tag-price col-md-8" }, [
-                          _c("h5", [_vm._v("First Installment")])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "price col-md-4" }, [
-                          _c("h5", { staticClass: "price-text-color" }, [
-                            _vm._v(
-                              "\r\n                                        $99.99"
-                            )
-                          ])
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "row" }, [
-                        _c("div", { staticClass: "tag-price col-md-8" }, [
-                          _c("h5", [_vm._v("Monthly Repaymentt")])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "price col-md-4" }, [
-                          _c("h5", { staticClass: "price-text-color" }, [
-                            _vm._v(
-                              "\r\n                                        $99.99"
-                            )
-                          ])
-                        ])
-                      ])
-                    ])
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass: "modal fade modal modal-primary",
-                  attrs: {
-                    id: "myModal1",
-                    tabindex: "-1",
-                    role: "dialog",
-                    "aria-labelledby": "myModalLabel",
-                    "aria-hidden": "true"
-                  }
-                },
-                [
-                  _c("div", { staticClass: "modal-dialog modal-lg" }, [
-                    _c("div", { staticClass: "modal-content" }, [
-                      _c(
-                        "div",
-                        { staticClass: "modal-header justify-content-center" },
-                        [
-                          _c("div", { staticClass: "modal-profile" }, [
-                            _c("i", { staticClass: "nc-icon nc-bulb-63" })
-                          ])
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "modal-body" }, [
-                        _c("div", { staticClass: "container-fluid" }, [
-                          _c("div", { staticClass: "row" }, [
-                            _c("div", { staticClass: "row" }, [
-                              _c("div", { staticClass: "col-md-7" }, [
-                                _c("a", { attrs: { href: "#" } }, [
-                                  _c("img", {
-                                    staticClass:
-                                      "img-fluid rounded mb-3 mb-md-0",
-                                    attrs: {
-                                      src: "/images/phone/zero4-min.png",
-                                      alt: ""
-                                    }
-                                  })
-                                ])
-                              ]),
-                              _vm._v(" "),
-                              _c("div", { staticClass: "col-md-5" }, [
-                                _c("div", { staticClass: "row" }, [
-                                  _c("h3", [_vm._v("Infinix Zero 4")]),
-                                  _vm._v(" "),
-                                  _c("p", [
-                                    _vm._v(
-                                      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde."
-                                    )
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "row" }, [
-                                  _c("div", { staticClass: "info" }, [
-                                    _c("div", { staticClass: "row" }, [
-                                      _c(
-                                        "div",
-                                        { staticClass: "tag-price col-md-8" },
-                                        [
-                                          _c("h5", [
-                                            _vm._v("First Installment")
-                                          ])
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "div",
-                                        { staticClass: "price col-md-4" },
-                                        [
-                                          _c(
-                                            "h5",
-                                            { staticClass: "price-text-color" },
-                                            [
-                                              _vm._v(
-                                                "\r\n                                        $99.99"
-                                              )
-                                            ]
-                                          )
-                                        ]
-                                      )
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("div", { staticClass: "row" }, [
-                                      _c(
-                                        "div",
-                                        { staticClass: "tag-price col-md-8" },
-                                        [
-                                          _c("h5", [
-                                            _vm._v("Monthly Repaymentt")
-                                          ])
-                                        ]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "div",
-                                        { staticClass: "price col-md-4" },
-                                        [
-                                          _c(
-                                            "h5",
-                                            { staticClass: "price-text-color" },
-                                            [
-                                              _vm._v(
-                                                "\r\n                                        $99.99"
-                                              )
-                                            ]
-                                          )
-                                        ]
-                                      )
-                                    ])
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c("div", { staticClass: "row" }, [
-                                  _c("h4", [_vm._v("Product Specification")]),
-                                  _vm._v(" "),
-                                  _c("ul", [
-                                    _c("li", [
-                                      _vm._v(
-                                        "Lorem ipsum dolor sit amet, consectetur"
-                                      )
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("li", [
-                                      _vm._v(
-                                        "Lorem ipsum dolor sit amet, consectetur"
-                                      )
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("li", [
-                                      _vm._v(
-                                        "Lorem ipsum dolor sit amet, consectetur"
-                                      )
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("li", [
-                                      _vm._v(
-                                        "Lorem ipsum dolor sit amet, consectetur"
-                                      )
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("li", [
-                                      _vm._v(
-                                        "Lorem ipsum dolor sit amet, consectetur"
-                                      )
-                                    ])
-                                  ])
-                                ])
-                              ])
-                            ])
-                          ])
-                        ])
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "modal-footer" }, [
-                        _c(
-                          "button",
-                          {
-                            staticClass: "btn btn-link btn-simple",
-                            attrs: { type: "button" }
-                          },
-                          [_vm._v("Back")]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "button",
-                          {
-                            staticClass: "btn btn-link btn-simple",
-                            attrs: { type: "button", "data-dismiss": "modal" }
-                          },
-                          [_vm._v("Close")]
-                        )
-                      ])
-                    ])
-                  ])
-                ]
-              )
             ])
           ])
         ]),
         _vm._v(" "),
-        _c("hr")
+        _c("div", { staticClass: "card-footer " }, [
+          _c("div", { staticClass: "col-md-12 text-center" }, [
+            _c(
+              "button",
+              {
+                staticClass: "btn btn-fill btn-info",
+                attrs: { type: "submit" }
+              },
+              [_vm._v("Create Product")]
+            )
+          ])
+        ])
       ])
     ])
   }
@@ -21205,7 +20544,7 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-1788b11c", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-1c9cf40c", module.exports)
   }
 }
 
@@ -21590,15 +20929,595 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("router-view")
+  return _c(
+    "div",
+    { staticClass: "container-fluid" },
+    [
+      _c("nav", { staticClass: "navbar navbar-expand-lg " }, [
+        _c("div", { staticClass: "container-fluid" }, [
+          _vm._m(0),
+          _vm._v(" "),
+          _vm.view == "catalog"
+            ? _c(
+                "div",
+                { staticClass: "navbar-collapse justify-content-end" },
+                [_vm._m(1), _vm._v(" "), _vm._m(2)]
+              )
+            : _vm._e()
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "navbar navbar1" }, [
+        _c("div", { staticClass: "navbar__brand" }, [
+          _vm._v("\r\n\t\t\t\tWelcome to Altara Catalog\r\n\t\t\t")
+        ]),
+        _vm._v(" "),
+        _c("ul", { staticClass: "navbar__list" }, [
+          _c(
+            "li",
+            { staticClass: "navbar__item" },
+            [_c("router-link", { attrs: { to: "/login" } }, [_vm._v("Login")])],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "li",
+            { staticClass: "navbar__item" },
+            [
+              _c("router-link", { attrs: { to: "/catalog" } }, [
+                _vm._v("Catalog")
+              ])
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "li",
+            { staticClass: "navbar__item" },
+            [
+              _c("router-link", { attrs: { to: "/product/create" } }, [
+                _vm._v("Create Product")
+              ])
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c("li", { staticClass: "navbar__item" }, [
+            _c(
+              "a",
+              {
+                on: {
+                  click: function($event) {
+                    $event.stopPropagation()
+                    return _vm.logout($event)
+                  }
+                }
+              },
+              [_vm._v("LOGOUT")]
+            )
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("router-view")
+    ],
+    1
+  )
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "logo navbar-brand" }, [
+      _c(
+        "a",
+        {
+          staticClass: "photo logo-mini",
+          attrs: { href: "http://www.altaracredit/" }
+        },
+        [
+          _c("img", {
+            attrs: {
+              src: "/images/altara_logo.png",
+              width: "134",
+              height: "50",
+              alt: ""
+            }
+          })
+        ]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("ul", { staticClass: "nav navbar-nav " }, [
+      _c(
+        "form",
+        {
+          staticClass: "navbar-form navbar-search-form",
+          attrs: { role: "search" }
+        },
+        [
+          _c("div", { staticClass: "input-group" }, [
+            _c("i", { staticClass: "nc-icon nc-zoom-split" }),
+            _vm._v(" "),
+            _c("input", {
+              staticClass: "form-control",
+              attrs: { type: "text", value: "", placeholder: "Search..." }
+            })
+          ])
+        ]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("ul", { staticClass: "navbar-nav" }, [
+      _c("li", { staticClass: "nav-item" }, [
+        _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
+          _c("i", { staticClass: "nc-icon nc-planet" }),
+          _vm._v("Liked item\r\n                                ")
+        ])
+      ]),
+      _vm._v(" "),
+      _c("li", { staticClass: "nav-item" }, [
+        _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
+          _c("i", { staticClass: "nc-icon nc-cart" }),
+          _vm._v(" Cart\r\n                                ")
+        ])
+      ])
+    ])
+  }
+]
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
     require("vue-hot-reload-api")      .rerender("data-v-6dd1125c", module.exports)
+  }
+}
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-7454161c\",\"hasScoped\":false,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/views/Catalog/Index.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [
+    _c("div", { staticClass: "container-fluid" }, [
+      _c(
+        "div",
+        { staticClass: "row" },
+        [_c("sidebar"), _vm._v(" "), _vm._m(0)],
+        1
+      ),
+      _vm._v(" "),
+      _c("hr")
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-md-9" }, [
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-lg-4 col-sm-6 portfolio-item" }, [
+          _c("div", { staticClass: "card h-100" }, [
+            _c(
+              "a",
+              {
+                attrs: {
+                  href: "#",
+                  "data-toggle": "modal",
+                  "data-target": "#myModal1"
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "card-img-top",
+                  attrs: { src: "/images/phone/aircondition-mini.png", alt: "" }
+                })
+              ]
+            ),
+            _vm._v(" "),
+            _c("div", { staticClass: "card-body" }, [
+              _c("h4", { staticClass: "card-text" }, [
+                _vm._v("\r\n                Infinix Zero 4\r\n              ")
+              ]),
+              _vm._v(" "),
+              _c("hr"),
+              _vm._v(" "),
+              _c("div", { staticClass: "info" }, [
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "tag-price col-md-8" }, [
+                    _c("h5", [_vm._v("First Installment")])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "price col-md-4" }, [
+                    _c("h5", { staticClass: "price-text-color" }, [
+                      _vm._v(
+                        "\r\n                                        $99.99"
+                      )
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "tag-price col-md-8" }, [
+                    _c("h5", [_vm._v("Monthly Repaymentt")])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "price col-md-4" }, [
+                    _c("h5", { staticClass: "price-text-color" }, [
+                      _vm._v(
+                        "\r\n                                        $99.99"
+                      )
+                    ])
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-lg-4 col-sm-6 portfolio-item" }, [
+          _c("div", { staticClass: "card h-100" }, [
+            _c(
+              "a",
+              {
+                attrs: {
+                  href: "#",
+                  "data-toggle": "modal",
+                  "data-target": "#myModal1"
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "card-img-top",
+                  attrs: { src: "/images/phone/zero4-min.png", alt: "" }
+                })
+              ]
+            ),
+            _vm._v(" "),
+            _c("div", { staticClass: "card-body" }, [
+              _c("h4", { staticClass: "card-text" }, [
+                _vm._v("\r\n                Infinix Zero 4\r\n              ")
+              ]),
+              _vm._v(" "),
+              _c("hr"),
+              _vm._v(" "),
+              _c("div", { staticClass: "info" }, [
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "tag-price col-md-8" }, [
+                    _c("h5", [_vm._v("First Installment")])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "price col-md-4" }, [
+                    _c("h5", { staticClass: "price-text-color" }, [
+                      _vm._v(
+                        "\r\n                                        $99.99"
+                      )
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "tag-price col-md-8" }, [
+                    _c("h5", [_vm._v("Monthly Repaymentt")])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "price col-md-4" }, [
+                    _c("h5", { staticClass: "price-text-color" }, [
+                      _vm._v(
+                        "\r\n                                        $99.99"
+                      )
+                    ])
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-lg-4 col-sm-6 portfolio-item" }, [
+          _c("div", { staticClass: "card h-100" }, [
+            _c(
+              "a",
+              {
+                attrs: {
+                  href: "#",
+                  "data-toggle": "modal",
+                  "data-target": "#myModal1"
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "card-img-top",
+                  attrs: { src: "/images/phone/zero4-min.png", alt: "" }
+                })
+              ]
+            ),
+            _vm._v(" "),
+            _c("div", { staticClass: "card-body" }, [
+              _c("h4", { staticClass: "card-text" }, [
+                _vm._v("\r\n                Infinix Zero 4\r\n              ")
+              ]),
+              _vm._v(" "),
+              _c("hr"),
+              _vm._v(" "),
+              _c("div", { staticClass: "info" }, [
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "tag-price col-md-8" }, [
+                    _c("h5", [_vm._v("First Installment")])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "price col-md-4" }, [
+                    _c("h5", { staticClass: "price-text-color" }, [
+                      _vm._v(
+                        "\r\n                                        $99.99"
+                      )
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "tag-price col-md-8" }, [
+                    _c("h5", [_vm._v("Monthly Repaymentt")])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "price col-md-4" }, [
+                    _c("h5", { staticClass: "price-text-color" }, [
+                      _vm._v(
+                        "\r\n                                        $99.99"
+                      )
+                    ])
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-lg-4 col-sm-6 portfolio-item" }, [
+          _c("div", { staticClass: "card h-100" }, [
+            _c(
+              "a",
+              {
+                attrs: {
+                  href: "#",
+                  "data-toggle": "modal",
+                  "data-target": "#myModal1"
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "card-img-top",
+                  attrs: { src: "/images/phone/zero4-min.png", alt: "" }
+                })
+              ]
+            ),
+            _vm._v(" "),
+            _c("div", { staticClass: "card-body" }, [
+              _c("h4", { staticClass: "card-text" }, [
+                _vm._v("\r\n                Infinix Zero 4\r\n              ")
+              ]),
+              _vm._v(" "),
+              _c("hr"),
+              _vm._v(" "),
+              _c("div", { staticClass: "info" }, [
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "tag-price col-md-8" }, [
+                    _c("h5", [_vm._v("First Installment")])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "price col-md-4" }, [
+                    _c("h5", { staticClass: "price-text-color" }, [
+                      _vm._v(
+                        "\r\n                                        $99.99"
+                      )
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "tag-price col-md-8" }, [
+                    _c("h5", [_vm._v("Monthly Repaymentt")])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "price col-md-4" }, [
+                    _c("h5", { staticClass: "price-text-color" }, [
+                      _vm._v(
+                        "\r\n                                        $99.99"
+                      )
+                    ])
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "modal fade modal modal-primary",
+            attrs: {
+              id: "myModal1",
+              tabindex: "-1",
+              role: "dialog",
+              "aria-labelledby": "myModalLabel",
+              "aria-hidden": "true"
+            }
+          },
+          [
+            _c("div", { staticClass: "modal-dialog modal-lg" }, [
+              _c("div", { staticClass: "modal-content" }, [
+                _c(
+                  "div",
+                  { staticClass: "modal-header justify-content-center" },
+                  [
+                    _c("div", { staticClass: "modal-profile" }, [
+                      _c("i", { staticClass: "nc-icon nc-bulb-63" })
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c("div", { staticClass: "modal-body" }, [
+                  _c("div", { staticClass: "container-fluid" }, [
+                    _c("div", { staticClass: "row" }, [
+                      _c("div", { staticClass: "row" }, [
+                        _c("div", { staticClass: "col-md-7" }, [
+                          _c("a", { attrs: { href: "#" } }, [
+                            _c("img", {
+                              staticClass: "img-fluid rounded mb-3 mb-md-0",
+                              attrs: {
+                                src: "/images/phone/zero4-min.png",
+                                alt: ""
+                              }
+                            })
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-md-5" }, [
+                          _c("div", { staticClass: "row" }, [
+                            _c("h3", [_vm._v("Infinix Zero 4")]),
+                            _vm._v(" "),
+                            _c("p", [
+                              _vm._v(
+                                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde."
+                              )
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "row" }, [
+                            _c("div", { staticClass: "info" }, [
+                              _c("div", { staticClass: "row" }, [
+                                _c(
+                                  "div",
+                                  { staticClass: "tag-price col-md-8" },
+                                  [_c("h5", [_vm._v("First Installment")])]
+                                ),
+                                _vm._v(" "),
+                                _c("div", { staticClass: "price col-md-4" }, [
+                                  _c(
+                                    "h5",
+                                    { staticClass: "price-text-color" },
+                                    [
+                                      _vm._v(
+                                        "\r\n                                        $99.99"
+                                      )
+                                    ]
+                                  )
+                                ])
+                              ]),
+                              _vm._v(" "),
+                              _c("div", { staticClass: "row" }, [
+                                _c(
+                                  "div",
+                                  { staticClass: "tag-price col-md-8" },
+                                  [_c("h5", [_vm._v("Monthly Repaymentt")])]
+                                ),
+                                _vm._v(" "),
+                                _c("div", { staticClass: "price col-md-4" }, [
+                                  _c(
+                                    "h5",
+                                    { staticClass: "price-text-color" },
+                                    [
+                                      _vm._v(
+                                        "\r\n                                        $99.99"
+                                      )
+                                    ]
+                                  )
+                                ])
+                              ])
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "row" }, [
+                            _c("h4", [_vm._v("Product Specification")]),
+                            _vm._v(" "),
+                            _c("ul", [
+                              _c("li", [
+                                _vm._v(
+                                  "Lorem ipsum dolor sit amet, consectetur"
+                                )
+                              ]),
+                              _vm._v(" "),
+                              _c("li", [
+                                _vm._v(
+                                  "Lorem ipsum dolor sit amet, consectetur"
+                                )
+                              ]),
+                              _vm._v(" "),
+                              _c("li", [
+                                _vm._v(
+                                  "Lorem ipsum dolor sit amet, consectetur"
+                                )
+                              ]),
+                              _vm._v(" "),
+                              _c("li", [
+                                _vm._v(
+                                  "Lorem ipsum dolor sit amet, consectetur"
+                                )
+                              ]),
+                              _vm._v(" "),
+                              _c("li", [
+                                _vm._v(
+                                  "Lorem ipsum dolor sit amet, consectetur"
+                                )
+                              ])
+                            ])
+                          ])
+                        ])
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "modal-footer" }, [
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-link btn-simple",
+                      attrs: { type: "button" }
+                    },
+                    [_vm._v("Back")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-link btn-simple",
+                      attrs: { type: "button", "data-dismiss": "modal" }
+                    },
+                    [_vm._v("Close")]
+                  )
+                ])
+              ])
+            ])
+          ]
+        )
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-7454161c", module.exports)
   }
 }
 
@@ -24235,23 +24154,50 @@ if (inBrowser && window.Vue) {
 
 /***/ }),
 
-/***/ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1788b11c\",\"scoped\":false,\"hasInlineConfig\":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/assets/js/views/Catalog.vue":
+/***/ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-00467796\",\"scoped\":false,\"hasInlineConfig\":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/assets/js/components/Sidebar.vue":
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__("./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1788b11c\",\"scoped\":false,\"hasInlineConfig\":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/assets/js/views/Catalog.vue");
+var content = __webpack_require__("./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-00467796\",\"scoped\":false,\"hasInlineConfig\":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/assets/js/components/Sidebar.vue");
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("0e98fb20", content, false, {});
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("52308236", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1788b11c\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Catalog.vue", function() {
-     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1788b11c\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Catalog.vue");
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-00467796\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Sidebar.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-00467796\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Sidebar.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1c9cf40c\",\"scoped\":false,\"hasInlineConfig\":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/assets/js/views/Catalog/Create.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__("./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1c9cf40c\",\"scoped\":false,\"hasInlineConfig\":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/assets/js/views/Catalog/Create.vue");
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("1abe8c7e", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1c9cf40c\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Create.vue", function() {
+     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1c9cf40c\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Create.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -24279,6 +24225,33 @@ if(false) {
  if(!content.locals) {
    module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-264cb249\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./LandingPage.vue", function() {
      var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-264cb249\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./LandingPage.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./node_modules/vue-style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7454161c\",\"scoped\":false,\"hasInlineConfig\":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/assets/js/views/Catalog/Index.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__("./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7454161c\",\"scoped\":false,\"hasInlineConfig\":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/assets/js/views/Catalog/Index.vue");
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__("./node_modules/vue-style-loader/lib/addStylesClient.js")("da8cd2c0", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7454161c\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Index.vue", function() {
+     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7454161c\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Index.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -35622,6 +35595,58 @@ var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
 
 /***/ }),
 
+/***/ "./resources/assets/js/components/Sidebar.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__("./node_modules/vue-style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-00467796\",\"scoped\":false,\"hasInlineConfig\":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/assets/js/components/Sidebar.vue")
+}
+var normalizeComponent = __webpack_require__("./node_modules/vue-loader/lib/component-normalizer.js")
+/* script */
+var __vue_script__ = __webpack_require__("./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]],\"plugins\":[\"transform-object-rest-spread\",[\"transform-runtime\",{\"polyfill\":false,\"helpers\":false}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/components/Sidebar.vue")
+/* template */
+var __vue_template__ = __webpack_require__("./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-00467796\",\"hasScoped\":false,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/components/Sidebar.vue")
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources\\assets\\js\\components\\Sidebar.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-00467796", Component.options)
+  } else {
+    hotAPI.reload("data-v-00467796", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+
 /***/ "./resources/assets/js/helpers/api.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -35725,8 +35750,11 @@ function interceptors(cb) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__views_Auth_Login_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__views_Auth_Login_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__views_Auth_Register_vue__ = __webpack_require__("./resources/assets/js/views/Auth/Register.vue");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__views_Auth_Register_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__views_Auth_Register_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__views_Catalog_vue__ = __webpack_require__("./resources/assets/js/views/Catalog.vue");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__views_Catalog_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__views_Catalog_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__views_Catalog_Index_vue__ = __webpack_require__("./resources/assets/js/views/Catalog/Index.vue");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__views_Catalog_Index_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__views_Catalog_Index_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__views_Catalog_Create_vue__ = __webpack_require__("./resources/assets/js/views/Catalog/Create.vue");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__views_Catalog_Create_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__views_Catalog_Create_vue__);
+
 
 
 
@@ -35738,7 +35766,7 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vue_
 
 var router = new __WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]({
     mode: 'history',
-    routes: [{ path: '/', component: __WEBPACK_IMPORTED_MODULE_2__views_LandingPage_vue___default.a }, { path: '/login', component: __WEBPACK_IMPORTED_MODULE_3__views_Auth_Login_vue___default.a }, { path: '/register', component: __WEBPACK_IMPORTED_MODULE_4__views_Auth_Register_vue___default.a }, { path: '/catalog', component: __WEBPACK_IMPORTED_MODULE_5__views_Catalog_vue___default.a }]
+    routes: [{ path: '/', component: __WEBPACK_IMPORTED_MODULE_2__views_LandingPage_vue___default.a }, { path: '/login', component: __WEBPACK_IMPORTED_MODULE_3__views_Auth_Login_vue___default.a, meta: { mode: 'login' } }, { path: '/register', component: __WEBPACK_IMPORTED_MODULE_4__views_Auth_Register_vue___default.a, meta: { mode: 'register' } }, { path: '/catalog', component: __WEBPACK_IMPORTED_MODULE_5__views_Catalog_Index_vue___default.a, meta: { mode: 'catalog' } }, { path: '/product/create', component: __WEBPACK_IMPORTED_MODULE_6__views_Catalog_Create_vue___default.a }]
 });
 
 /* harmony default export */ __webpack_exports__["a"] = (router);
@@ -35868,19 +35896,19 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ "./resources/assets/js/views/Catalog.vue":
+/***/ "./resources/assets/js/views/Catalog/Create.vue":
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__("./node_modules/vue-style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1788b11c\",\"scoped\":false,\"hasInlineConfig\":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/assets/js/views/Catalog.vue")
+  __webpack_require__("./node_modules/vue-style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1c9cf40c\",\"scoped\":false,\"hasInlineConfig\":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/assets/js/views/Catalog/Create.vue")
 }
 var normalizeComponent = __webpack_require__("./node_modules/vue-loader/lib/component-normalizer.js")
 /* script */
-var __vue_script__ = __webpack_require__("./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]],\"plugins\":[\"transform-object-rest-spread\",[\"transform-runtime\",{\"polyfill\":false,\"helpers\":false}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/views/Catalog.vue")
+var __vue_script__ = __webpack_require__("./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]],\"plugins\":[\"transform-object-rest-spread\",[\"transform-runtime\",{\"polyfill\":false,\"helpers\":false}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/views/Catalog/Create.vue")
 /* template */
-var __vue_template__ = __webpack_require__("./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-1788b11c\",\"hasScoped\":false,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/views/Catalog.vue")
+var __vue_template__ = __webpack_require__("./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-1c9cf40c\",\"hasScoped\":false,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/views/Catalog/Create.vue")
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -35897,7 +35925,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources\\assets\\js\\views\\Catalog.vue"
+Component.options.__file = "resources\\assets\\js\\views\\Catalog\\Create.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -35906,9 +35934,61 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-1788b11c", Component.options)
+    hotAPI.createRecord("data-v-1c9cf40c", Component.options)
   } else {
-    hotAPI.reload("data-v-1788b11c", Component.options)
+    hotAPI.reload("data-v-1c9cf40c", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+
+/***/ "./resources/assets/js/views/Catalog/Index.vue":
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__("./node_modules/vue-style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-7454161c\",\"scoped\":false,\"hasInlineConfig\":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0!./resources/assets/js/views/Catalog/Index.vue")
+}
+var normalizeComponent = __webpack_require__("./node_modules/vue-loader/lib/component-normalizer.js")
+/* script */
+var __vue_script__ = __webpack_require__("./node_modules/babel-loader/lib/index.js?{\"cacheDirectory\":true,\"presets\":[[\"env\",{\"modules\":false,\"targets\":{\"browsers\":[\"> 2%\"],\"uglify\":true}}]],\"plugins\":[\"transform-object-rest-spread\",[\"transform-runtime\",{\"polyfill\":false,\"helpers\":false}]]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./resources/assets/js/views/Catalog/Index.vue")
+/* template */
+var __vue_template__ = __webpack_require__("./node_modules/vue-loader/lib/template-compiler/index.js?{\"id\":\"data-v-7454161c\",\"hasScoped\":false,\"buble\":{\"transforms\":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./resources/assets/js/views/Catalog/Index.vue")
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources\\assets\\js\\views\\Catalog\\Index.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-7454161c", Component.options)
+  } else {
+    hotAPI.reload("data-v-7454161c", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true

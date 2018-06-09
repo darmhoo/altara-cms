@@ -1,7 +1,7 @@
   <template>
     <div class="wrapper wrapper-full-page">
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute">
+        <!-- <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute">
             <div class="container">
                 <div class="navbar-wrapper">
                     <a class="navbar-brand" href="www.altaracredit.com">Altara</a>
@@ -27,7 +27,7 @@
                     </ul>
                 </div>
             </div>
-        </nav>
+        </nav> -->
         <!-- End Navbar -->
         <div class="full-page  section-image" data-color="black" data-image="../../assets/img/full-screen-image-2.jpg">
             <!--   you can change the color of the filter page using: data-color="blue | purple | green | orange | red | rose " -->
