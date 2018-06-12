@@ -12,14 +12,6 @@ class Product extends Model
 
     public function user()
     {
-    	return $this->belongsToManyy(User::class);
-    }
-
-    public function brand() {
-        return $this->belongsToMany(Brand::class);
-    }
-
-    public function category() {
-        return $this->belongsToMany(Category::class);
+    	return $this->belongsTo(User::class);
     }
 }
