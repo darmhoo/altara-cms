@@ -223,15 +223,26 @@
 </template>
 
 <script>
+import { get } from '../../helpers/api'
 import Sidebar from '../../components/Sidebar.vue'
 export default {
     components: {
 			Sidebar
 		},
-  mounted() {
-    console.log("Component mounted.");
-  }
-};
+  data() {
+			return {
+				products: []
+			}
+		},
+		created() {
+			get('/api/products')
+				.then((res) => {
+					console.log(res);
+                    this.products = res.data.products
+                    console.log(this.products)
+				})
+		}
+	}
 </script>
 <style>
 

@@ -7,11 +7,19 @@ use Illuminate\Database\Eloquent\Model;
 class Product extends Model
 {
     protected $fillable = [
-    	'user_id','make', 'name', 'pcategory','features', 'price','rprice', 'image'
+    	'name','brand_id', 'category_id', 'features','features', 'price','image', 'user_id','rprice'
     ];
 
     public function user()
     {
-    	return $this->belongsTo(User::class);
+    	return $this->belongsToManyy(User::class);
+    }
+
+    public function brand() {
+        return $this->belongsToMany(Brand::class);
+    }
+
+    public function category() {
+        return $this->belongsToMany(Category::class);
     }
 }

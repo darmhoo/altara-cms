@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateProductsTable extends Migration
+class CreateProductTable extends Migration
 {
     /**
      * Run the migrations.
@@ -16,14 +16,16 @@ class CreateProductsTable extends Migration
         Schema::create('products', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->string('make');
+            $table->integer('brand_id')->unsigned()->index();
+            $table->integer('category_id')->unsigned()->index();
             $table->text('features');
             $table->string('price');
             $table->string('image');
             $table->integer('user_id');//the id of the agent that added the product.
             $table->string('rprice');
-            $table->integer('pcategory');
             $table->timestamps();
+            $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
+            $table->foreign('brand_id')->references('id')->on('brands')->onDelete('cascade');
         });
     }
 
@@ -34,6 +36,12 @@ class CreateProductsTable extends Migration
      */
     public function down()
     {
+       //$table->dropForeign('products_brand_id_foreign');
+        // $table->dropIndex('brand_id');
+        // $table->dropColumn('brand_id');
+        //$table->dropForeign('products_category_id_foreign');
+        // $table->dropIndex('category_id');
+        // $table->dropColumn('category_id');
         Schema::dropIfExists('products');
     }
 }

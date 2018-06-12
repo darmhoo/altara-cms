@@ -1,7 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Product;
+use App\Brand;
 use Illuminate\Http\Request;
 
 class ProductsController extends Controller
@@ -15,12 +16,18 @@ class ProductsController extends Controller
 
     public function index()
     {
-    	$products = Product::orderBy('created_at', 'desc')
-    		->get(['user_id','make', 'name', 'pcategory','features', 'price','rprice', 'image']);
+        $products = Product::orderByRaw('RAND()')->take(10)->get();
+        $nproducts = array();
+        foreach($products as $val){
+            $brand = Brand::find($val->brand_id);
+            $nproducts[] = $brand;
+            }
 
     	return response()
     		->json([
-    			'products' => $products
+                'products' => $products,
+                'brand'=> $nproducts
+
     		]);
     }
 }
