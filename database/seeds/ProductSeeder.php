@@ -29,7 +29,7 @@ class ProductSeeder extends Seeder
             ";
             $product->rprice = "3,000";
             $product->price = "43,000";
-            $product->image = "microwave-oven-polystar-medium";
+            $product->image = "polystar-microwave-1-medium.png";
             $product->user_id = 1;
             $product->category_id = 8;
             $product->save();
@@ -46,7 +46,7 @@ class ProductSeeder extends Seeder
             ";
             $product->rprice = "3,000";
             $product->price = "23,000";
-            $product->image = "table-gas-cooker-polystar-medium";
+            $product->image = "polystar-gas-c-1-medium.png";
             $product->user_id = 2;
             $product->category_id = 6;
             $product->save();
@@ -64,7 +64,7 @@ class ProductSeeder extends Seeder
             ";
             $product->rprice = "3,000";
             $product->price = "23,000";
-            $product->image = "washing-machine-polystar-medium";
+            $product->image = "polystar-washin-m-1-medium.png";
             $product->user_id = 1;
             $product->category_id = 3;
             $product->save();
@@ -82,7 +82,7 @@ class ProductSeeder extends Seeder
             ";
             $product->rprice = "3,000";
             $product->price = "23,000";
-            $product->image = "washing-machine-polystar-medium2";
+            $product->image = "polystar-washin-m-2-medium.png";
             $product->user_id = 1;
             $product->category_id = 3;
             $product->save();
@@ -98,7 +98,7 @@ class ProductSeeder extends Seeder
             ";
             $product->rprice = "3,000";
             $product->price = "67,000";
-            $product->image = "infinix-zero-5-medium";
+            $product->image = "infinix-note-3-pro-medium.png";
             $product->user_id = 2;
             $product->category_id = 11 ;
             $product->save();
@@ -114,7 +114,7 @@ class ProductSeeder extends Seeder
             ";
             $product->rprice = "3,000";
             $product->price = "67,000";
-            $product->image = "itel-s32-medium";
+            $product->image = "itel-a12-medium.png";
             $product->user_id = 1;
             $product->category_id = 11;
             $product->save();
@@ -130,7 +130,7 @@ class ProductSeeder extends Seeder
             ";
             $product->rprice = "3,000";
             $product->price = "53,500";
-            $product->image = "itel-s12-medium";
+            $product->image = "it1556-medium.png";
             $product->user_id = 2;
             $product->category_id = 11;
             $product->save();
@@ -146,7 +146,7 @@ class ProductSeeder extends Seeder
             ";
             $product->rprice = "3,000";
             $product->price = "43,600";
-            $product->image = "itel-a51-medium";
+            $product->image = "it1508-medium.png";
             $product->user_id = 1;
             $product->category_id = 11;
             $product->save();
@@ -163,7 +163,7 @@ class ProductSeeder extends Seeder
             ";
             $product->rprice = "3,000";
             $product->price = "45,000";
-            $product->image = "itel-it551-medium";
+            $product->image = "itel-a12-medium.png";
             $product->user_id = 2;
             $product->category_id = 11;
             $product->save();
@@ -182,7 +182,7 @@ class ProductSeeder extends Seeder
             ";
             $product->rprice = "3,000";
             $product->price = "33,600";
-            $product->image = "gionee-a1-lite-medium";
+            $product->image = "gionee-2-medium.png";
             $product->user_id = 1;
             $product->category_id = 11;
             $product->save();
@@ -200,14 +200,14 @@ class ProductSeeder extends Seeder
             ";
             $product->rprice = "3,000";
             $product->price = "89,000";
-            $product->image = "midea-air-conditioner-medium";
+            $product->image = "midea-ac-1-medium.png";
             $product->user_id = 2;
             $product->category_id = 7;
             $product->save();
             //12
             $product = new Product();
-            $product->name = 'Haier Thermocool Single Door Medium Fridge - HR 185S Silver 77301-0378';
-            $product->brand_id = 7;
+            $product->name = 'Polystar Single Door Medium Fridge - HR 185S Silver 77301-0378';
+            $product->brand_id = 1;
             $product->features="
             Storage Capacity: 185 Litres,
             Direct cooling technology,
@@ -218,7 +218,7 @@ class ProductSeeder extends Seeder
             ";
             $product->rprice = "3,000";
             $product->price = "89,400";
-            $product->image = "haier-thermocool-fridge-medium";
+            $product->image = "plosytar-fridge-2-medium.png";
             $product->user_id = 2;
             $product->category_id = 2;
             $product->save();
@@ -233,27 +233,24 @@ class ProductSeeder extends Seeder
             ";
             $product->rprice = "3,000";
             $product->price = "36,555";
-            $product->image = "polystar-fridge-medium";
+            $product->image = "plosytar-fridge-1-medium.png";
             $product->user_id = 1;
             $product->category_id = 2;
             $product->save();
             //14
             $product = new Product();
-            $product->name = 'Haier Thermocool Double Door Fridge - HRF 95 EX';
-            $product->brand_id = 7;
+            $product->name = 'Polystar Chest Freeser - HRF 95 EX';
+            $product->brand_id = 1;
             $product->features = "
-            Model: HRF-95EX,
-            Jumbo Freezer compartment,
             Material: Steel,
             Colour: White,
-            Double Door,
             Direct Cool
             ";
             $product->rprice = "3,000";
             $product->price = "71,730";
-            $product->image = "haier-thermocool-fridge-medium2";
+            $product->image = "plosytar-fridge-3-medium.png";
             $product->user_id = 1;
-            $product->category_id = 2;
+            $product->category_id = 1;
             $product->save();
             //15
             $product = new Product();
@@ -266,7 +263,7 @@ class ProductSeeder extends Seeder
             ";
             $product->rprice = "3,000";
             $product->price = "49,500";
-            $product->image = "polystar-ty-medium";
+            $product->image = "polystar-tv-1-medium.png";
             $product->user_id = 1;
             $product->category_id = 10;
             $product->save();
@@ -282,7 +279,7 @@ class ProductSeeder extends Seeder
             ";
             $product->rprice = "3,000";
             $product->price = "34,499";
-            $product->image = "elepaq-generator-medium";
+            $product->image = "elepaq-generator-1-medium.png";
             $product->user_id = 1;
             $product->category_id = 4;
             $product->save();
@@ -297,7 +294,7 @@ class ProductSeeder extends Seeder
             ";
             $product->rprice = "3,000";
             $product->price = "86,000";
-            $product->image = "polystar-chest-freezer-medium";
+            $product->image = "plosytar-fridge-3-medium.png";
             $product->user_id = 2;
             $product->category_id = 1;
             $product->save();
@@ -312,7 +309,7 @@ class ProductSeeder extends Seeder
             ";
             $product->rprice = "3,000";
             $product->price = "40,000";
-            $product->image = "polystar-tv-medium2";
+            $product->image = "polystar-tv-2-medium.png";
             $product->user_id = 1;
             $product->category_id = 10;
             $product->save();
@@ -330,7 +327,7 @@ class ProductSeeder extends Seeder
             ";
             $product->rprice = "3,000";
             $product->price = "81,500";
-            $product->image = "midea-air-conditioner-medium2";
+            $product->image = "midea-ac-1-medium.png";
             $product->user_id = 1;
             $product->category_id = 7;
             $product->save();
@@ -346,9 +343,370 @@ class ProductSeeder extends Seeder
             ";
             $product->rprice = "3,000";
             $product->price = "89,800";
-            $product->image = "polystar-air-conditioner-medium2";
+            $product->image = "polystar-ac-1-medium.png";
             $product->user_id = 2;
             $product->category_id = 7;
+            $product->save();
+            //21
+            $product = new Product();
+            $product->name = 'Midea Gas Cooker With oven';
+            $product->brand_id = 5;
+            $product->features = "
+            Italian design in stylish black finish,
+            Double Enamel Coated Strong Pot Support,
+            Double Enamel Coated Burner Caps
+            ";
+            $product->rprice = "3,000";
+            $product->price = "14,800";
+            $product->image = "midea-cooking-g-1-medium.png";
+            $product->user_id = 2;
+            $product->category_id = 6;
+            $product->save();
+            //22
+            $product = new Product();
+            $product->name = 'Midea Gas Cooker With oven';
+            $product->brand_id = 5;
+            $product->features = "
+            4 gas burners,
+            Tray with wire grid,
+            Gas type: LPG 30 mbar,
+            Ignition with oven lamp
+            ";
+            $product->rprice = "3,000";
+            $product->price = "15,990";
+            $product->image = "midea-cooking-g-5-medium.png";
+            $product->user_id = 2;
+            $product->category_id = 6;
+            $product->save();
+            //23
+            $product = new Product();
+            $product->name = 'Midea Standing Fan';
+            $product->brand_id = 5;
+            $product->features = "
+            High efficiency twin blades,
+            LED display,
+            1.5M adjustable height,
+            28 rib safety grill,
+            Long life motor
+            ";
+            $product->rprice = "3,000";
+            $product->price = "9,900";
+            $product->image = "midea-fan-1-medium.png";
+            $product->user_id = 2;
+            $product->category_id = 5;
+            $product->save();
+            //24
+            $product = new Product();
+            $product->name = 'Midea washing machine';
+            $product->brand_id = 5;
+            $product->features = "
+            5kg drum capacity - great for smaller households,
+            Efficient A+ energy rating,
+            Wash your clothes in a speedy 28 minutes,
+            Dimensions (cm) - H85 x W60 x D45
+            ";
+            $product->rprice = "3,000";
+            $product->price = "58,000";
+            $product->image = "midea-washing-m-3-medium.png";
+            $product->user_id = 2;
+            $product->category_id = 3;
+            $product->save();
+            //25
+            $product = new Product();
+            $product->name = 'Midea washing machine';
+            $product->brand_id = 5;
+            $product->features = "
+            7kg drum capacity - great for smaller households,
+            Efficient A+ energy rating,
+            Wash your clothes in a speedy 28 minutes,
+            Dimensions (cm) - H85 x W60 x D45
+            ";
+            $product->rprice = "3,000";
+            $product->price = "64,000";
+            $product->image = "midea-washing-m-5-medium.png";
+            $product->user_id = 2;
+            $product->category_id = 3;
+            $product->save();
+            //26
+            $product = new Product();
+            $product->name = 'Polystar washing machine';
+            $product->brand_id = 1;
+            $product->features = "
+            7kg drum capacity - great for smaller households,
+            Wash your clothes in a speedy 25 minutes,
+            Dimensions (cm) - H85 x W60 x D45
+            ";
+            $product->rprice = "3,000";
+            $product->price = "67,000";
+            $product->image = "polystar-washin-m-5-medium.png";
+            $product->user_id = 2;
+            $product->category_id = 3;
+            $product->save();
+            //27
+            $product = new Product();
+            $product->name = 'Media Standing Fan';
+            $product->brand_id = 5;
+            $product->features = "
+            High efficiency twin blades,
+            LED display,
+            1.5M adjustable height,
+            28 rib safety grill,
+            Long life motor
+            ";
+            $product->rprice = "3,000";
+            $product->price = "13,500";
+            $product->image = "midea-fan-2-medium.png";
+            $product->user_id = 2;
+            $product->category_id = 5;
+            $product->save();
+            //28
+            $product = new Product();
+            $product->name = 'Media Standing Fan';
+            $product->brand_id = 5;
+            $product->features = "
+            High efficiency twin blades,
+            LED display,
+            1.5M adjustable height,
+            28 rib safety grill,
+            Long life motor
+            ";
+            $product->rprice = "3,000";
+            $product->price = "15,000";
+            $product->image = "midea-fan-3-medium.png";
+            $product->user_id = 2;
+            $product->category_id = 5;
+            $product->save();
+            //29
+            $product = new Product();
+            $product->name = 'Media Microwave Oven';
+            $product->brand_id = 5;
+            $product->features = "
+            Microwave Oven With Grill,
+            Capacity: 20L,
+            230V~50Hz,
+            Easy control,
+            Color:black,
+            700W Microwave output,
+            1000W Grill Power,
+            8 Auto Menus,
+            Fast cooking
+            ";
+            $product->rprice = "3,000";
+            $product->price = "23,600";
+            $product->image = "midea-microwave-3-medium.png";
+            $product->user_id = 2;
+            $product->category_id = 8;
+            $product->save();
+            //30
+            $product = new Product();
+            $product->name = 'Media Microwave Oven';
+            $product->brand_id = 5;
+            $product->features = "
+            Microwave Oven With Grill,
+            Capacity: 20L,
+            230V~50Hz,
+            Easy control,
+            Color:Ash,
+            700W Microwave output,
+            1000W Grill Power,
+            5 Auto Menus,
+            Fast cooking
+            ";
+            $product->rprice = "3,000";
+            $product->price = "22,000";
+            $product->image = "midea-microwave-1-medium.png";
+            $product->user_id = 2;
+            $product->category_id = 8;
+            $product->save();
+            //31
+            $product = new Product();
+            $product->name = 'Elepaq Generator';
+            $product->brand_id = 6;
+            $product->features = "
+            AC Frequency: 50 Hz,
+            Starting Capacity: 4.5KVA,
+            Running Capacity: 4.2KVA,
+            Alternator Type: Brushless,
+            100% Copper Enameled Wire,
+            Voltage Regulation: 220V,
+            Phase: Single Phase,
+            DC Output (HP/ KW): 12V/8.3A,
+            Starting System: Electric/Recoil (Manual),
+            Fuel: Petrol,
+            Fuel Tank Capacity: 15L,
+            Noise Level @ 7 Meters: 63dB,
+            Battery: Yes
+            ";
+            $product->rprice = "3,000";
+            $product->price = "89,000";
+            $product->image = "elepaq-generator-2-medium.png";
+            $product->user_id = 2;
+            $product->category_id = 4;
+            $product->save();
+            //32
+            $product = new Product();
+            $product->name = 'Thermocool Generator';
+            $product->brand_id = 7;
+            $product->features = "
+            AC Frequency: 50 Hz,
+            Starting Capacity: 4.5KVA,
+            Running Capacity: 4.2KVA,
+            Alternator Type: Brushless,
+            100% Copper Enameled Wire,
+            Voltage Regulation: 220V,
+            Phase: Single Phase,
+            DC Output (HP/ KW): 12V/8.3A,
+            Starting System: Electric/Recoil (Manual),
+            Fuel: Petrol,
+            Fuel Tank Capacity: 15L,
+            Noise Level @ 7 Meters: 63dB,
+            Battery: Yes
+            ";
+            $product->rprice = "3,000";
+            $product->price = "94,000";
+            $product->image = "thermocool-generator-1-medium.png";
+            $product->user_id = 2;
+            $product->category_id = 4;
+            $product->save();
+            //33
+            $product = new Product();
+            $product->name = 'Midea Washing Machine';
+            $product->brand_id = 5;
+            $product->features = "
+            8kg drum capacity - great for smaller households,
+            Wash your clothes in a speedy 25 minutes,
+            Dimensions (cm) - H85 x W60 x D45
+            ";
+            $product->rprice = "3,000";
+            $product->price = "63,900";
+            $product->image = "midea-washing-m-4-medium.png";
+            $product->user_id = 2;
+            $product->category_id = 3;
+            $product->save();
+            //34
+            $product = new Product();
+            $product->name = 'Polystar Cooker';
+            $product->brand_id = 1;
+            $product->features = "
+            304 Stainless steel cooker – top,
+            Cast iron pan support with wok support,
+            Electronic ignition,
+            Front controls,
+            Heat output,
+            1 triple ring burner 3.60kw,
+            2 semi – rapid burner 1.75kw,
+            1 auxiliary burner 1.0,
+            1 rapid burner 3.0kw
+            ";
+            $product->rprice = "3,000";
+            $product->price = "21,800";
+            $product->image = "polystar-gas-c-2-medium.png";
+            $product->user_id = 2;
+            $product->category_id = 6;
+            $product->save();
+            //35
+            $product = new Product();
+            $product->name = 'Polystar Cooker and Oven';
+            $product->brand_id = 1;
+            $product->features = "
+            304 Stainless steel cooker – top,
+            Cast iron pan support with wok support,
+            Electronic ignition,
+            Front controls,
+            Heat output,
+            3 triple ring burner 3.60kw,
+            2 semi – rapid burner 1.75kw,
+            1 auxiliary burner 1.0,
+            1 rapid burner 3.0kw
+            ";
+            $product->rprice = "3,000";
+            $product->price = "43,800";
+            $product->image = "polystar-gas-c-4-medium.png";
+            $product->user_id = 2;
+            $product->category_id = 6;
+            $product->save();
+            //36
+            $product = new Product();
+            $product->name = 'Midea Medium Air Conditioner';
+            $product->brand_id = 5;
+            $product->features = "
+            1HP Capacity,
+            Streamlined Design,
+            Comfort: Faster Cooling,
+            High Density Filter
+            ";
+            $product->rprice = "3,000";
+            $product->price = "72,000";
+            $product->image = "midea-ac-3-medium.png";
+            $product->user_id = 7;
+            $product->category_id = 7;
+            $product->save();
+            //37
+            $product = new Product();
+            $product->name = 'Midea Medium Air Conditioner Split Unit';
+            $product->brand_id = 5;
+            $product->features = "
+            1.5HP Capacity,
+            Streamlined Design,
+            Comfort: Faster Cooling,
+            High Density Filter
+            ";
+            $product->rprice = "3,000";
+            $product->price = "76,000";
+            $product->image = "midea-ac-4-medium.png";
+            $product->user_id = 7;
+            $product->category_id = 6;
+            $product->save();
+            //38
+            $product = new Product();
+            $product->name = 'Midea Medium Air Conditioner Split Unit';
+            $product->brand_id = 5;
+            $product->features = "
+            2HP Capacity,
+            Streamlined Design,
+            Comfort: Faster Cooling,
+            High Density Filter,
+            Auto Restart,
+            Turbo
+            ";
+            $product->rprice = "3,000";
+            $product->price = "82,900";
+            $product->image = "midea-ac-1-medium.png";
+            $product->user_id = 7;
+            $product->category_id = 6;
+            $product->save();
+            //39
+            $product = new Product();
+            $product->name = 'Elepaq Generator';
+            $product->brand_id = 5;
+            $product->features = "
+            1.8KVA,
+            Manual Start
+            ";
+            $product->rprice = "3,000";
+            $product->price = "37,800";
+            $product->image = "elepaq-generator-3-medium.png";
+            $product->user_id = 7;
+            $product->category_id = 6;
+            $product->save();
+            //40
+            $product = new Product();
+            $product->name = 'Elepaq Generator 10KVA- SV 20000 E2 - Constant';
+            $product->brand_id = 5;
+            $product->features = "
+            Model No.: SV 20000E2A/c,
+            Output:- 220 - 240 volts,
+            Starting: Recoil/ElectricStarting,
+            Kva: 10.0kva,
+            Max.Running Kva: 9.0kva,
+            RatedIgnition System: Transistor Magneto,
+            Fuel Tank Capacity: 25L
+            ";
+            $product->rprice = "3,000";
+            $product->price = "132,000";
+            $product->image = "elepaq-generator-4-medium.png";
+            $product->user_id = 7;
+            $product->category_id = 6;
             $product->save();
         }
     }

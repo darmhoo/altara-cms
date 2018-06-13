@@ -3,7 +3,7 @@
     <div class="wrapper wrapper-full-page">
         
         <!--   you can change the color of the filter page using: data-color="blue | azure | green | orange | red | purple" -->
-        <div class="full-page register-page section-image" data-color="orange" data-image="../../assets/img/bg5.jpg">
+        <div class="full-page register-page section-image" style="margin-bottom:50px;" data-color="orange" data-image="../../assets/img/bg5.jpg">
             <div class="content">
                 <div class="container">
                     <div class="card card-register card-plain text-center">
@@ -62,7 +62,7 @@
                                                 </div>
                                             </div>
                                             <div class="footer text-center">
-                                                <button type="submit" :disabled="isProcessing" class="btn btn-fill btn-wd">Register</button>
+                                                <button type="submit" :disabled="isProcessing" class="btn btn-fill btn-primary btn-wd">Register</button>
                                             </div>
                                         </div>
                                     </form>
@@ -73,7 +73,7 @@
                 </div>
             </div>
         </div>
-        <div class="footer">
+        <!-- <div class="footer" >
             <div class="container">
                 <nav  class="fixed-bottom">
                    
@@ -84,7 +84,7 @@
                     </p>
                 </nav>
             </div>
-        </div>
+        </div> -->
     </div>
 </template>
 

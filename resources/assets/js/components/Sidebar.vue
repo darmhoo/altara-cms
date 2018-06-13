@@ -1,44 +1,19 @@
 <template>
     <div class="col-md-3">
       <div  id="sidebar">
-        <div class="list-group">
-            <a href="#menu1" class="list-group-item" data-toggle="collapse" data-parent="#sidebar">
-                <i class="fa fa-dashboard"> &nbsp; &nbsp;</i> 
-                <span class="">Product Category <i class="fa fa-caret-down"></i></span> 
-            </a>
-                <div class="collapse" id="menu1">
-                <a href="#menu3" class="list-group-item">
-                <i class="fa fa-list"></i> &nbsp;
-                <span class="hidden-sm-down">Generating Set</span> 
-            </a>
-            <a href="#menu4" class="list-group-item">
-                <i class="fa fa-list-alt"></i>&nbsp; 
-                <span class="hidden-sm-down">Television</span> 
-            </a>
-             <a href="#menu5" class="list-group-item">
-                <i class="fa fa-list-alt"></i> &nbsp;
-                <span class="hidden-sm-down">Mobile Phone</span> 
-            </a>
-            <a href="#menu5" class="list-group-item">
-                <i class="fa fa-list-alt"></i> &nbsp;
-                <span class="hidden-sm-down">Sewing Machine</span> 
-            </a>
-            <a href="#menu5" class="list-group-item">
-                <i class="fa fa-list-alt"></i> &nbsp;
-                <span class="hidden-sm-down">Water Dispenser</span> 
-            </a>
-            <a href="#menu5" class="list-group-item">
-                <i class="fa fa-list-alt"></i> &nbsp;
-                <span class="hidden-sm-down">Home Theater</span> 
-            </a>
-            <a href="#menu5" class="list-group-item">
-                <i class="fa fa-list-alt"></i> &nbsp;
-                <span class="hidden-sm-down">Industrial Fan</span> 
-            </a>
-            <a href="#menu5" class="list-group-item">
-                <i class="fa fa-list-alt"></i> &nbsp;
-                <span class="hidden-sm-down">Air Conditioner</span> 
-            </a>
+        <div class="list-group list-group-item" data-parent="#sidebar">
+           <div  style="margin-bottom : 20px;">
+                <span class=""><h5>Product Category  &nbsp; &nbsp;  &nbsp; &nbsp;<i class="fa fa-arrow-circle-o-down"></i></h5></span> 
+           </div>
+                <div  id="menu1">
+                    <div  v-for="category in categories">
+<router-link class="list-group-item"  :to="`/product/category/${category.id}`">
+				 <i class="fa fa-list"></i> &nbsp;
+                <span class="hidden-sm-down">{{category.category}}</span> 
+			</router-link>
+                    </div>
+
+
                  <!--    <div class="collapse" id="menu1sub1">
                 //     <a href="#" class="list-group-item" data-parent="#menu2sub1">Sub 1 a</a>
                 //     <a href="#" class="list-group-item" data-parent="#menu2sub1">Sub 1 b</a>
@@ -60,11 +35,25 @@
 </template>
 
 <script>
+import { get } from '../helpers/api'
 export default {
-  mounted() {
-    console.log("Component mounted.");
-  }
-};
+  data() {
+			return {
+                categories: []
+        }
+  },
+		created() {
+			get('/api/category')
+				.then((res) => {
+					console.log(res);
+                    this.categories = res.data.categories
+                    console.log(this.categories)
+				})
+        },
+          methods: {
+             
+          }
+	}
 </script>
 <style>
 a.list-group-item{
