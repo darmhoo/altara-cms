@@ -1,7 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Product;
+use App\Brand;
 use Illuminate\Http\Request;
 
 class ProductsController extends Controller
@@ -15,12 +16,32 @@ class ProductsController extends Controller
 
     public function index()
     {
-    	$products = Product::orderBy('created_at', 'desc')
-    		->get(['user_id','make', 'name', 'pcategory','features', 'price','rprice', 'image']);
+        $products = Product::orderByRaw('RAND()')->where('popularity', 3)->take(12)->get();
+        $brands = Brand::all();
+        // $nproducts = array();
+        // foreach($products as $val){
+        //     $brand = Brand::find($val->brand_id);
+        //     $nproducts[] = $brand;
 
     	return response()
     		->json([
-    			'products' => $products
+                'products' => $products,
+                'brands' => $brands
     		]);
+    	
     }
+
+    public function show($id)
+    {
+        $products = Product::where('category_id', $id)->get();
+        // $categories = Product::select('name','surname')->where('id', 1)->get();
+        // $recipe = Recipe::with(['user', 'ingredients', 'directions'])
+        //     ->findOrFail($id);
+
+        return response()
+            ->json([
+                'products' => $products
+            ]);
+    }
+
 }

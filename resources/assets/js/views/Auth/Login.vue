@@ -34,7 +34,7 @@
             <div class="content">
                 <div class="container">
                     <div class="col-md-4 col-sm-6 ml-auto mr-auto">
-                        <form class="form" method="" action="#">
+                        <form @submit.prevent="login">
                             <div class="card card-login card-hidden">
                                 <div class="card-header ">
                                     <h3 class="header text-center">Login</h3>
@@ -43,17 +43,19 @@
                                     <div class="card-body">
                                         <div class="form-group">
                                             <label>Email address</label>
-                                            <input type="email" placeholder="Enter email" class="form-control">
+                                            <input type="email" v-model="form.email" placeholder="Enter email" class="form-control">
+                                            <small class="error-control" v-if="error.email">{{error.email[0]}}</small>
                                         </div>
                                         <div class="form-group">
                                             <label>Password</label>
-                                            <input type="password" placeholder="Password" class="form-control">
+                                            <input type="password" v-model="form.password" placeholder="Password" class="form-control">
+                                            <small class="error-control" v-if="error.password">{{error.password[0]}}</small>
                                         </div>
                                      
                                     </div>
                                 </div>
                                 <div class="card-footer ml-auto mr-auto">
-                                    <button type="submit" class="btn btn-warning btn-wd">Login</button>
+                                    <button type="submit" :disabled="isProcessing" class="btn btn-primary btn-wd">Login</button>
                                 </div>
                             </div>
                         </form>
@@ -61,19 +63,18 @@
                 </div>
             </div>
         </div>
-        <div class="footer">
+        <!-- <div class="footer">
             <div class="container">
                 <nav class="fixed-bottom">
                    
                     <p class="copyright text-center">
                         ©
                         2018
-                       
                         <a href="http://www.altaracredit.com/">Altara</a>, Buy now, Pay small small
                     </p>
                 </nav>
             </div>
-        </div>
+        </div> -->
     </div>
 </template>
 <script type="text/javascript">
@@ -115,5 +116,3 @@
         }
     }
 </script>
-  
-  
