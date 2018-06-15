@@ -29,7 +29,7 @@ class CategorySeeder extends Seeder
         $category->save();
         //5
         $category = new Category();
-        $category->category = 'FAN';
+        $category->category = 'Fan';
         $category->save();
         //6
         $category = new Category();

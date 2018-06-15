@@ -169,6 +169,7 @@ export default {
 				.then((res) => {
 					console.log(res);
                     this.products = res.data.products
+                    console.log(res.data.brands);
                     console.log(this.products)
 				})
         },

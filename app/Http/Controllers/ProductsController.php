@@ -16,19 +16,19 @@ class ProductsController extends Controller
 
     public function index()
     {
-        $products = Product::orderByRaw('RAND()')->take(12)->get();
+        $products = Product::orderByRaw('RAND()')->where('popularity', 3)->take(12)->get();
+        $brands = Brand::all();
         // $nproducts = array();
         // foreach($products as $val){
         //     $brand = Brand::find($val->brand_id);
         //     $nproducts[] = $brand;
-        //     }
 
     	return response()
     		->json([
                 'products' => $products,
-                // 'brand'=> $nproducts
-
+                'brands' => $brands
     		]);
+    	
     }
 
     public function show($id)
