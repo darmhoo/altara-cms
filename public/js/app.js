@@ -30973,7 +30973,7 @@ exports = module.exports = __webpack_require__(129)(false);
 
 
 // module
-exports.push([module.i, "\na.list-group-item{\n    color:  #fff !important;\n    background-color: #003366 !important;\n}\n", ""]);
+exports.push([module.i, "\na.list-group-item{\r\n    color:  #fff !important;\r\n    background-color: #003366 !important;\n}\r\n", ""]);
 
 // exports
 
@@ -31134,7 +31134,7 @@ var render = function() {
           _vm._v(" "),
           _c("div", { staticClass: "navbar-collapse justify-content-end" }, [
             _vm.catalog
-              ? _c("ul", { staticClass: "nav navbar-nav " }, [_vm._m(1)])
+              ? _c("ul", { staticClass: "nav navbar-nav" }, [_vm._m(1)])
               : _vm._e(),
             _vm._v(" "),
             _c("ul", { staticClass: "navbar-nav" }, [
@@ -31275,7 +31275,7 @@ var staticRenderFns = [
         "a",
         {
           staticClass: "photo logo-mini",
-          attrs: { href: "http://www.altaracredit/" }
+          attrs: { href: "http://www.altaracredit.com/" }
         },
         [
           _c("img", {

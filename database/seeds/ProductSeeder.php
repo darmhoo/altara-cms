@@ -28,7 +28,7 @@ class ProductSeeder extends Seeder
             Silver Housing
             ";
             $product->rprice = "1,500";
-            $product->price = "30,400";
+            $product->price = "12,400";
             $product->image = "polystar-microwave-1-medium.png";
             $product->user_id = 1;
             $product->category_id = 8;
@@ -36,17 +36,17 @@ class ProductSeeder extends Seeder
             $product->save();
             //2
             $product = new Product();
-            $product->name = 'Table Gas Cooker';
+            $product->name = 'Gas Cooker';
             $product->brand_id = 1;
             $product->features = "
-            Two Burners Gas Stove,
+            Four Burners Gas Stove,
             Tampered Glass Top,
             With Brass burner ring,
             automatic ignition,
             Detachable pan fro easy cleaning
             ";
-            $product->rprice = "1,000";
-            $product->price = "20,200";
+            $product->rprice = "4,000";
+            $product->price = "32,500";
             $product->image = "polystar-gas-c-1-medium.png";
             $product->user_id = 2;
             $product->category_id = 6;
@@ -57,7 +57,7 @@ class ProductSeeder extends Seeder
             $product->name = 'Washing machine';
             $product->brand_id = 1;
             $product->features = "
-            12kg semi automatic washing machine,
+            10kg semi automatic washing machine,
             separate wash and spin dry tubs | built in Drain Pump,
             non detachable ltop cover for safer washing,
             washing capacity 9.8kg,
@@ -65,7 +65,7 @@ class ProductSeeder extends Seeder
             product Dim (mm) 820 X 495 X 990 mm
             ";
             $product->rprice = "4,000";
-            $product->price = "80,500";
+            $product->price = "32,500";
             $product->image = "polystar-washin-m-1-medium.png";
             $product->user_id = 1;
             $product->category_id = 3;
@@ -76,7 +76,7 @@ class ProductSeeder extends Seeder
             $product->name = 'Washing machine';
             $product->brand_id = 1;
             $product->features = "
-            12kg semi automatic washing machine,
+            6.5kg semi automatic washing machine,
             separate wash and spin dry tubs | built in Drain Pump,
             non detachable ltop cover for safer washing,
             washing capacity 9.8kg,
@@ -84,7 +84,7 @@ class ProductSeeder extends Seeder
             product Dim (mm) 820 X 495 X 990 mm
             ";
             $product->rprice = "1,900";
-            $product->price = "38,400";
+            $product->price = "15,600";
             $product->image = "polystar-washin-m-2-medium.png";
             $product->user_id = 1;
             $product->category_id = 3;
@@ -97,11 +97,11 @@ class ProductSeeder extends Seeder
             $product->features = "
             ZERO 4,
             Helio P25 Optical Zoom,
-            64GB ROM 6GB RAM,
+            32GB 3GB 
             5.98\" FHD LTPS(2.5D) 4350mAh 
             ";
-            $product->rprice = "4,700";
-            $product->price = "92,000";
+            $product->rprice = "4,600";
+            $product->price = "37,000";
             $product->image = "infinix-note-4-medium.png";
             $product->user_id = 2;
             $product->category_id = 11 ;
@@ -114,11 +114,11 @@ class ProductSeeder extends Seeder
             $product->features = "
             Android™ 7.0,
             5.5,
-             2GB RAM: up to 32GB,
+             2GB RAM: up to 16GB,
             Dual Selfie Camera 2.0MP+8.0MP/ Rear Camera 8.0MP,
             ";
             $product->rprice = "2,900";
-            $product->price = "58,400";
+            $product->price = "23,000";
             $product->image = "infinix-hot-6-pro-medium.png";
             $product->user_id = 1;
             $product->category_id = 11;
@@ -135,7 +135,7 @@ class ProductSeeder extends Seeder
             Front Camera 2.0MP+5.0MP/Rear Camera 8.0MP AF,
             ";
             $product->rprice = "1,800";
-            $product->price = "36,600";
+            $product->price = "15,100";
             $product->image = "itel-a12-medium.png";
             $product->user_id = 2;
             $product->category_id = 11;
@@ -152,7 +152,7 @@ class ProductSeeder extends Seeder
             Back 5.0MP AF/Front 2.0MP,
             ";
             $product->rprice = "2,500";
-            $product->price = "50,700";
+            $product->price = "20,700";
             $product->image = "it1508-medium.png";
             $product->user_id = 1;
             $product->category_id = 11;
@@ -169,8 +169,8 @@ class ProductSeeder extends Seeder
             5.5” HD Display,
             Fingerprint
             ";
-            $product->rprice = "2,500";
-            $product->price = "66,400";
+            $product->rprice = "3,300";
+            $product->price = "26,800";
             $product->image = "itel-a12-medium.png";
             $product->user_id = 2;
             $product->category_id = 11;
@@ -184,13 +184,13 @@ class ProductSeeder extends Seeder
             5.3 Inch 2.5D Corning Gorilla Glass 3 Screen, 1280*720 Pixel,
             MTK6753 1.3GHz Octa Core,
             Support Touch ID,
-            3GB RAM + 32GB ROM + Support 256GB TF Card Expansion,
+            1GB RAM + 8GB ROM + Support 256GB TF Card Expansion,
             13 MP Back Camera + 20 MP Front Camera with Selfie Flash,
             Amigo OS 4.0 ( Based On Android 7.0 System),
             4000mAh Battery
             ";
             $product->rprice = "1,800";
-            $product->price = "36,600";
+            $product->price = "14,800";
             $product->image = "gionee-2-medium.png";
             $product->user_id = 1;
             $product->category_id = 11;
@@ -209,7 +209,7 @@ class ProductSeeder extends Seeder
             Turbo
             ";
             $product->rprice = "5,400";
-            $product->price = "108,200";
+            $product->price = "43,400";
             $product->image = "midea-ac-1-medium.png";
             $product->user_id = 2;
             $product->category_id = 7;
@@ -220,7 +220,7 @@ class ProductSeeder extends Seeder
             $product->name = 'Polystar Single Door Medium Fridge - HR 185S Silver 77301-0378';
             $product->brand_id = 1;
             $product->features="
-            Storage Capacity: 185 Litres,
+            Storage Capacity: 177 Litres,
             Direct cooling technology,
             Fully tropicalized compressor,
             Big evaporator for rapid and uniform cooling glass shelving,
@@ -228,7 +228,7 @@ class ProductSeeder extends Seeder
             Toughened glass shelves
             ";
             $product->rprice = "2,900";
-            $product->price = "58,400";
+            $product->price = "23,600";
             $product->image = "plosytar-fridge-2-medium.png";
             $product->user_id = 2;
             $product->category_id = 2;
@@ -239,12 +239,13 @@ class ProductSeeder extends Seeder
             $product->name = 'Polystar Bedside Fridge Pv-TF79LS - (Silver)';
             $product->brand_id = 1;
             $product->features = "
+            78LB
             Superior Quality,
             Durable,
             Effective & Reliable
             ";
             $product->rprice = "2,300";
-            $product->price = "46,100";
+            $product->price = "18,500";
             $product->image = "plosytar-fridge-1-medium.png";
             $product->user_id = 1;
             $product->category_id = 2;
@@ -255,12 +256,13 @@ class ProductSeeder extends Seeder
             $product->name = 'Polystar Chest Freeser - HRF 95 EX';
             $product->brand_id = 1;
             $product->features = "
+            320LGR
             Material: Steel,
             Colour: White,
             Direct Cool
             ";
             $product->rprice = "6,700";
-            $product->price = "134,000";
+            $product->price = "53,600";
             $product->image = "plosytar-fridge-3-medium.png";
             $product->user_id = 1;
             $product->category_id = 1;
@@ -276,7 +278,7 @@ class ProductSeeder extends Seeder
             Effective & Reliable
             ";
             $product->rprice = "4,100";
-            $product->price = "82,300";
+            $product->price = "33,100";
             $product->image = "polystar-tv-1-medium.png";
             $product->user_id = 1;
             $product->category_id = 10;
@@ -284,7 +286,7 @@ class ProductSeeder extends Seeder
             $product->save();
             //16
             $product = new Product();
-            $product->name = 'Elepaq Generator - 1.3KVA - SV2200';
+            $product->name = 'Elepaq Generator - 1.2KVA - SV2200';
             $product->brand_id = 6;
             $product->features = "
             Run Time per Tankful 7Hrs@75%Load,
@@ -293,7 +295,7 @@ class ProductSeeder extends Seeder
             Weight : 26.5
             ";
             $product->rprice = "1,600";
-            $product->price = "32,600";
+            $product->price = "13,400";
             $product->image = "elepaq-generator-1-medium.png";
             $product->user_id = 1;
             $product->category_id = 4;
@@ -304,12 +306,13 @@ class ProductSeeder extends Seeder
             $product->name = 'Polystar Chest Freezer PV-CF260LGR';
             $product->brand_id = 1;
             $product->features = "
+            260L
             Great Value For Money,
             Superior Quality,
             Effective & Reliable
             ";
             $product->rprice = "5,500";
-            $product->price = "110,000";
+            $product->price = "44,400";
             $product->image = "plosytar-fridge-3-medium.png";
             $product->user_id = 2;
             $product->category_id = 1;
@@ -317,7 +320,7 @@ class ProductSeeder extends Seeder
             $product->save();
             //18
             $product = new Product();
-            $product->name = 'Polystar 24 Inches LED TV';
+            $product->name = 'Polystar 32 Inches LED TV';
             $product->brand_id = 1;
             $product->features = "
             Great Value For Money,
@@ -325,31 +328,31 @@ class ProductSeeder extends Seeder
             Effective & Reliable
             ";
             $product->rprice = "4,300";
-            $product->price = "88,500";
+            $product->price = "35,700";
             $product->image = "polystar-tv-2-medium.png";
             $product->user_id = 1;
             $product->category_id = 10;
             $product->popularity = 3;
             $product->save();
             //19
-            $product = new Product();
-            $product->name = 'Midea Comfort Series Split Air Conditioner + Installation Kit';
-            $product->brand_id = 5;
-            $product->features = "
-            Streamlined Design,
-            Comfort: Faster Cooling,
-            High Density Filter,
-            Auto Restart,
-            Turbo,
-            Sleep Mode
-            ";
-            $product->rprice = "9,100";
-            $product->price = "182,600";
-            $product->image = "midea-ac-1-medium.png";
-            $product->user_id = 1;
-            $product->category_id = 7;
-            $product->popularity = 1;
-            $product->save();
+            // $product = new Product();
+            // $product->name = 'Midea Comfort Series Split Air Conditioner + Installation Kit';
+            // $product->brand_id = 5;
+            // $product->features = "
+            // Streamlined Design,
+            // Comfort: Faster Cooling,
+            // High Density Filter,
+            // Auto Restart,
+            // Turbo,
+            // Sleep Mode
+            // ";
+            // $product->rprice = "9,100";
+            // $product->price = "182,600";
+            // $product->image = "midea-ac-1-medium.png";
+            // $product->user_id = 1;
+            // $product->category_id = 7;
+            // $product->popularity = 1;
+            // $product->save();
             //20
             $product = new Product();
             $product->name = 'Polystar 1.5HP Fast Cooling, Copper Split Polystar Air Conditioner';
@@ -361,45 +364,45 @@ class ProductSeeder extends Seeder
             Two years warranty,
             ";
             $product->rprice = "5,600";
-            $product->price = "112,500";
+            $product->price = "45,300";
             $product->image = "polystar-ac-1-medium.png";
             $product->user_id = 2;
             $product->category_id = 7;
             $product->popularity = 2;
             $product->save();
             //21
-            $product = new Product();
-            $product->name = 'Midea Gas Cooker With oven';
-            $product->brand_id = 5;
-            $product->features = "
-            Italian design in stylish black finish,
-            Double Enamel Coated Strong Pot Support,
-            Double Enamel Coated Burner Caps
-            ";
-            $product->rprice = "3,000";
-            $product->price = "60,500";
-            $product->image = "midea-cooking-g-1-medium.png";
-            $product->user_id = 2;
-            $product->category_id = 6;
-            $product->popularity = 1;
-            $product->save();
+            // $product = new Product();
+            // $product->name = 'Midea Gas Cooker With oven';
+            // $product->brand_id = 5;
+            // $product->features = "
+            // Italian design in stylish black finish,
+            // Double Enamel Coated Strong Pot Support,
+            // Double Enamel Coated Burner Caps
+            // ";
+            // $product->rprice = "3,000";
+            // $product->price = "60,500";
+            // $product->image = "midea-cooking-g-1-medium.png";
+            // $product->user_id = 2;
+            // $product->category_id = 6;
+            // $product->popularity = 1;
+            // $product->save();
             //22
-            $product = new Product();
-            $product->name = 'Midea Gas Cooker With oven';
-            $product->brand_id = 5;
-            $product->features = "
-            4 gas burners,
-            Tray with wire grid,
-            Gas type: LPG 30 mbar,
-            Ignition with oven lamp
-            ";
-            $product->rprice = "3,100";
-            $product->price = "62,700";
-            $product->image = "midea-cooking-g-5-medium.png";
-            $product->user_id = 2;
-            $product->category_id = 6;
-            $product->popularity = 1;
-            $product->save();
+            // $product = new Product();
+            // $product->name = 'Midea Gas Cooker With oven';
+            // $product->brand_id = 5;
+            // $product->features = "
+            // 4 gas burners,
+            // Tray with wire grid,
+            // Gas type: LPG 30 mbar,
+            // Ignition with oven lamp
+            // ";
+            // $product->rprice = "3,100";
+            // $product->price = "62,700";
+            // $product->image = "midea-cooking-g-5-medium.png";
+            // $product->user_id = 2;
+            // $product->category_id = 6;
+            // $product->popularity = 1;
+            // $product->save();
             //23
             $product = new Product();
             $product->name = 'OX Standing Fan';
@@ -721,8 +724,8 @@ class ProductSeeder extends Seeder
             1.8KVA,
             Manual Start
             ";
-            $product->rprice = "6,700";
-            $product->price = "70,700";
+            $product->rprice = "3,600";
+            $product->price = "29,300";
             $product->image = "elepaq-generator-3-medium.png";
             $product->user_id = 7;
             $product->category_id = 6;
@@ -730,7 +733,7 @@ class ProductSeeder extends Seeder
             $product->save();
             //40
             $product = new Product();
-            $product->name = 'Elepaq Generator 10KVA- SV 20000 E2 - Constant';
+            $product->name = 'Elepaq Generator 3.5KVA- SV 20000 E2 - Constant';
             $product->brand_id = 5;
             $product->features = "
             Model No.: SV 20000E2A/c,
@@ -741,8 +744,8 @@ class ProductSeeder extends Seeder
             RatedIgnition System: Transistor Magneto,
             Fuel Tank Capacity: 25L
             ";
-            $product->rprice = "3,800";
-            $product->price = "76,200";
+            $product->rprice = "3,900";
+            $product->price = "31,900";
             $product->image = "elepaq-generator-4-medium.png";
             $product->user_id = 7;
             $product->category_id = 6;
