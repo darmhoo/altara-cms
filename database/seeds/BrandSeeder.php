@@ -42,8 +42,36 @@ class BrandSeeder extends Seeder
         $brand->save();
         //8
         $brand = new Brand();
+        $brand->brand = 'Century';
+        $brand->save();
+        //9
+        $brand = new Brand();
+        $brand->brand = 'Tiger';
+        $brand->save();
+        //10
+        $brand = new Brand();
+        $brand->brand = 'Sumo Premium';
+        $brand->save();
+        //11
+        $brand = new Brand();
         $brand->brand = 'Tecno';
         $brand->save();
-     
+        //12
+        $brand = new Brand();
+        $brand->brand = 'Fero';
+        $brand->save();
+        //13
+        $brand = new Brand();
+        $brand->brand = 'Vigitab';
+        $brand->save();
+        //14
+        $brand = new Brand();
+        $brand->brand = 'Ox';
+        $brand->save();
+        //15
+        $brand = new Brand();
+        $brand->brand = 'Hp';
+        $brand->save();
+        
     }
 }

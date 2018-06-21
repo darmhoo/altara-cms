@@ -55,6 +55,18 @@ class CategorySeeder extends Seeder
         $category = new Category();
         $category->category = 'Phones';
         $category->save();
+        //12
+        $category = new Category();
+        $category->category = 'Water Dispensers';
+        $category->save();
+        //13
+        $category = new Category();
+        $category->category = 'Home Theaters';
+        $category->save();
+        //14
+        $category = new Category();
+        $category->category = 'Laptop Computers';
+        $category->save();
         
     }
 }
