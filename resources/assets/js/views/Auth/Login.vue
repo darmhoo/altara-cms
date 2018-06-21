@@ -55,7 +55,7 @@
                                     </div>
                                 </div>
                                 <div class="card-footer ml-auto mr-auto">
-                                    <button type="submit" :disabled="isProcessing" class="btn btn-warning btn-wd">Login</button>
+                                    <button type="submit" :disabled="isProcessing" class="btn btn-primary btn-wd">Login</button>
                                 </div>
                             </div>
                         </form>
@@ -63,19 +63,18 @@
                 </div>
             </div>
         </div>
-        <div class="footer">
+        <!-- <div class="footer">
             <div class="container">
                 <nav class="fixed-bottom">
                    
                     <p class="copyright text-center">
                         ©
                         2018
-                       
                         <a href="http://www.altaracredit.com/">Altara</a>, Buy now, Pay small small
                     </p>
                 </nav>
             </div>
-        </div>
+        </div> -->
     </div>
 </template>
 <script type="text/javascript">

@@ -18,6 +18,7 @@ class CreateProductTable extends Migration
             $table->string('name');
             $table->integer('brand_id')->unsigned()->index();
             $table->integer('category_id')->unsigned()->index();
+            $table->integer('popularity')->index();
             $table->text('features');
             $table->string('price');
             $table->string('image');

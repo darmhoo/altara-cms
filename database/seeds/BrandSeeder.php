@@ -40,6 +40,10 @@ class BrandSeeder extends Seeder
         $brand = new Brand();
         $brand->brand = 'Haier Thermocool';
         $brand->save();
+        //8
+        $brand = new Brand();
+        $brand->brand = 'Tecno';
+        $brand->save();
      
     }
 }
