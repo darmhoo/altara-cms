@@ -28,6 +28,7 @@ class ProductSeeder extends Seeder
         $product->image = "plosytar-fridge-3-medium.png";
         $product->user_id = 1;
         $product->category_id = 1;
+        $product->popularity = 3;
         $product->save();
         //2
         $product = new Product();
@@ -45,6 +46,7 @@ class ProductSeeder extends Seeder
         $product->image = "plosytar-fridge-5-medium.png";
         $product->user_id = 2;
         $product->category_id = 1;
+        $product->popularity = 2;
         $product->save();
         //3
         $product = new Product();
@@ -62,6 +64,7 @@ class ProductSeeder extends Seeder
         $product->image = "plosytar-fridge-6-medium.png";
         $product->user_id = 1;
         $product->category_id = 1;
+        $product->popularity = 2;
         $product->save();
         //4
         $product = new Product();
@@ -79,6 +82,7 @@ class ProductSeeder extends Seeder
         $product->image = "plosytar-fridge-7-medium.png";
         $product->user_id = 1;
         $product->category_id = 1;
+        $product->popularity = 2;
         $product->save();
         //5
         $product = new Product();
@@ -104,6 +108,7 @@ class ProductSeeder extends Seeder
         $product->image = "plosytar-fridge-8-medium.png";
         $product->user_id = 1;
         $product->category_id = 1;
+        $product->popularity = 3;
         $product->save();
         //6
         $product = new Product();
@@ -122,6 +127,7 @@ class ProductSeeder extends Seeder
         $product->image = "plosytar-fridge-9-medium.png";
         $product->user_id = 1;
         $product->category_id = 1;
+        $product->popularity = 2;
         $product->save();
         //7
         $product = new Product();
@@ -139,6 +145,7 @@ class ProductSeeder extends Seeder
         $product->image = "plosytar-fridge-5-medium.png";
         $product->user_id = 1;
         $product->category_id = 1;
+        $product->popularity = 3;
         $product->save();
         //8
         $product = new Product();
@@ -158,6 +165,7 @@ class ProductSeeder extends Seeder
         $product->image = "midea-fridge-1-medium.png";
         $product->user_id = 1;
         $product->category_id = 2;
+        $product->popularity = 2;
         $product->save();
         //9
         $product = new Product();
@@ -178,6 +186,7 @@ class ProductSeeder extends Seeder
         $product->image = "midea-fridge-2-medium.png";
         $product->user_id = 1;
         $product->category_id = 2;
+        $product->popularity = 3;
         $product->save();
         //10
         $product = new Product();
@@ -195,6 +204,7 @@ class ProductSeeder extends Seeder
         $product->image = "plosytar-fridge-10-medium.png";
         $product->user_id = 1;
         $product->category_id = 2;
+        $product->popularity = 3;
         $product->save();
         //11
         $product = new Product();
@@ -208,6 +218,7 @@ class ProductSeeder extends Seeder
         $product->image = "plosytar-fridge-1-medium.png";
         $product->user_id = 1;
         $product->category_id = 2;
+        $product->popularity = 2;
         $product->save();
         //12
         $product = new Product();
@@ -225,6 +236,7 @@ class ProductSeeder extends Seeder
         $product->image = "plosytar-fridge-11-medium.png";
         $product->user_id = 1;
         $product->category_id = 2;
+        $product->popularity = 3;
         $product->save();
         //13
         $product = new Product();
@@ -243,6 +255,7 @@ class ProductSeeder extends Seeder
         $product->image = "plosytar-fridge-12-medium.png";
         $product->user_id = 1;
         $product->category_id = 2;
+        $product->popularity = 2;
         $product->save();
         //14
         $product = new Product();
@@ -260,6 +273,7 @@ class ProductSeeder extends Seeder
         $product->image = "plosytar-fridge-2-medium.png";
         $product->user_id = 1;
         $product->category_id = 2;
+        $product->popularity = 3;
         $product->save();
         //15
         $product = new Product();
@@ -273,6 +287,7 @@ class ProductSeeder extends Seeder
         $product->image = "polystar-washin-m-2-medium.png";
         $product->user_id = 1;
         $product->category_id = 3;
+        $product->popularity = 2;
         $product->save();
         //16
         $product = new Product();
@@ -286,6 +301,7 @@ class ProductSeeder extends Seeder
         $product->image = "polystar-washin-m-3-medium.png";
         $product->user_id = 1;
         $product->category_id = 3;
+        $product->popularity = 3;
         $product->save();
         //17
         $product = new Product();
@@ -307,6 +323,7 @@ class ProductSeeder extends Seeder
         $product->image = "century-washing-m-1-medium.png";
         $product->user_id = 1;
         $product->category_id = 3;
+        $product->popularity = 2;
         $product->save();
         //18
         $product = new Product();
@@ -320,6 +337,7 @@ class ProductSeeder extends Seeder
         $product->image = "elepaq-generator-medium.png";
         $product->user_id = 1;
         $product->category_id = 4;
+        $product->popularity = 3;
         $product->save();
         //19
         $product = new Product();
@@ -333,6 +351,7 @@ class ProductSeeder extends Seeder
         $product->image = "elepaq-generator-medium.png";
         $product->user_id = 1;
         $product->category_id = 4;
+        $product->popularity = 2;
         $product->save();
         //20
         $product = new Product();
@@ -346,6 +365,7 @@ class ProductSeeder extends Seeder
         $product->image = "tiger-generator-1-medium.png";
         $product->user_id = 1;
         $product->category_id = 4;
+        $product->popularity = 3;
         $product->save();
         //21
         $product = new Product();
@@ -359,6 +379,7 @@ class ProductSeeder extends Seeder
         $product->image = "polystar-fan-2-medium.png";
         $product->user_id = 1;
         $product->category_id = 5;
+        $product->popularity = 2;
         $product->save();
         //22
         $product = new Product();
@@ -383,6 +404,7 @@ class ProductSeeder extends Seeder
         $product->image = "century-cooker-1-medium.png";
         $product->user_id = 1;
         $product->category_id = 6;
+        $product->popularity = 3;
         $product->save();
         //23
         $product = new Product();
@@ -403,6 +425,7 @@ class ProductSeeder extends Seeder
         $product->image = "polystar-gas-c-1-medium.png";
         $product->user_id = 1;
         $product->category_id = 6;
+        $product->popularity = 2;
         $product->save();
         //24
         $product = new Product();
@@ -422,6 +445,7 @@ class ProductSeeder extends Seeder
         $product->image = "polystar-gas-c-4-medium.png";
         $product->user_id = 1;
         $product->category_id = 6;
+        $product->popularity = 3;
         $product->save();
         //25
         $product = new Product();
@@ -435,6 +459,7 @@ class ProductSeeder extends Seeder
         $product->image = "polystar-ac-2-medium.png";
         $product->user_id = 1;
         $product->category_id = 7;
+        $product->popularity = 2;
         $product->save();
         //26
         $product = new Product();
@@ -448,6 +473,7 @@ class ProductSeeder extends Seeder
         $product->image = "polystar-ac-1-medium.png";
         $product->user_id = 1;
         $product->category_id = 7;
+        $product->popularity = 2;
         $product->save();
         //27
         $product = new Product();
@@ -461,6 +487,7 @@ class ProductSeeder extends Seeder
         $product->image = "midea-microwave-1-medium.png";
         $product->user_id = 1;
         $product->category_id = 8;
+        $product->popularity = 3;
         $product->save();
         //28
         $product = new Product();
@@ -474,6 +501,7 @@ class ProductSeeder extends Seeder
         $product->image = "midea-microwave-2-medium.png";
         $product->user_id = 1;
         $product->category_id = 8;
+        $product->popularity = 2;
         $product->save();
         //29
         $product = new Product();
@@ -493,6 +521,7 @@ class ProductSeeder extends Seeder
         $product->image = "sewing-m-1-medium.png";
         $product->user_id = 1;
         $product->category_id = 9;
+        $product->popularity = 3;
         $product->save();
         //30
         $product = new Product();
@@ -506,6 +535,7 @@ class ProductSeeder extends Seeder
         $product->image = "polystar-tv-5-medium.png";
         $product->user_id = 1;
         $product->category_id = 10;
+        $product->popularity = 2;
         $product->save();
         //31
         $product = new Product();
@@ -519,6 +549,7 @@ class ProductSeeder extends Seeder
         $product->image = "polystar-tv-1-medium.png";
         $product->user_id = 1;
         $product->category_id = 10;
+        $product->popularity = 3;
         $product->save();
         //32
         $product = new Product();
@@ -532,6 +563,7 @@ class ProductSeeder extends Seeder
         $product->image = "polystar-tv-2-medium.png";
         $product->user_id = 1;
         $product->category_id = 10;
+        $product->popularity = 2;
         $product->save();
         //33
         $product = new Product();
@@ -545,6 +577,7 @@ class ProductSeeder extends Seeder
         $product->image = "polystar-tv-3-medium.png";
         $product->user_id = 1;
         $product->category_id = 10;
+        $product->popularity = 2;
         $product->save();
         //34
         $product = new Product();
@@ -564,11 +597,12 @@ class ProductSeeder extends Seeder
         $product->image = "infinix-zero-4-medium.png";
         $product->user_id = 1;
         $product->category_id = 11;
+        $product->popularity = 2;
         $product->save();
         //35
         $product = new Product();
         $product->name = 'HOT 5';
-        $product->brand_id = 2;
+        $product->brand_id = 3;
         $product->features = '
         16GB, 2GB,
         Screen: 5.5-Inch HD IPS,
@@ -583,6 +617,7 @@ class ProductSeeder extends Seeder
         $product->image = "infinix-hot-5-2-medium.png";
         $product->user_id = 1;
         $product->category_id = 11;
+        $product->popularity = 2;
         $product->save();
         //36
         $product = new Product();
@@ -602,6 +637,7 @@ class ProductSeeder extends Seeder
         $product->image = "infinix-hot-5-medium.png";
         $product->user_id = 1;
         $product->category_id = 11;
+        $product->popularity = 3;
         $product->save();
         //37
         $product = new Product();
@@ -619,6 +655,7 @@ class ProductSeeder extends Seeder
         $product->image = "k7-spark-medium.png";
         $product->user_id = 1;
         $product->category_id = 11;
+        $product->popularity = 2;
         $product->save();
         //38
         $product = new Product();
@@ -632,6 +669,7 @@ class ProductSeeder extends Seeder
         $product->image = "k9-plus-medium.png";
         $product->user_id = 1;
         $product->category_id = 11;
+        $product->popularity = 2;
         $product->save();
         //39
         $product = new Product();
@@ -649,6 +687,7 @@ class ProductSeeder extends Seeder
         $product->image = "p5-mini-medium.png";
         $product->user_id = 1;
         $product->category_id = 11;
+        $product->popularity = 2;
         $product->save();
         //40
         $product = new Product();
@@ -662,6 +701,7 @@ class ProductSeeder extends Seeder
         $product->image = "infinix-note-4-medium.png";
         $product->user_id = 1;
         $product->category_id = 11;
+        $product->popularity = 2;
         $product->save();
         //41
         $product = new Product();
@@ -675,6 +715,7 @@ class ProductSeeder extends Seeder
         $product->image = "itel-a12-medium.png";
         $product->user_id = 1;
         $product->category_id = 11;
+        $product->popularity = 2;
         $product->save();
         //42
         $product = new Product();
@@ -698,6 +739,7 @@ class ProductSeeder extends Seeder
         $product->image = "droipad-pad-medium.png";
         $product->user_id = 1;
         $product->category_id = 11;
+        $product->popularity = 2;
         $product->save();
         //43
         $product = new Product();
@@ -718,6 +760,7 @@ class ProductSeeder extends Seeder
         $product->image = "royale-a1-fero-medium.png";
         $product->user_id = 1;
         $product->category_id = 11;
+        $product->popularity = 2;
         $product->save();
         //44
         $product = new Product();
@@ -735,6 +778,7 @@ class ProductSeeder extends Seeder
         $product->image = "vigitab-medium.png";
         $product->user_id = 1;
         $product->category_id = 11;
+        $product->popularity = 2;
         $product->save();
         //45
         $product = new Product();
@@ -748,6 +792,7 @@ class ProductSeeder extends Seeder
         $product->image = "ox-fan-medium.png";
         $product->user_id = 1;
         $product->category_id = 5;
+        $product->popularity = 2;
         $product->save();
         //46
         $product = new Product();
@@ -767,6 +812,7 @@ class ProductSeeder extends Seeder
         $product->image = "polystar-water-d-2-medium.png";
         $product->user_id = 1;
         $product->category_id = 12;
+        $product->popularity = 2;
         $product->save();
         //47
         $product = new Product();
@@ -780,6 +826,7 @@ class ProductSeeder extends Seeder
         $product->image = "polystar-sound-s-4-medium.png";
         $product->user_id = 1;
         $product->category_id = 13;
+        $product->popularity = 2;
         $product->save();
         //48
         $product = new Product();
@@ -793,6 +840,7 @@ class ProductSeeder extends Seeder
         $product->image = "polystar-sound-s-3-medium.png";
         $product->user_id = 1;
         $product->category_id = 13;
+        $product->popularity = 2;
         $product->save();
         //49
         $product = new Product();
@@ -812,6 +860,7 @@ class ProductSeeder extends Seeder
         $product->image = "hp-255-medium.png";
         $product->user_id = 1;
         $product->category_id = 14;
+        $product->popularity = 2;
         $product->save();
         //50
         $product = new Product();
@@ -828,6 +877,7 @@ class ProductSeeder extends Seeder
         $product->image = "hp-15-celeron-medium.png";
         $product->user_id = 1;
         $product->category_id = 14;
+        $product->popularity = 2;
         $product->save();
 
     }
