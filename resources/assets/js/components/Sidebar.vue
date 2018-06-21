@@ -45,9 +45,7 @@ export default {
 		created() {
 			get('/api/category')
 				.then((res) => {
-					console.log(res);
                     this.categories = res.data.categories
-                    console.log(this.categories)
 				})
         },
           methods: {

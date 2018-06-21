@@ -24,13 +24,13 @@
                                 <img class="card-img-top" :src="`/images/catalog/${product.image}`" v-if="product.image">   
                                 <div class="card-body">
                                     <h4 class="card-text">
-                                        {{product.name}}
+                                        {{product.name}}  <span style=" float:right;font-size:12px;color:#777777"> {{product.brand}}</span> 
                                     </h4>
                                     <hr>
                                     <div class="info">
                                         <div class="row">
                                             <div class="tag-price col-md-6">
-                                                <h5>First</h5>
+                                                <h5>First Installment</h5>
                                             </div>
                                             <div class="price col-md-6">
                                                 <h5 class="price-text-color">
@@ -40,7 +40,7 @@
                                         </div>
                                         <div class="row">
                                             <div class="tag-price col-md-6">
-                                                <h5>Monthly</h5>
+                                                <h5>Bi-Weekly</h5>
                                             </div>
                                             <div class="price col-md-6">
                                                 <h5 class="price-text-color">
@@ -80,7 +80,7 @@
                                                 </div>
                                                 <div class="col-md-6 content-left">
                                                     <div class="row">
-                                                        <h3>{{viewMore.name}}</h3>
+                                                        <h3>{{viewMore.name}}  <span style=" float:right;font-size:16px;color:#777777"> {{viewMore.brand}}</span> </h3></h3>
                                                     </div>
 <hr>
                                                     <div class="row">
@@ -96,7 +96,7 @@
                                                             </div>
                                                             <div class="row">
                                                                 <div class="view-more-tag-price col-md-6">
-                                                                    <h5>Monthly Repaymentt</h5>
+                                                                    <h5>Bi-Weekly Repayment</h5>
                                                                 </div>
                                                                 <div class="view-more-price col-md-6">
                                                                     <h5 class="price-text-color">
@@ -107,7 +107,7 @@
                                                     </div>
                                                     <hr>
                                                     <div class="row">
-                                                        <h4>Product Specification</h4>
+                                                        <h4>Product Specification</h4> <br>
                                                         <p>{{viewMore.features}}</p>
                                                     </div>
                                                     <hr>
@@ -130,7 +130,7 @@
                                         <div class="col-md-6">
 <div class="footer">
 To buy this product, Kindly visite any Altara Credit Office closest to you, or 
-Call Us : <a href="tel:08068492563"> 08068492563</a> for more enquiries
+Call Us : <a href="tel:08150479425" style="text-decoration:none"> 08150479425</a> for more enquiries
                                                     </div>
                                         </div>
                                       
@@ -173,7 +173,8 @@ export default {
         price: null,
         rprice: null,
         updated_at: null,
-        user_id: null
+        user_id: null,
+        brand:null
       },
 			}
 		},
@@ -181,18 +182,22 @@ export default {
 	created() {
 			get(`/api/products/${this.$route.params.id}`)
 					.then((res) => {
-					console.log(res);
-                    this.products = res.data.products
-                    console.log(this.products)
+                    let p = res.data.products;
+                    let b = res.data.brands;
+                    p.forEach((element) =>b.forEach((element2)=>{
+                    if (element.brand_id === element2.id){
+                        element.brand=element2.brand;
+                    }
+                    }));
+                    this.products = p;
+                    console.log(this.products);
 				})
 		},
 watch:{
 route(){
 get(`/api/products/${this.$route.params.id}`)
 					.then((res) => {
-					console.log(res);
                     this.products = res.data.products
-                    console.log(this.products)
 				})
 }
 },
@@ -209,6 +214,7 @@ get(`/api/products/${this.$route.params.id}`)
                     this.viewMore.rprice = productData.rprice;
                     this.viewMore.updated_at = productData.updated_at;
                     this.viewMore.user_id = productData.user_id;
+                    this.viewMore.brand = productData.brand;
     }
           }
 	}
@@ -218,6 +224,9 @@ get(`/api/products/${this.$route.params.id}`)
     font-weight: 800;
     font-size: 13px;
     line-height: 17px;
+}
+.card-text h4{
+text-transform: capitalize; 
 }
  .info
 {
@@ -249,7 +258,7 @@ get(`/api/products/${this.$route.params.id}`)
 
 .tag-price h5{
     margin: 0;
-    font-size:14px;
+    font-size:12px;
     font-weight:normal
 }
 

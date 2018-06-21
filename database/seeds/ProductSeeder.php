@@ -25,7 +25,7 @@ class ProductSeeder extends Seeder
         ";
         $product->rprice = "5,500";
         $product->price = "44,000";
-        $product->image = "plosytar-fridge-3-medium.png";
+        $product->image = "polystar-fridge-3-medium.png";
         $product->user_id = 1;
         $product->category_id = 1;
         $product->popularity = 3;
@@ -43,7 +43,7 @@ class ProductSeeder extends Seeder
         ";
         $product->rprice = "5,300";
         $product->price = "42,700";
-        $product->image = "plosytar-fridge-5-medium.png";
+        $product->image = "polystar-fridge-9-medium.png";
         $product->user_id = 2;
         $product->category_id = 1;
         $product->popularity = 2;
@@ -61,7 +61,7 @@ class ProductSeeder extends Seeder
         ";
         $product->rprice = "4,900";
         $product->price = "39,500";
-        $product->image = "plosytar-fridge-6-medium.png";
+        $product->image = "polystar-fridge-6-medium.png";
         $product->user_id = 1;
         $product->category_id = 1;
         $product->popularity = 2;
@@ -79,7 +79,7 @@ class ProductSeeder extends Seeder
         ";
         $product->rprice = "4,100";
         $product->price = "33,100";
-        $product->image = "plosytar-fridge-7-medium.png";
+        $product->image = "polystar-fridge-7-medium.png";
         $product->user_id = 1;
         $product->category_id = 1;
         $product->popularity = 2;
@@ -105,7 +105,7 @@ class ProductSeeder extends Seeder
         ";
         $product->rprice = "6,700";
         $product->price = "53,600";
-        $product->image = "plosytar-fridge-8-medium.png";
+        $product->image = "polystar-fridge-8-medium.png";
         $product->user_id = 1;
         $product->category_id = 1;
         $product->popularity = 3;
@@ -124,7 +124,7 @@ class ProductSeeder extends Seeder
         ";
         $product->rprice = "9,600";
         $product->price = "77,200";
-        $product->image = "plosytar-fridge-9-medium.png";
+        $product->image = "polystar-fridge-9-medium.png";
         $product->user_id = 1;
         $product->category_id = 1;
         $product->popularity = 2;
@@ -142,7 +142,7 @@ class ProductSeeder extends Seeder
         ";
         $product->rprice = "4,900";
         $product->price = "39,900";
-        $product->image = "plosytar-fridge-5-medium.png";
+        $product->image = "midea-freezer-1-medium.png";
         $product->user_id = 1;
         $product->category_id = 1;
         $product->popularity = 3;
@@ -201,7 +201,7 @@ class ProductSeeder extends Seeder
         ";
         $product->rprice = "3,900";
         $product->price = "31,600";
-        $product->image = "plosytar-fridge-10-medium.png";
+        $product->image = "polystar-fridge-10-medium.png";
         $product->user_id = 1;
         $product->category_id = 2;
         $product->popularity = 3;
@@ -215,7 +215,7 @@ class ProductSeeder extends Seeder
         ";
         $product->rprice = "2,300";
         $product->price = "18,500";
-        $product->image = "plosytar-fridge-1-medium.png";
+        $product->image = "polystar-fridge-1-medium.png";
         $product->user_id = 1;
         $product->category_id = 2;
         $product->popularity = 2;
@@ -233,7 +233,7 @@ class ProductSeeder extends Seeder
         ";
         $product->rprice = "3,000";
         $product->price = "24,700";
-        $product->image = "plosytar-fridge-11-medium.png";
+        $product->image = "polystar-fridge-11-medium.png";
         $product->user_id = 1;
         $product->category_id = 2;
         $product->popularity = 3;
@@ -252,7 +252,7 @@ class ProductSeeder extends Seeder
         ";
         $product->rprice = "2,900";
         $product->price = "23,600";
-        $product->image = "plosytar-fridge-12-medium.png";
+        $product->image = "polystar-fridge-12-medium.png";
         $product->user_id = 1;
         $product->category_id = 2;
         $product->popularity = 2;
@@ -270,7 +270,7 @@ class ProductSeeder extends Seeder
         ";
         $product->rprice = "2,800";
         $product->price = "22,900";
-        $product->image = "plosytar-fridge-2-medium.png";
+        $product->image = "polystar-fridge-2-medium.png";
         $product->user_id = 1;
         $product->category_id = 2;
         $product->popularity = 3;
