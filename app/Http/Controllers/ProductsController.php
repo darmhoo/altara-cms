@@ -34,13 +34,15 @@ class ProductsController extends Controller
     public function show($id)
     {
         $products = Product::where('category_id', $id)->get();
+        $brands = Brand::all();
         // $categories = Product::select('name','surname')->where('id', 1)->get();
         // $recipe = Recipe::with(['user', 'ingredients', 'directions'])
         //     ->findOrFail($id);
 
         return response()
             ->json([
-                'products' => $products
+                'products' => $products,
+                'brands' => $brands
             ]);
     }
 

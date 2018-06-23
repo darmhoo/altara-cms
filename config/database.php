@@ -1,5 +1,12 @@
 <?php
 
+
+$url = parse_url(getenv("DATABASE_URL"));
+$host = $url["host"];
+$username = $url["user"];
+$password = $url["pass"];
+$database = substr($url["path"], 1);
+
 return [
 
     /*
@@ -13,7 +20,8 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
+    // 'default' => env('DB_CONNECTION', 'mysql'),
+    'default' => 'mysql_production',
 
     /*
     |--------------------------------------------------------------------------
@@ -52,6 +60,24 @@ return [
             'prefix' => '',
             'strict' => true,
             'engine' => null,
+        ],
+
+        'mysql_production' => [
+            'driver' => 'mysql',
+            'port' => '3306',
+            'host'      => $host,
+            'database'  => $database,
+            'username'  => $username,
+            'password'  => $password,
+            'charset' => 'utf8mb4',
+            'collation' => 'utf8mb4_unicode_ci',
+            'prefix' => '',
+            'strict' => true,
+            'engine' => null,
+            'options'  => array(
+                        "sslmode" => "require",
+                        "sslrootcert" => "config/amazon-rds-ca-cert.pem"
+                    )
         ],
 
         'pgsql' => [

@@ -13,47 +13,59 @@ class CategorySeeder extends Seeder
     {
         //1
         $category = new Category();
-        $category->category = 'Freezer';
+        $category->category = 'Freezers';
         $category->save();
         //2
         $category = new Category();
-        $category->category = 'Fridge';
+        $category->category = 'Fridges';
         $category->save();
         //3
         $category = new Category();
-        $category->category = 'Washing Machine';
+        $category->category = 'Washing Machines';
         $category->save();
         //4
         $category = new Category();
-        $category->category = 'Generator';
+        $category->category = 'Generators';
         $category->save();
         //5
         $category = new Category();
-        $category->category = 'Fan';
+        $category->category = 'Fans';
         $category->save();
         //6
         $category = new Category();
-        $category->category = 'Cooker';
+        $category->category = 'Cookers';
         $category->save();
         //7
         $category = new Category();
-        $category->category = 'Air Conditioner';
+        $category->category = 'Air Conditioners';
         $category->save();
         //8
         $category = new Category();
-        $category->category = 'Oven';
+        $category->category = 'Ovens';
         $category->save();
         //9
         $category = new Category();
-        $category->category = 'Sewing Machine';
+        $category->category = 'Sewing Machines';
         $category->save();
         //10
         $category = new Category();
-        $category->category = 'Television';
+        $category->category = 'Televisions';
         $category->save();
         //11
         $category = new Category();
-        $category->category = 'Phone';
+        $category->category = 'Phones';
+        $category->save();
+        //12
+        $category = new Category();
+        $category->category = 'Water Dispensers';
+        $category->save();
+        //13
+        $category = new Category();
+        $category->category = 'Home Theaters';
+        $category->save();
+        //14
+        $category = new Category();
+        $category->category = 'Laptop Computers';
         $category->save();
         
     }
