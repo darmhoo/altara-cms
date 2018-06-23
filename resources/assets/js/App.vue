@@ -4,12 +4,12 @@
             <nav class="navbar navbar-expand-lg ">
                 <div class="container-fluid">
                     <div class="logo navbar-brand">
-                     <a href="http://www.altaracredit/" class="photo logo-mini">
+                     <a href="http://www.altaracredit.com/" class="photo logo-mini">
                          <img src="/images/altara_logo.png" width="134" height= "50" alt="">
                     </a>
                 </div>
                     <div  class="navbar-collapse justify-content-end">
-                        <ul class="nav navbar-nav " v-if="catalog">
+                        <ul class="nav navbar-nav" v-if="catalog">
                             <form class="navbar-form navbar-search-form" role="search">
                                 <div class="input-group">
                                     <input type="text" name="search" value="" class="form-control" placeholder="Search...">
@@ -19,7 +19,7 @@
                         </ul>
                         <ul class="navbar-nav">
                             <li class="nav-item" v-if="catalog">
-                                <a href="#" class="nav-link icon-link" >
+                                <a href="#" class="nav-link icon-link">
                                     <i class="fa fa-heart-o"></i>
                                 </a>
                             </li>

@@ -31128,9 +31128,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     var _this = this;
 
     Object(__WEBPACK_IMPORTED_MODULE_0__helpers_api__["a" /* get */])('/api/category').then(function (res) {
-      console.log(res);
       _this.categories = res.data.categories;
-      console.log(_this.categories);
     });
   },
 
@@ -31229,7 +31227,7 @@ var render = function() {
           _vm._v(" "),
           _c("div", { staticClass: "navbar-collapse justify-content-end" }, [
             _vm.catalog
-              ? _c("ul", { staticClass: "nav navbar-nav " }, [_vm._m(1)])
+              ? _c("ul", { staticClass: "nav navbar-nav" }, [_vm._m(1)])
               : _vm._e(),
             _vm._v(" "),
             _c("ul", { staticClass: "navbar-nav" }, [
@@ -31370,7 +31368,7 @@ var staticRenderFns = [
         "a",
         {
           staticClass: "photo logo-mini",
-          attrs: { href: "http://www.altaracredit/" }
+          attrs: { href: "http://www.altaracredit.com/" }
         },
         [
           _c("img", {
@@ -35375,7 +35373,7 @@ exports = module.exports = __webpack_require__(129)(false);
 
 
 // module
-exports.push([module.i, "\n.card-text{\r\n    font-weight: 800;\r\n    font-size: 13px;\r\n    line-height: 17px;\n}\n.info\r\n{\r\n    padding: 5px;\r\n    border-radius: 0 0 5px 5px;\r\n    margin-top: 1px;\n}\r\n\r\n/* .info:hover {\r\n  \r\n} */\n.content-right{\r\nborder-right: 1px solid #ccc;\n}\n.content-left{\r\n    margin-left:10px\n}\n.card-body:hover{\r\n      background-color: #E0F2FF;\n}\n.price\r\n{\r\n    /*width: 50%;*/\r\n    margin-top: 3px;\n}\n.price h5\r\n{\r\n    margin: 0;\r\n    font-size:13px;\n}\n.tag-price h5{\r\n    margin: 0;\r\n    font-size:14px;\r\n    font-weight:normal\n}\n.view-more-price h5\r\n{\r\n    margin: 0;\r\n    font-size:20px;\r\n    font-weight: 900\n}\n.view-more-tag-price h5{\r\n    margin: 0;\r\n    font-size:15px;\r\n    font-weight: bold;\n}\n.price-text-color\r\n{\r\n    color: #003366;\n}\n.footer{\r\n    background-color: #003366;\r\n    color:#fff;\r\n    font-size:12px;\r\n    padding:5px;\n}\n.separator\r\n{\r\n    border-top: 1px solid #E1E1E1;\n}\n.clear-left\r\n{\r\n    clear: left;\n}\n.separator p\r\n{\r\n    line-height: 20px;\r\n    margin-bottom: 0;\r\n    margin-top: 10px;\r\n    text-align: center;\n}\n.separator p i\r\n{\r\n    margin-right: 5px;\n}\n.btn-add\r\n{\r\n    width: 50%;\r\n    float: left;\n}\n.btn-add\r\n{\r\n    border-right: 1px solid #E1E1E1;\n}\n.btn-details\r\n{\r\n    width: 50%;\r\n    float: left;\r\n    padding-left: 10px;\n}\n.modal-lg{\r\n    max-width:80%;\n}\r\n\r\n\r\n", ""]);
+exports.push([module.i, "\n.card-text{\r\n    font-weight: 800;\r\n    font-size: 13px;\r\n    line-height: 17px;\n}\n.card-text h4{\r\ntext-transform: capitalize;\n}\n.info\r\n{\r\n    padding: 5px;\r\n    border-radius: 0 0 5px 5px;\r\n    margin-top: 1px;\n}\r\n\r\n/* .info:hover {\r\n  \r\n} */\n.content-right{\r\nborder-right: 1px solid #ccc;\n}\n.content-left{\r\n    margin-left:10px\n}\n.card-body:hover{\r\n      background-color: #E0F2FF;\n}\n.price\r\n{\r\n    /*width: 50%;*/\r\n    margin-top: 3px;\n}\n.price h5\r\n{\r\n    margin: 0;\r\n    font-size:13px;\n}\n.tag-price h5{\r\n    margin: 0;\r\n    font-size:12px;\r\n    font-weight:normal\n}\n.view-more-price h5\r\n{\r\n    margin: 0;\r\n    font-size:20px;\r\n    font-weight: 900\n}\n.view-more-tag-price h5{\r\n    margin: 0;\r\n    font-size:15px;\r\n    font-weight: bold;\n}\n.price-text-color\r\n{\r\n    color: #003366;\n}\n.footer{\r\n    background-color: #003366;\r\n    color:#fff;\r\n    font-size:12px;\r\n    padding:5px;\n}\n.separator\r\n{\r\n    border-top: 1px solid #E1E1E1;\n}\n.clear-left\r\n{\r\n    clear: left;\n}\n.separator p\r\n{\r\n    line-height: 20px;\r\n    margin-bottom: 0;\r\n    margin-top: 10px;\r\n    text-align: center;\n}\n.separator p i\r\n{\r\n    margin-right: 5px;\n}\n.btn-add\r\n{\r\n    width: 50%;\r\n    float: left;\n}\n.btn-add\r\n{\r\n    border-right: 1px solid #E1E1E1;\n}\n.btn-details\r\n{\r\n    width: 50%;\r\n    float: left;\r\n    padding-left: 10px;\n}\n.modal-lg{\r\n    max-width:80%;\n}\r\n\r\n\r\n", ""]);
 
 // exports
 
@@ -35538,53 +35536,62 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  components: {
-    Sidebar: __WEBPACK_IMPORTED_MODULE_1__components_Sidebar_vue___default.a
-  },
-  data: function data() {
-    return {
-      products: [],
-      viewMore: {
-        brand_id: null,
-        category_id: null,
-        created_at: null,
-        features: null,
-        id: null,
-        image: null,
-        name: null,
-        price: null,
-        rprice: null,
-        updated_at: null,
-        user_id: null
-      }
-    };
-  },
-  created: function created() {
-    var _this = this;
+    components: {
+        Sidebar: __WEBPACK_IMPORTED_MODULE_1__components_Sidebar_vue___default.a
+    },
+    data: function data() {
+        return {
+            products: [],
+            viewMore: {
+                brand_id: null,
+                category_id: null,
+                created_at: null,
+                features: null,
+                id: null,
+                image: null,
+                name: null,
+                price: null,
+                rprice: null,
+                updated_at: null,
+                user_id: null,
+                brand: null
+            }
+        };
+    },
+    created: function created() {
+        var _this = this;
 
-    Object(__WEBPACK_IMPORTED_MODULE_0__helpers_api__["a" /* get */])('/api/products').then(function (res) {
-      console.log(res);
-      _this.products = res.data.products;
-      console.log(res.data.brands);
-      console.log(_this.products);
-    });
-  },
+        Object(__WEBPACK_IMPORTED_MODULE_0__helpers_api__["a" /* get */])('/api/products').then(function (res) {
+            var p = res.data.products;
+            var b = res.data.brands;
+            p.forEach(function (element) {
+                return b.forEach(function (element2) {
+                    if (element.brand_id === element2.id) {
+                        element.brand = element2.brand;
+                    }
+                });
+            });
+            _this.products = p;
+            console.log(_this.products);
+        });
+    },
 
-  methods: {
-    showMore: function showMore(productData) {
-      this.viewMore.brand_id = productData.brand_id;
-      this.viewMore.category_id = productData.category_id;
-      this.viewMore.created_at = productData.created_at;
-      this.viewMore.features = productData.features;
-      this.viewMore.id = productData.id;
-      this.viewMore.image = productData.image;
-      this.viewMore.name = productData.name;
-      this.viewMore.price = productData.price;
-      this.viewMore.rprice = productData.rprice;
-      this.viewMore.updated_at = productData.updated_at;
-      this.viewMore.user_id = productData.user_id;
+    methods: {
+        showMore: function showMore(productData) {
+            this.viewMore.brand_id = productData.brand_id;
+            this.viewMore.category_id = productData.category_id;
+            this.viewMore.created_at = productData.created_at;
+            this.viewMore.features = productData.features;
+            this.viewMore.id = productData.id;
+            this.viewMore.image = productData.image;
+            this.viewMore.name = productData.name;
+            this.viewMore.price = productData.price;
+            this.viewMore.rprice = productData.rprice;
+            this.viewMore.updated_at = productData.updated_at;
+            this.viewMore.user_id = productData.user_id;
+            this.viewMore.brand = productData.brand;
+        }
     }
-  }
 });
 
 /***/ }),
@@ -35626,7 +35633,18 @@ var render = function() {
                             _vm._v(
                               "\r\n                                        " +
                                 _vm._s(product.name) +
-                                "\r\n                                    "
+                                "  "
+                            ),
+                            _c(
+                              "span",
+                              {
+                                staticStyle: {
+                                  float: "right",
+                                  "font-size": "12px",
+                                  color: "#777777"
+                                }
+                              },
+                              [_vm._v(" " + _vm._s(product.brand))]
                             )
                           ]),
                           _vm._v(" "),
@@ -35736,7 +35754,22 @@ var render = function() {
                                 [
                                   _c("div", { staticClass: "row" }, [
                                     _c("h3", [
-                                      _vm._v(_vm._s(_vm.viewMore.name))
+                                      _vm._v(_vm._s(_vm.viewMore.name) + "  "),
+                                      _c(
+                                        "span",
+                                        {
+                                          staticStyle: {
+                                            float: "right",
+                                            "font-size": "16px",
+                                            color: "#777777"
+                                          }
+                                        },
+                                        [
+                                          _vm._v(
+                                            " " + _vm._s(_vm.viewMore.brand)
+                                          )
+                                        ]
+                                      )
                                     ])
                                   ]),
                                   _vm._v(" "),
@@ -35811,6 +35844,8 @@ var render = function() {
                                   _c("div", { staticClass: "row" }, [
                                     _c("h4", [_vm._v("Product Specification")]),
                                     _vm._v(" "),
+                                    _c("br"),
+                                    _vm._v(" "),
                                     _c("p", [
                                       _vm._v(_vm._s(_vm.viewMore.features))
                                     ])
@@ -35846,7 +35881,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "tag-price col-md-6" }, [
-      _c("h5", [_vm._v("First")])
+      _c("h5", [_vm._v("First Installment")])
     ])
   },
   function() {
@@ -35854,7 +35889,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "tag-price col-md-6" }, [
-      _c("h5", [_vm._v("Monthly")])
+      _c("h5", [_vm._v("Bi-Weekly")])
     ])
   },
   function() {
@@ -35880,7 +35915,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "view-more-tag-price col-md-6" }, [
-      _c("h5", [_vm._v("Monthly Repaymentt")])
+      _c("h5", [_vm._v("Bi-Weekly Repayment")])
     ])
   },
   function() {
@@ -35925,9 +35960,14 @@ var staticRenderFns = [
             _vm._v(
               "\r\nTo buy this product, Kindly visite any Altara Credit Office closest to you, or \r\nCall Us : "
             ),
-            _c("a", { attrs: { href: "tel:08068492563" } }, [
-              _vm._v(" 08068492563")
-            ]),
+            _c(
+              "a",
+              {
+                staticStyle: { "text-decoration": "none" },
+                attrs: { href: "tel:08150479425" }
+              },
+              [_vm._v(" 08150479425")]
+            ),
             _vm._v(
               " for more enquiries\r\n                                                    "
             )
@@ -36032,7 +36072,7 @@ exports = module.exports = __webpack_require__(129)(false);
 
 
 // module
-exports.push([module.i, "\n.card-text{\r\n    font-weight: 800;\r\n    font-size: 13px;\r\n    line-height: 17px;\n}\n.info\r\n{\r\n    padding: 5px;\r\n    border-radius: 0 0 5px 5px;\r\n    margin-top: 1px;\n}\r\n\r\n/* .info:hover {\r\n  \r\n} */\n.card-body:hover{\r\n      background-color: #E0F2FF;\n}\n.price\r\n{\r\n    /*width: 50%;*/\r\n    float: left;\r\n    margin-top: 3px;\n}\n.price h5\r\n{\r\n    margin: 0;\r\n    font-size:13px;\n}\n.tag-price h5{\r\n    margin: 0;\r\n    font-size:14px;\r\n    font-weight:normal\n}\n.view-more-price h5\r\n{\r\n    margin: 0;\r\n    font-size:20px;\r\n    font-weight: 900\n}\n.view-more-tag-price h5{\r\n    margin: 0;\r\n    font-size:15px;\r\n    font-weight: bold;\n}\n.price-text-color\r\n{\r\n    color: #003366;\n}\n.info .rating\r\n{\r\n    color: #777;\n}\n.rating\r\n{\r\n    /*width: 50%;*/\r\n    float: left;\r\n    font-size: 17px;\r\n    text-align: right;\r\n    line-height: 52px;\r\n    margin-bottom: 10px;\r\n    height: 52px;\n}\n.separator\r\n{\r\n    border-top: 1px solid #E1E1E1;\n}\n.clear-left\r\n{\r\n    clear: left;\n}\n.separator p\r\n{\r\n    line-height: 20px;\r\n    margin-bottom: 0;\r\n    margin-top: 10px;\r\n    text-align: center;\n}\n.separator p i\r\n{\r\n    margin-right: 5px;\n}\n.btn-add\r\n{\r\n    width: 50%;\r\n    float: left;\n}\n.btn-add\r\n{\r\n    border-right: 1px solid #E1E1E1;\n}\n.btn-details\r\n{\r\n    width: 50%;\r\n    float: left;\r\n    padding-left: 10px;\n}\n.modal-lg{\r\n    max-width:80%;\n}\r\n\r\n\r\n", ""]);
+exports.push([module.i, "\n.card-text{\r\n    font-weight: 800;\r\n    font-size: 13px;\r\n    line-height: 17px;\n}\n.card-text h4{\r\ntext-transform: capitalize;\n}\n.info\r\n{\r\n    padding: 5px;\r\n    border-radius: 0 0 5px 5px;\r\n    margin-top: 1px;\n}\r\n\r\n/* .info:hover {\r\n  \r\n} */\n.card-body:hover{\r\n      background-color: #E0F2FF;\n}\n.price\r\n{\r\n    /*width: 50%;*/\r\n    float: left;\r\n    margin-top: 3px;\n}\n.price h5\r\n{\r\n    margin: 0;\r\n    font-size:13px;\n}\n.tag-price h5{\r\n    margin: 0;\r\n    font-size:12px;\r\n    font-weight:normal\n}\n.view-more-price h5\r\n{\r\n    margin: 0;\r\n    font-size:20px;\r\n    font-weight: 900\n}\n.view-more-tag-price h5{\r\n    margin: 0;\r\n    font-size:15px;\r\n    font-weight: bold;\n}\n.price-text-color\r\n{\r\n    color: #003366;\n}\n.info .rating\r\n{\r\n    color: #777;\n}\n.rating\r\n{\r\n    /*width: 50%;*/\r\n    float: left;\r\n    font-size: 17px;\r\n    text-align: right;\r\n    line-height: 52px;\r\n    margin-bottom: 10px;\r\n    height: 52px;\n}\n.separator\r\n{\r\n    border-top: 1px solid #E1E1E1;\n}\n.clear-left\r\n{\r\n    clear: left;\n}\n.separator p\r\n{\r\n    line-height: 20px;\r\n    margin-bottom: 0;\r\n    margin-top: 10px;\r\n    text-align: center;\n}\n.separator p i\r\n{\r\n    margin-right: 5px;\n}\n.btn-add\r\n{\r\n    width: 50%;\r\n    float: left;\n}\n.btn-add\r\n{\r\n    border-right: 1px solid #E1E1E1;\n}\n.btn-details\r\n{\r\n    width: 50%;\r\n    float: left;\r\n    padding-left: 10px;\n}\n.modal-lg{\r\n    max-width:80%;\n}\r\n\r\n\r\n", ""]);
 
 // exports
 
@@ -36203,64 +36243,72 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  components: {
-    Sidebar: __WEBPACK_IMPORTED_MODULE_1__components_Sidebar_vue___default.a
-  },
-  data: function data() {
-    return {
-      route: this.$route.params.id,
-      products: [],
-      viewMore: {
-        brand_id: null,
-        category_id: null,
-        created_at: null,
-        features: null,
-        id: null,
-        image: null,
-        name: null,
-        price: null,
-        rprice: null,
-        updated_at: null,
-        user_id: null
-      }
-    };
-  },
-  created: function created() {
-    var _this = this;
+    components: {
+        Sidebar: __WEBPACK_IMPORTED_MODULE_1__components_Sidebar_vue___default.a
+    },
+    data: function data() {
+        return {
+            route: this.$route.params.id,
+            products: [],
+            viewMore: {
+                brand_id: null,
+                category_id: null,
+                created_at: null,
+                features: null,
+                id: null,
+                image: null,
+                name: null,
+                price: null,
+                rprice: null,
+                updated_at: null,
+                user_id: null,
+                brand: null
+            }
+        };
+    },
+    created: function created() {
+        var _this = this;
 
-    Object(__WEBPACK_IMPORTED_MODULE_0__helpers_api__["a" /* get */])('/api/products/' + this.$route.params.id).then(function (res) {
-      console.log(res);
-      _this.products = res.data.products;
-      console.log(_this.products);
-    });
-  },
+        Object(__WEBPACK_IMPORTED_MODULE_0__helpers_api__["a" /* get */])('/api/products/' + this.$route.params.id).then(function (res) {
+            var p = res.data.products;
+            var b = res.data.brands;
+            p.forEach(function (element) {
+                return b.forEach(function (element2) {
+                    if (element.brand_id === element2.id) {
+                        element.brand = element2.brand;
+                    }
+                });
+            });
+            _this.products = p;
+            console.log(_this.products);
+        });
+    },
 
-  watch: {
-    route: function route() {
-      var _this2 = this;
+    watch: {
+        route: function route() {
+            var _this2 = this;
 
-      Object(__WEBPACK_IMPORTED_MODULE_0__helpers_api__["a" /* get */])('/api/products/' + this.$route.params.id).then(function (res) {
-        console.log(res);
-        _this2.products = res.data.products;
-        console.log(_this2.products);
-      });
+            Object(__WEBPACK_IMPORTED_MODULE_0__helpers_api__["a" /* get */])('/api/products/' + this.$route.params.id).then(function (res) {
+                _this2.products = res.data.products;
+            });
+        }
+    },
+    methods: {
+        showMore: function showMore(productData) {
+            this.viewMore.brand_id = productData.brand_id;
+            this.viewMore.category_id = productData.category_id;
+            this.viewMore.created_at = productData.created_at;
+            this.viewMore.features = productData.features;
+            this.viewMore.id = productData.id;
+            this.viewMore.image = productData.image;
+            this.viewMore.name = productData.name;
+            this.viewMore.price = productData.price;
+            this.viewMore.rprice = productData.rprice;
+            this.viewMore.updated_at = productData.updated_at;
+            this.viewMore.user_id = productData.user_id;
+            this.viewMore.brand = productData.brand;
+        }
     }
-  },
-  methods: {
-    showMore: function showMore(productData) {
-      this.viewMore.brand_id = productData.brand_id;
-      this.viewMore.category_id = productData.category_id;
-      this.viewMore.created_at = productData.created_at;
-      this.viewMore.features = productData.features;
-      this.viewMore.id = productData.id;
-      this.viewMore.image = productData.image;
-      this.viewMore.name = productData.name;
-      this.viewMore.price = productData.price;
-      this.viewMore.rprice = productData.rprice;
-      this.viewMore.updated_at = productData.updated_at;
-      this.viewMore.user_id = productData.user_id;
-    }
-  }
 });
 
 /***/ }),
@@ -36326,7 +36374,18 @@ var render = function() {
                               _vm._v(
                                 "\r\n                                        " +
                                   _vm._s(product.name) +
-                                  "\r\n                                    "
+                                  "  "
+                              ),
+                              _c(
+                                "span",
+                                {
+                                  staticStyle: {
+                                    float: "right",
+                                    "font-size": "12px",
+                                    color: "#777777"
+                                  }
+                                },
+                                [_vm._v(" " + _vm._s(product.brand))]
                               )
                             ]),
                             _vm._v(" "),
@@ -36444,7 +36503,24 @@ var render = function() {
                                   [
                                     _c("div", { staticClass: "row" }, [
                                       _c("h3", [
-                                        _vm._v(_vm._s(_vm.viewMore.name))
+                                        _vm._v(
+                                          _vm._s(_vm.viewMore.name) + "  "
+                                        ),
+                                        _c(
+                                          "span",
+                                          {
+                                            staticStyle: {
+                                              float: "right",
+                                              "font-size": "16px",
+                                              color: "#777777"
+                                            }
+                                          },
+                                          [
+                                            _vm._v(
+                                              " " + _vm._s(_vm.viewMore.brand)
+                                            )
+                                          ]
+                                        )
                                       ])
                                     ]),
                                     _vm._v(" "),
@@ -36523,6 +36599,8 @@ var render = function() {
                                         _vm._v("Product Specification")
                                       ]),
                                       _vm._v(" "),
+                                      _c("br"),
+                                      _vm._v(" "),
                                       _c("p", [
                                         _vm._v(_vm._s(_vm.viewMore.features))
                                       ])
@@ -36556,7 +36634,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "tag-price col-md-6" }, [
-      _c("h5", [_vm._v("First")])
+      _c("h5", [_vm._v("First Installment")])
     ])
   },
   function() {
@@ -36564,7 +36642,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "tag-price col-md-6" }, [
-      _c("h5", [_vm._v("Monthly")])
+      _c("h5", [_vm._v("Bi-Weekly")])
     ])
   },
   function() {
@@ -36590,7 +36668,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "view-more-tag-price col-md-6" }, [
-      _c("h5", [_vm._v("Monthly Repaymentt")])
+      _c("h5", [_vm._v("Bi-Weekly Repayment")])
     ])
   },
   function() {
@@ -36635,9 +36713,14 @@ var staticRenderFns = [
             _vm._v(
               "\r\nTo buy this product, Kindly visite any Altara Credit Office closest to you, or \r\nCall Us : "
             ),
-            _c("a", { attrs: { href: "tel:08068492563" } }, [
-              _vm._v(" 08068492563")
-            ]),
+            _c(
+              "a",
+              {
+                staticStyle: { "text-decoration": "none" },
+                attrs: { href: "tel:08150479425" }
+              },
+              [_vm._v(" 08150479425")]
+            ),
             _vm._v(
               " for more enquiries\r\n                                                    "
             )
