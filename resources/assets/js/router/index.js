@@ -16,8 +16,9 @@ const router = new VueRouter({
         { path: '/login', component: Login, meta: { mode: 'login' } },
         { path: '/register', component: Register, meta: { mode: 'register' } },
         { path: '/catalog', component: Catalog, meta: { mode: 'catalog' } },
-        { path: '/product/category/:id', component: Category, meta: { mode: 'catalog' }  },
-        { path: '/product/create', component: Create, meta: { mode: 'catalog' }  },
+        { path: '/product/category/:id', component: Category, meta: { mode: 'catalog' } },
+        { path: '/product/create', component: Create, meta: { mode: 'create' } },
+        { path: '/product/:id/edit', component: Create, meta: { mode: 'edit' } },
         { path: '/not-found', component: NotFound },
         { path: '*', component: NotFound },
     ]

@@ -8,10 +8,10 @@
                 <div class="row">
                     <div class="col-lg-4 col-sm-6 portfolio-item" v-for="product in products">
                         <div class="card h-100">
-                                <img class="card-img-top" :src="`/images/catalog/${product.image}`" v-if="product.image">   
+                                <img class="card-img-top" :src="`/images/catalog/${product.image}`" v-if="product.image">
                                 <div class="card-body">
                                     <h4 class="card-text">
-                                        {{product.name}}  <span style=" float:right;font-size:12px;color:#777777"> {{product.brand}}</span> 
+                                        {{product.name}}  <span style=" float:right;font-size:12px;color:#777777"> {{product.brand}}</span>
                                     </h4>
                                     <hr>
                                     <div class="info">
@@ -41,15 +41,15 @@
 <button @click="showMore(product)" data-toggle="modal" class="btn btn-small btn-primary" data-target="#myModal1">More details</button>
                                          </div>
                                     </div>
-                            
-                                    
+
+
                                 </div>
-                            
+
                         </div>
                     </div>
 
                      <!-- Mini Modal -->
-                    <div class="modal fade modal modal-primary" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal fade modal modal-primary" ref="vuemodal" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-lg">
                             <div class="modal-content">
                                 <div class="modal-header justify-content-center">
@@ -62,9 +62,9 @@
                                             <!-- Project One -->
                                             <div class="row">
                                                 <div class="col-md-5 content-right">
-                                                       <img class="img-fluid rounded mb-3 mb-md-0" :src="`/images/catalog/${viewMore.image}`" v-if="viewMore.image">   
+                                                       <img class="img-fluid rounded mb-3 mb-md-0" :src="`/images/catalog/${viewMore.image}`" v-if="viewMore.image">
 
-                                                   
+
                                                 </div>
                                                 <div class="col-md-6 content-left">
                                                     <div class="row">
@@ -99,7 +99,7 @@
                                                         <p>{{viewMore.features}}</p>
                                                     </div>
                                                     <hr>
-                                                    
+
 
                                             </div>
                                             <!-- /.row -->
@@ -109,21 +109,24 @@
                                 </div>
                                 <div class="modal-footer">
                                     <div class="row">
-                                          <div class="col-md-6">
-                                              <button  type="button" class="btn btn-link btn-simple" ><i class="fa fa-undo"></i> &nbsp;Update</button> |
-                                               <button  type="button" class="btn btn-link btn-simple" > <i class="fa fa-trash"></i> &nbsp; Delete </button> |
-                                            
-                                             <button type="button" class="btn btn-link btn-simple" data-dismiss="modal"><i class="fa fa-close"></i>&nbsp; Close </button>
+                                          <div class="col-md-4" v-if=" authState.user_id">
+                                              <router-link :to="`/product/${viewMore.id}/edit`" data-dismiss="modal" class="btn btn-link btn-simple">
+                                              <i class="fa fa-undo"></i> &nbsp;Update
+						                        </router-link>|
+                                               <button  type="button" class="btn btn-link btn-simple" data-dismiss="modal" @click="remove" :disabled="isRemoving"><i class="fa fa-trash"></i> &nbsp; Delete </button> |
+                                        </div>
+                                        <div class="col-md-2">
+                                            <button type="button" class="btn btn-link btn-simple" data-dismiss="modal"><i class="fa fa-close"></i>&nbsp; Close </button>
                                         </div>
                                         <div class="col-md-6">
 <div class="footer">
-To buy this product, Kindly visite any Altara Credit Office closest to you, or 
+To buy this product, Kindly visite any Altara Credit Office closest to you, or
 Call Us : <a href="tel:08150479425" style="text-decoration:none"> 08150479425</a> for more enquiries
                                                     </div>
                                         </div>
-                                      
+
                                     </div>
-                                   
+
                                 </div>
                             </div>
                         </div>
@@ -140,7 +143,8 @@ Call Us : <a href="tel:08150479425" style="text-decoration:none"> 08150479425</a
 </template>
 
 <script>
-import { get } from '../../helpers/api'
+import Auth from '../../store/auth'
+import { get, del } from '../../helpers/api'
 import Sidebar from '../../components/Sidebar.vue'
 export default {
     components: {
@@ -148,6 +152,8 @@ export default {
 		},
   data() {
 			return {
+                authState: Auth.state,
+                isRemoving: false,
                 products: [],
                 viewMore: {
         brand_id: null,
@@ -164,7 +170,7 @@ export default {
         brand:null
       },
 			}
-		},
+        },
 		created() {
 			get('/api/products')
 				.then((res) => {
@@ -193,7 +199,17 @@ export default {
                     this.viewMore.updated_at = productData.updated_at;
                     this.viewMore.user_id = productData.user_id;
                     this.viewMore.brand = productData.brand;
-    }
+    },
+    remove() {
+				this.isRemoving = false
+				del(`/api/products/${this.$route.params.id}`)
+					.then((res) => {
+						if(res.data.deleted) {
+							Flash.setSuccess('You have successfully deleted Product!')
+							this.$router.push('/')
+						}
+					})
+			}
           }
 	}
 </script>
@@ -204,7 +220,7 @@ export default {
     line-height: 17px;
 }
 .card-text h4{
-text-transform: capitalize; 
+text-transform: capitalize;
 }
  .info
 {
@@ -214,7 +230,7 @@ text-transform: capitalize;
 }
 
 /* .info:hover {
-  
+
 } */
 .content-right{
 border-right: 1px solid #ccc;
