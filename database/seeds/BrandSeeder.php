@@ -14,7 +14,7 @@ class BrandSeeder extends Seeder
     {
         //1
         $brand = new Brand();
-        $brand->brand = 'Polyster';
+        $brand->brand = 'Polystar';
         $brand->save();
         //2
         $brand = new Brand();
@@ -29,9 +29,7 @@ class BrandSeeder extends Seeder
         $brand->brand = 'Gionee';
         $brand->save();
         //5
-        $brand = new Brand();
-        $brand->brand = 'Midea';
-        $brand->save();
+    
         //6
         $brand = new Brand();
         $brand->brand = 'Elepax';

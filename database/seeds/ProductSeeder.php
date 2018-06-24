@@ -14,7 +14,7 @@ class ProductSeeder extends Seeder
     {
         //1
         $product = new Product();
-        $product->name = 'CHEST FREEZER';
+        $product->name = 'Polystar 260L Chest Freezer';
         $product->brand_id = 1;
         $product->features = "
         size: 260L,
@@ -32,7 +32,7 @@ class ProductSeeder extends Seeder
         $product->save();
         //2
         $product = new Product();
-        $product->name = 'CHEST FREEZER';
+        $product->name = 'Polystar 185L Chest Freezer';
         $product->brand_id = 1;
         $product->features = "
         size: 185L,
@@ -43,14 +43,14 @@ class ProductSeeder extends Seeder
         ";
         $product->rprice = "5,300";
         $product->price = "42,700";
-        $product->image = "polystar-fridge-9-medium.png";
+        $product->image = "polystar-fridge-4-medium.png";
         $product->user_id = 2;
         $product->category_id = 1;
         $product->popularity = 2;
         $product->save();
         //3
         $product = new Product();
-        $product->name = 'CHEST FREEZER';
+        $product->name = 'Polystar 165L Chest Freezer';
         $product->brand_id = 1;
         $product->features = "
         size: 165L,
@@ -68,7 +68,7 @@ class ProductSeeder extends Seeder
         $product->save();
         //4
         $product = new Product();
-        $product->name = 'CHEST FREEZER';
+        $product->name = 'Polystar 127L Chest Freezer';
         $product->brand_id = 1;
         $product->features = "
         size: 127L,
@@ -86,7 +86,7 @@ class ProductSeeder extends Seeder
         $product->save();
         //5
         $product = new Product();
-        $product->name = 'CHEST FREEZER';
+        $product->name = 'Polystar 320LGR Chest Freezer';
         $product->brand_id = 1;
         $product->features = "
         Model: PVCF-320LGR,
@@ -112,7 +112,7 @@ class ProductSeeder extends Seeder
         $product->save();
         //6
         $product = new Product();
-        $product->name = 'CHEST FREEZER';
+        $product->name = 'Polystar 519LGR Chest Freezer';
         $product->brand_id = 1;
         $product->features = "
         size: 519LGR,
@@ -130,46 +130,12 @@ class ProductSeeder extends Seeder
         $product->popularity = 2;
         $product->save();
         //7
-        $product = new Product();
-        $product->name = 'CHEST FREEZER';
-        $product->brand_id = 5;
-        $product->features = "
-        size: 185L,
-        Adjustable Thermostat,
-        Fast freezing function,
-        100% HFC free & FCKW free,
-        Manual defrost
-        ";
-        $product->rprice = "4,900";
-        $product->price = "39,900";
-        $product->image = "midea-freezer-1-medium.png";
-        $product->user_id = 1;
-        $product->category_id = 1;
-        $product->popularity = 3;
-        $product->save();
+        
         //8
-        $product = new Product();
-        $product->name = 'REFRIGERATOR';
-        $product->brand_id = 5;
-        $product->features = "
-        Capacity: 121 L
-        Color: White,
-        Model: ID HS-121L,
-        Number Of Shelves: 4,
-        Stabilizer Required: No,
-        Star Rating: 5 Star,
-        Type: Compact
-        ";
-        $product->rprice = "3,100";
-        $product->price = "25,500";
-        $product->image = "midea-fridge-1-medium.png";
-        $product->user_id = 1;
-        $product->category_id = 2;
-        $product->popularity = 2;
-        $product->save();
+        
         //9
         $product = new Product();
-        $product->name = 'REFRIGERATOR';
+        $product->name = 'Polystar 261L Refrigerator';
         $product->brand_id = 1;
         $product->features = "
         size: 261L,
@@ -190,7 +156,7 @@ class ProductSeeder extends Seeder
         $product->save();
         //10
         $product = new Product();
-        $product->name = 'REFRIGERATOR';
+        $product->name = 'Polystar 203LR Refrigerator';
         $product->brand_id = 1;
         $product->features = "
         size: 203LR,
@@ -208,7 +174,7 @@ class ProductSeeder extends Seeder
         $product->save();
         //11
         $product = new Product();
-        $product->name = 'REFRIGERATOR';
+        $product->name = 'Polystar 78LB Refrigerator';
         $product->brand_id = 1;
         $product->features = "
         size: 78LB
@@ -222,7 +188,7 @@ class ProductSeeder extends Seeder
         $product->save();
         //12
         $product = new Product();
-        $product->name = 'REFRIGERATOR';
+        $product->name = 'Polystar 172SL Refrigerator';
         $product->brand_id = 1;
         $product->features = "
         size: 172SL,
@@ -240,7 +206,7 @@ class ProductSeeder extends Seeder
         $product->save();
         //13
         $product = new Product();
-        $product->name = 'REFRIGERATOR';
+        $product->name = 'Polystar 177SL Refrigerator';
         $product->brand_id = 1;
         $product->features = "
         size: 177SL,
@@ -259,7 +225,7 @@ class ProductSeeder extends Seeder
         $product->save();
         //14
         $product = new Product();
-        $product->name = 'REFRIGERATOR';
+        $product->name = 'Polystar 176WL Refrigerator';
         $product->brand_id = 1;
         $product->features = "
         size: 176WL,
@@ -277,7 +243,7 @@ class ProductSeeder extends Seeder
         $product->save();
         //15
         $product = new Product();
-        $product->name = 'WASHING MACHINE';
+        $product->name = 'Polystar 10KG Washing Machine';
         $product->brand_id = 1;
         $product->features = "
         size: 10KG
@@ -291,7 +257,7 @@ class ProductSeeder extends Seeder
         $product->save();
         //16
         $product = new Product();
-        $product->name = 'WASHING MACHINE';
+        $product->name = 'Polystar 6.5KG Washing Machine';
         $product->brand_id = 1;
         $product->features = "
         size: 6.5KG
@@ -305,7 +271,7 @@ class ProductSeeder extends Seeder
         $product->save();
         //17
         $product = new Product();
-        $product->name = 'WASHING MACHINE';
+        $product->name = 'Century 8KG Washing Machine';
         $product->brand_id = 8;
         $product->features = "
         size: 8KG,
@@ -327,7 +293,7 @@ class ProductSeeder extends Seeder
         $product->save();
         //18
         $product = new Product();
-        $product->name = 'GENERATOR';
+        $product->name = 'Elepaq 3.5KVA Generator';
         $product->brand_id = 6;
         $product->features = "
         Capacity: 3.5KVA
@@ -341,7 +307,7 @@ class ProductSeeder extends Seeder
         $product->save();
         //19
         $product = new Product();
-        $product->name = 'GENERATOR';
+        $product->name = 'Elepaq 2.2KVA Generator';
         $product->brand_id = 6;
         $product->features = "
         Capacity: 2.2KVA
@@ -355,7 +321,7 @@ class ProductSeeder extends Seeder
         $product->save();
         //20
         $product = new Product();
-        $product->name = 'GENERATOR';
+        $product->name = 'Tiger 1.2KVA Generator';
         $product->brand_id = 9;
         $product->features = "
         Capacity: 1.2KVA
@@ -369,7 +335,7 @@ class ProductSeeder extends Seeder
         $product->save();
         //21
         $product = new Product();
-        $product->name = 'STANDING FAN';
+        $product->name = 'Polystar 20" Standing Fan';
         $product->brand_id = 1;
         $product->features = '
         20"
@@ -383,7 +349,7 @@ class ProductSeeder extends Seeder
         $product->save();
         //22
         $product = new Product();
-        $product->name = 'GAS COOKER';
+        $product->name = 'Century 3Gas 1Electric Cooker';
         $product->brand_id = 8;
         $product->features = '        
         1 Electric 3 Gas burner,
@@ -408,7 +374,7 @@ class ProductSeeder extends Seeder
         $product->save();
         //23
         $product = new Product();
-        $product->name = 'GAS COOKER';
+        $product->name = 'Polystar 3Gas Bunner Cooker';
         $product->brand_id = 1;
         $product->features = '
         3 GAS BURNERS, 1 ELECTRIC,
@@ -429,7 +395,7 @@ class ProductSeeder extends Seeder
         $product->save();
         //24
         $product = new Product();
-        $product->name = 'GAS COOKER';
+        $product->name = 'Polystar 4Gas Bunner Cooker';
         $product->brand_id = 1;
         $product->features = '
         4 GAS BURNERS,
@@ -449,7 +415,7 @@ class ProductSeeder extends Seeder
         $product->save();
         //25
         $product = new Product();
-        $product->name = 'AIR CONDITIONER';
+        $product->name = 'Polystar 1.5HP A.C';
         $product->brand_id = 1;
         $product->features = '
         1.5HP
@@ -463,7 +429,7 @@ class ProductSeeder extends Seeder
         $product->save();
         //26
         $product = new Product();
-        $product->name = 'AIR CONDITIONER';
+        $product->name = 'Polystar 1HP A.C';
         $product->brand_id = 1;
         $product->features = '
         1HP
@@ -476,22 +442,10 @@ class ProductSeeder extends Seeder
         $product->popularity = 2;
         $product->save();
         //27
-        $product = new Product();
-        $product->name = 'MICROWAVE OVEN';
-        $product->brand_id = 5;
-        $product->features = '
-        20L
-        ';
-        $product->rprice = "1,900";
-        $product->price = "15,600";
-        $product->image = "midea-microwave-1-medium.png";
-        $product->user_id = 1;
-        $product->category_id = 8;
-        $product->popularity = 3;
-        $product->save();
+       
         //28
         $product = new Product();
-        $product->name = 'MICROWAVE OVEN';
+        $product->name = 'Polystar 20L Microwave Oven';
         $product->brand_id = 1;
         $product->features = '
         20L
@@ -505,7 +459,7 @@ class ProductSeeder extends Seeder
         $product->save();
         //29
         $product = new Product();
-        $product->name = 'SEWING MACHINE';
+        $product->name = 'Sumo Premium Industrial Sewing Machine';
         $product->brand_id = 10;
         $product->features = '
         Maintenance free,
@@ -525,7 +479,7 @@ class ProductSeeder extends Seeder
         $product->save();
         //30
         $product = new Product();
-        $product->name = 'SMART TELEVISION';
+        $product->name = 'Polystar 40" LED Smart TV';
         $product->brand_id = 1;
         $product->features = '
         40"
@@ -539,7 +493,7 @@ class ProductSeeder extends Seeder
         $product->save();
         //31
         $product = new Product();
-        $product->name = 'SMART TELEVISION';
+        $product->name = 'Polystar 32" LED Smart TV';
         $product->brand_id = 1;
         $product->features = '
         32"
@@ -553,7 +507,7 @@ class ProductSeeder extends Seeder
         $product->save();
         //32
         $product = new Product();
-        $product->name = 'LED TELEVISION';
+        $product->name = 'Polystar 32" LED TV';
         $product->brand_id = 1;
         $product->features = '
         32"
@@ -567,7 +521,7 @@ class ProductSeeder extends Seeder
         $product->save();
         //33
         $product = new Product();
-        $product->name = 'TELEVISION';
+        $product->name = 'Polystar 20" LED TV';
         $product->brand_id = 1;
         $product->features = '
         20"
@@ -581,7 +535,7 @@ class ProductSeeder extends Seeder
         $product->save();
         //34
         $product = new Product();
-        $product->name = 'ZERO 4';
+        $product->name = 'Infinix 32GB/3GB Zero 4';
         $product->brand_id = 2;
         $product->features = '
         3GB RAM,
@@ -601,7 +555,7 @@ class ProductSeeder extends Seeder
         $product->save();
         //35
         $product = new Product();
-        $product->name = 'HOT 5';
+        $product->name = 'Infinix 16GB/2GB Hot 5';
         $product->brand_id = 3;
         $product->features = '
         16GB, 2GB,
@@ -613,7 +567,7 @@ class ProductSeeder extends Seeder
         Battery: 4000mAh capacity Dirac Stereo Widening. Enjoy more enthralling auditory feast. INFINIX HOT5 Lite With
         ';
         $product->rprice = "2,900";
-        $product->price = "32,600";
+        $product->price = "23,600";
         $product->image = "infinix-hot-5-2-medium.png";
         $product->user_id = 1;
         $product->category_id = 11;
@@ -621,7 +575,7 @@ class ProductSeeder extends Seeder
         $product->save();
         //36
         $product = new Product();
-        $product->name = 'HOT 5';
+        $product->name = 'Infinix 16GB/1GB Hot 5';
         $product->brand_id = 2;
         $product->features = '
         16GB, 1GB,
@@ -641,7 +595,7 @@ class ProductSeeder extends Seeder
         $product->save();
         //37
         $product = new Product();
-        $product->name = 'K7 SPARK';
+        $product->name = 'Tecno 16GB/1GB K7 Spark';
         $product->brand_id = 11;
         $product->features = '
         5.5" Display,
@@ -659,7 +613,7 @@ class ProductSeeder extends Seeder
         $product->save();
         //38
         $product = new Product();
-        $product->name = 'K9 PLUS';
+        $product->name = 'Tecno 1GB K9 Plus';
         $product->brand_id = 11;
         $product->features = '
         1GB
@@ -673,7 +627,7 @@ class ProductSeeder extends Seeder
         $product->save();
         //39
         $product = new Product();
-        $product->name = 'P5 MINI';
+        $product->name = 'Gionee 8GB/1GB P5 Mini';
         $product->brand_id = 4;
         $product->features = '
         4.5" IPS LCD,
@@ -691,7 +645,7 @@ class ProductSeeder extends Seeder
         $product->save();
         //40
         $product = new Product();
-        $product->name = 'NOTE 4';
+        $product->name = 'Infinix 16GB/2GB Note 4';
         $product->brand_id = 2;
         $product->features = '
         16GB, 2GB
@@ -705,7 +659,7 @@ class ProductSeeder extends Seeder
         $product->save();
         //41
         $product = new Product();
-        $product->name = 'S12';
+        $product->name = 'Itel 8GB/1GB S12';
         $product->brand_id = 3;
         $product->features = '
         8GB, 1GB
@@ -719,7 +673,7 @@ class ProductSeeder extends Seeder
         $product->save();
         //42
         $product = new Product();
-        $product->name = 'DROIPAD 7D';
+        $product->name = 'Tecno 16GB/1GB Droipad 7D';
         $product->brand_id = 11;
         $product->features = '
         SIM: Dual Micro SIM,
@@ -743,17 +697,17 @@ class ProductSeeder extends Seeder
         $product->save();
         //43
         $product = new Product();
-        $product->name = 'ROYALE A1 FERO';
+        $product->name = 'Android 1GB Royale A1 Fero';
         $product->brand_id = 12;
         $product->features = '
-        1 GB RAM,
-        5,000 MAH BATTERY,
-        HD IPS DISPLAY,
-        XENSATION GLASS,
-        5 INCH DISPLAY,
-        8 MP + 5 MP,
-        QUAD CORE PROCESSOR,
-        32 GB STORAGE
+        1Gb Ram,
+        5,000 Mah Battery,
+        Hd Ips Display,
+        Xensation Glass,
+        5 Inch Display,
+        8Mp + 5Mp,
+        Quad Core Processor,
+        32Gb Storage
         ';
         $product->rprice = "2,200";
         $product->price = "18,100";
@@ -764,7 +718,7 @@ class ProductSeeder extends Seeder
         $product->save();
         //44
         $product = new Product();
-        $product->name = 'VIGITAB';
+        $product->name = 'Android 1GB Vigitab';
         $product->brand_id = 13;
         $product->features = '
         10.1" Android OS,
@@ -782,7 +736,7 @@ class ProductSeeder extends Seeder
         $product->save();
         //45
         $product = new Product();
-        $product->name = 'INDUSTRIAL FAN';
+        $product->name = 'Ox 20" Industrial Fan';
         $product->brand_id = 14;
         $product->features = '
         20"
@@ -796,7 +750,7 @@ class ProductSeeder extends Seeder
         $product->save();
         //46
         $product = new Product();
-        $product->name = 'WATER DISPENSER';
+        $product->name = 'Polystar 2 Taps Water Dispenser';
         $product->brand_id = 1;
         $product->features = '
         2 Taps,
@@ -816,7 +770,7 @@ class ProductSeeder extends Seeder
         $product->save();
         //47
         $product = new Product();
-        $product->name = 'HOME THEATRE';
+        $product->name = 'Polystar HT520 Home Theatre';
         $product->brand_id = 1;
         $product->features = '
         HT520
@@ -830,7 +784,7 @@ class ProductSeeder extends Seeder
         $product->save();
         //48
         $product = new Product();
-        $product->name = 'HOME THEATRE';
+        $product->name = 'Polystar VT607 Home Theatre';
         $product->brand_id = 1;
         $product->features = '
         VT607
@@ -844,7 +798,7 @@ class ProductSeeder extends Seeder
         $product->save();
         //49
         $product = new Product();
-        $product->name = 'HP 255';
+        $product->name = 'HP 255 4GB/500HDD Laptop';
         $product->brand_id = 15;
         $product->features = '
         Memory - 4GB,
@@ -864,7 +818,7 @@ class ProductSeeder extends Seeder
         $product->save();
         //50
         $product = new Product();
-        $product->name = 'HP 15 CELERON';
+        $product->name = 'HP 15 Celeron 4GB/500HDD Laptop';
         $product->brand_id = 15;
         $product->features = ' 
         Operating System : Windows 10,
