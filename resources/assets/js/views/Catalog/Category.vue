@@ -6,8 +6,9 @@
             <div class="col-md-3">
       <div  id="sidebar">
         <div  class="list-group-item">
-                <i class="fa fa-arrow-circle-o-left"> &nbsp; &nbsp;</i> 
-                <span class=""> <router-link to="/">  Back to Catalog Home</router-link></span> 
+                <i class="fa fa-arrow-circle-o-left"> &nbsp; &nbsp;</i>
+
+                <span class=""> <a @click="$router.back()">  Back to Catalog Home</a></span>
         </div>
       </div>
             </div>
@@ -21,10 +22,10 @@
                 <div class="row" v-else>
                     <div class="col-lg-4 col-sm-6 portfolio-item" v-for="product in products">
                         <div class="card h-100">
-                                <img class="card-img-top" :src="`/images/catalog/${product.image}`" v-if="product.image">   
+                                <img class="card-img-top" :src="`/images/catalog/${product.image}`" v-if="product.image">
                                 <div class="card-body">
                                     <h4 class="card-text">
-                                        {{product.name}}  <span style=" float:right;font-size:12px;color:#777777"> {{product.brand}}</span> 
+                                        {{product.name}}  <span style=" float:right;font-size:12px;color:#777777"> {{product.brand}}</span>
                                     </h4>
                                     <hr>
                                     <div class="info">
@@ -54,10 +55,10 @@
 <button @click="showMore(product)" data-toggle="modal" class="btn btn-small btn-primary" data-target="#myModal1">More details</button>
                                          </div>
                                     </div>
-                            
-                                    
+
+
                                 </div>
-                            
+
                         </div>
                     </div>
                     <!-- Mini Modal -->
@@ -74,9 +75,9 @@
                                             <!-- Project One -->
                                             <div class="row">
                                                 <div class="col-md-5 content-right">
-                                                       <img class="img-fluid rounded mb-3 mb-md-0" :src="`/images/catalog/${viewMore.image}`" v-if="viewMore.image">   
+                                                       <img class="img-fluid rounded mb-3 mb-md-0" :src="`/images/catalog/${viewMore.image}`" v-if="viewMore.image">
 
-                                                   
+
                                                 </div>
                                                 <div class="col-md-6 content-left">
                                                     <div class="row">
@@ -111,7 +112,7 @@
                                                         <p>{{viewMore.features}}</p>
                                                     </div>
                                                     <hr>
-                                                    
+
 
                                             </div>
                                             <!-- /.row -->
@@ -124,18 +125,18 @@
                                           <div class="col-md-6">
                                               <button  type="button" class="btn btn-link btn-simple" ><i class="fa fa-undo"></i> &nbsp;Update</button> |
                                                <button  type="button" class="btn btn-link btn-simple" > <i class="fa fa-trash"></i> &nbsp; Delete </button> |
-                                            
+
                                              <button type="button" class="btn btn-link btn-simple" data-dismiss="modal"><i class="fa fa-close"></i>&nbsp; Close </button>
                                         </div>
                                         <div class="col-md-6">
 <div class="footer">
-To buy this product, Kindly visite any Altara Credit Office closest to you, or 
+To buy this product, Kindly visite any Altara Credit Office closest to you, or
 Call Us : <a href="tel:08150479425" style="text-decoration:none"> 08150479425</a> for more enquiries
                                                     </div>
                                         </div>
-                                      
+
                                     </div>
-                                   
+
                                 </div>
                             </div>
                         </div>
@@ -178,7 +179,7 @@ export default {
       },
 			}
 		},
-		
+
 	created() {
 			get(`/api/products/${this.$route.params.id}`)
 					.then((res) => {
@@ -226,7 +227,7 @@ get(`/api/products/${this.$route.params.id}`)
     line-height: 17px;
 }
 .card-text h4{
-text-transform: capitalize; 
+text-transform: capitalize;
 }
  .info
 {
@@ -236,7 +237,7 @@ text-transform: capitalize;
 }
 
 /* .info:hover {
-  
+
 } */
 
 .card-body:hover{

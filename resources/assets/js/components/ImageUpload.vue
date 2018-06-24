@@ -2,9 +2,9 @@
 	<div class="image">
 		<image-preview :preview="value" @close="$emit('input', null)"
 			 v-if="value"></image-preview>
-		<div class="image__upload" v-else>
-			<input type="file" accept="image/*" @change="upload">
-		</div>
+              <span class="btn btn-default btn-file" v-else>
+                      Browse… <input  type="file" accept="image/*" @change="upload" id="imgInp">
+             </span>
 	</div>
 </template>
 <script type="text/javascript">

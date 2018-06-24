@@ -1,7 +1,7 @@
 <template>
 	<div class="image__preview" v-if="image">
-		<img :src="image">
-		<button class="btn btn__danger image__close" @click="close">
+		<img :src="image" width="350" height="200">
+		<button class="btn btn-danger image-close" @click="close">
 			&times;
 		</button>
 	</div>
@@ -34,7 +34,7 @@
 					}
 					fileReader.readAsDataURL(this.preview)
 				} else if (typeof this.preview === 'string') {
-					this.image = `/images/${this.preview}`
+					this.image = `/images/catalog/${this.preview}`
 				} else {
 					this.image = null
 				}

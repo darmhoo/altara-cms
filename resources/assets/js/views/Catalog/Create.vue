@@ -16,31 +16,41 @@
                                             <div class="row">
                                                 <label class="col-md-3 control-label">Product Name</label>
                                                 <div class="col-md-9">
-                                                    <input type="text" placeholder="Product name" class="form-control">
+                                                    <input type="text" v-model="product.name"  class="form-control">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <div class="row">
-                                                <label class="col-md-3 control-label">Product Make</label>
-                                                <div class="col-md-9">
-                                                    <input type="text" placeholder="Password" class="form-control">
-                                                </div>
-                                            </div>
-                                        </div>
-                                       <div class="form-group">
-                                            <div class="row">
-                                                <label class="col-md-3 control-label">Product Price</label>
-                                                <div class="col-md-9">
-                                                    <input type="number" placeholder="Product Price" class="form-control">
-                                                </div>
+                                                <label class="col-md-3 control-label">Product Brand</label>
+                                                <select class="col-md-9 form-control" v-model="product.brand_id" name="" id="">
+                                                    <option v-for="brand in brands"  v-bind:value="brand.id" >  {{brand.brand}} </option>
+                                                </select>
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <div class="row">
-                                                <label class="col-md-3 control-label">Down Payment</label>
+                                                <label class="col-md-3 control-label">Degree of Demand</label>
+                                                <select class="col-md-9 form-control" v-model="product.popularity" name="" id="">
+                                                    <option  v-bind:value="1" > Low demand </option>
+                                                    <option  v-bind:value="2" > Average demand </option>
+                                                    <option  v-bind:value="3" > High demand </option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                         <div class="form-group">
+                                            <div class="row">
+                                                <label class="col-md-3 control-label">Product Category</label>
+                                                <select class="col-md-9 form-control" v-model="product.category_id" name="" id="">
+                                                     <option v-for="category in categories" v-bind:value="category.id">  {{category.category}} </option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <label class="col-md-3 control-label">Down Payment:40%</label>
                                                 <div class="col-md-9">
-                                                    <input type="number" placeholder="Down Payment" class="form-control">
+                                                    <input type="text" v-model="product.price"  class="form-control">
                                                 </div>
                                             </div>
                                         </div>
@@ -48,7 +58,7 @@
                                             <div class="row">
                                                 <label class="col-md-3 control-label">Bi-weekly Payment Payment</label>
                                                 <div class="col-md-9">
-                                                    <input type="number" placeholder="Bi-weekly Payment Payment" class="form-control">
+                                                    <input type="text" v-model="product.rprice"  class="form-control">
                                                 </div>
                                             </div>
                                         </div>
@@ -56,52 +66,112 @@
                                             <div class="row">
                                                 <label class="col-md-3 control-label">Features/Description</label>
                                                 <div class="col-md-9">
-                                                    <input type="number" placeholder="Bi-weekly Payment Payment" class="form-control">
+                                                   <textarea name="" id="" class="form-control"  v-model="product.features"  cols="30" rows="10"></textarea>
                                                 </div>
                                             </div>
                                         </div>
-                                        
                                             </div>
                                             <div class="col-md-4">
                                         <div class="form-group">
                                                 <label>Upload Image</label>
                                                 <div class="input-group">
                                                     <span class="input-group-btn">
-                                                        <span class="btn btn-default btn-file">
-                                                            Browse… <input type="file" id="imgInp">
-                                                        </span>
+                                                       <image-upload v-model="product.image"></image-upload>
+				                            	<small class="error-control" v-if="error.image">{{error.image[0]}}</small>
                                                     </span>
                                                     <input type="text" class="form-control" readonly>
                                                 </div>
-                                                <img id='img-upload'/>
-                                            </div>
+                                                  <!-- <img :src="`/images/${product.image}`" id='img-upload' v-if="product.image">
+                                                 <img :src="`/images/catalog/century-washing-m-1-medium.png`" width="350" height="200" v-else> -->
                                             </div>
                                         </div>
-                                        
+                                        </div>
+
                                     </form>
                                 </div>
                                 <div class="card-footer ">
                                     <div class="col-md-12 text-center">
-                                        <button type="submit" class="btn btn-fill btn-info">Create Product</button>
+                                        <button type="submit" @click="save" :disabled="isProcessing" class="btn btn-fill btn-info">Create Product</button>
                                     </div>
                                 </div>
                             </div>
-                            
+
                         </div>
     </div>
 </div>
 </template>
 
 <script>
-  import Sidebar from '../../components/Sidebar.vue'
+    import Vue from 'vue'
+    import Auth from '../../store/auth'
+    import Flash from '../../helpers/flash'
+	import { get, post } from '../../helpers/api'
+	import { toMulipartedForm } from '../../helpers/form'
+    import Sidebar from '../../components/Sidebar.vue'
+  	import ImageUpload from '../../components/ImageUpload.vue'
 export default {
         components: {
-			Sidebar
+			Sidebar,
+            ImageUpload
 		},
-        mounted() {
-            console.log('Component mounted.')
-        }
+        data() {
+			return {
+                authState: Auth.state,
+				product: {},
+				error: {},
+				isProcessing: false,
+				initializeURL: `/api/products/create`,
+				storeURL: `/api/products`,
+                action: 'Create',
+                categories:'',
+                brands:''
+			}
+        },
+        created(){
+			get('/api/category')
+				.then((res) => {
+                    this.brands = res.data.brands;
+                    this.categories = res.data.categories;
+                    console.log(this.brands)
+                     console.log(this.categories)
+                })
+                if(this.$route.meta.mode === 'edit') {
+				this.initializeURL = `/api/products/${this.$route.params.id}/edit`
+				this.storeURL = `/api/products/${this.$route.params.id}?_method=PUT`
+				this.action = 'Update'
+			}
+			get(this.initializeURL)
+				.then((res) => {
+					console.log(this.$data)
+					Vue.set(this.$data, 'product', res.data.form)
+				})
+        },
+         mounted(){
+    $(this.$refs.vuemodal).on("hidden.bs.modal")
+  },
+		methods: {
+			save() {
+                this.product.user_id = this.authState.user_id;
+                console.log(this.product);
+				const form = toMulipartedForm(this.product, this.$route.meta.mode)
+			console.log(form)
+			post(this.storeURL, form)
+				    .then((res) => {
+				        if(res.data.saved) {
+				            Flash.setSuccess(res.data.message)
+				            this.$router.push(`/catalog`)
+				        }
+				        this.isProcessing = false
+				    })
+				    .catch((err) => {
+				        if(err.response.status === 422) {
+				            this.error = err.response.data
+				        }
+				        this.isProcessing = false
+				    })
+			},
     }
+}
 </script>
 <style>
 .btn-file {

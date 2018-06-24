@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Category;
+use App\Brand;
 use Illuminate\Http\Request;
 
 class CategoryController extends Controller
@@ -16,10 +17,12 @@ class CategoryController extends Controller
     public function index()
     {
         $categories = Category::all();
+        $brands = Brand::all();
 
     	return response()
     		->json([
-                'categories' => $categories
+                'categories' => $categories,
+                'brands' => $brands
     		]);
     }
 }
