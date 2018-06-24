@@ -1,5 +1,6 @@
 export function toMulipartedForm(form, mode) {
     if (mode === 'edit' && typeof form.image === 'string') {
+        console.log('yes');
         const temp = JSON.parse(JSON.stringify(form))
         delete temp.image
         return temp
