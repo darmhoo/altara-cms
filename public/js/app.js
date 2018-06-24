@@ -37197,7 +37197,7 @@ var render = function() {
         _c(
           "button",
           {
-            staticClass: "btn btn__danger image__close",
+            staticClass: "btn btn-danger image-close",
             on: { click: _vm.close }
           },
           [_vm._v("\n\t\t×\n\t")]

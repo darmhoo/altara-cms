@@ -56,7 +56,7 @@ class ProductsController extends Controller
     {
         $form = $request->user()->products()
             ->findOrFail($id, [
-                'id','name','brand_id', 'category_id', 'features','features', 'price', 'user_id','rprice','popularity'
+                'id','name','brand_id', 'category_id', 'features','features', 'price', 'user_id','rprice','popularity','image'
             ]);
         return response()
             ->json([
