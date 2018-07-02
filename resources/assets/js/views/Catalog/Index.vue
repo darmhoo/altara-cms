@@ -1,7 +1,8 @@
 <template>
 <div>
     <!-- Page Content -->
-    <div class="container-fluid">
+    <spinner v-if="products.length === 0"></spinner>
+    <div v-if="products.length > 0" class="container-fluid">
         <div class="row">
             <sidebar></sidebar>
             <div class="col-md-9">
@@ -120,7 +121,7 @@
                                         </div>
                                         <div class="col-md-6">
 <div class="footer">
-To buy this product, Kindly visite any Altara Credit Office closest to you, or
+To buy this product, Kindly visit any Altara Credit Office closest to you, or
 Call Us : <a href="tel:08150479425" style="text-decoration:none"> 08150479425</a> for more enquiries
                                                     </div>
                                         </div>
@@ -143,12 +144,14 @@ Call Us : <a href="tel:08150479425" style="text-decoration:none"> 08150479425</a
 </template>
 
 <script>
+import Spinner from '../../components/Spinner.vue'
 import Auth from '../../store/auth'
 import { get, del } from '../../helpers/api'
 import Sidebar from '../../components/Sidebar.vue'
 export default {
     components: {
-			Sidebar
+            Sidebar,
+            Spinner
 		},
   data() {
 			return {
