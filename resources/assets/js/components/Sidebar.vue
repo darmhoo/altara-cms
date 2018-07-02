@@ -39,10 +39,19 @@ export default {
         }
   },
 		created() {
+            //  localStorage.removeItem('categories')
+// if (localStorage.getItem('categories'))
+// {
+// this.categories = localStorage.getItem('categories');
+// }
+// else {
 			get('/api/category')
 				.then((res) => {
+                    localStorage.setItem("categories", JSON.stringify(res.data.categories));
                     this.categories = res.data.categories
+                    console.log(localStorage.getItem('categories'));
 				})
+// }
         },
           methods: {
 

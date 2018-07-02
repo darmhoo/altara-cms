@@ -9,7 +9,7 @@
                                     <h4 class="card-title">Product Description and Information</h4>
                                 </div>
                                 <div class="card-body ">
-                                    <form class="form-horizontal">
+                                    <form class="form-horizontal" v-on:submit.prevent>
                                         <div class="row">
                                             <div class="col-md-8">
 <div class="form-group">

@@ -272,7 +272,7 @@ class ProductSeeder extends Seeder
         //17
         $product = new Product();
         $product->name = 'Century 8KG Washing Machine';
-        $product->brand_id = 8;
+        $product->brand_id = 7;
         $product->features = "
         size: 8KG,
         Twin Tub Washing Machine,
@@ -294,7 +294,7 @@ class ProductSeeder extends Seeder
         //18
         $product = new Product();
         $product->name = 'Elepaq 3.5KVA Generator';
-        $product->brand_id = 6;
+        $product->brand_id = 5;
         $product->features = "
         Capacity: 3.5KVA
         ";
@@ -308,7 +308,7 @@ class ProductSeeder extends Seeder
         //19
         $product = new Product();
         $product->name = 'Elepaq 2.2KVA Generator';
-        $product->brand_id = 6;
+        $product->brand_id = 5;
         $product->features = "
         Capacity: 2.2KVA
         ";
@@ -322,7 +322,7 @@ class ProductSeeder extends Seeder
         //20
         $product = new Product();
         $product->name = 'Tiger 1.2KVA Generator';
-        $product->brand_id = 9;
+        $product->brand_id = 8;
         $product->features = "
         Capacity: 1.2KVA
         ";
@@ -350,7 +350,7 @@ class ProductSeeder extends Seeder
         //22
         $product = new Product();
         $product->name = 'Century 3Gas 1Electric Cooker';
-        $product->brand_id = 8;
+        $product->brand_id = 7;
         $product->features = '        
         1 Electric 3 Gas burner,
         Oven capacity- 60L ,
@@ -460,7 +460,7 @@ class ProductSeeder extends Seeder
         //29
         $product = new Product();
         $product->name = 'Sumo Premium Industrial Sewing Machine';
-        $product->brand_id = 10;
+        $product->brand_id = 9;
         $product->features = '
         Maintenance free,
         Rugged,
@@ -556,7 +556,7 @@ class ProductSeeder extends Seeder
         //35
         $product = new Product();
         $product->name = 'Infinix 16GB/2GB Hot 5';
-        $product->brand_id = 3;
+        $product->brand_id = 2;
         $product->features = '
         16GB, 2GB,
         Screen: 5.5-Inch HD IPS,
@@ -596,7 +596,7 @@ class ProductSeeder extends Seeder
         //37
         $product = new Product();
         $product->name = 'Tecno 16GB/1GB K7 Spark';
-        $product->brand_id = 11;
+        $product->brand_id = 10;
         $product->features = '
         5.5" Display,
         Android 7.0,
@@ -614,7 +614,7 @@ class ProductSeeder extends Seeder
         //38
         $product = new Product();
         $product->name = 'Tecno 1GB K9 Plus';
-        $product->brand_id = 11;
+        $product->brand_id = 10;
         $product->features = '
         1GB
         ';
@@ -674,7 +674,7 @@ class ProductSeeder extends Seeder
         //42
         $product = new Product();
         $product->name = 'Tecno 16GB/1GB Droipad 7D';
-        $product->brand_id = 11;
+        $product->brand_id = 10;
         $product->features = '
         SIM: Dual Micro SIM,
         Phone Size: 7 Inch IPS,
@@ -698,7 +698,7 @@ class ProductSeeder extends Seeder
         //43
         $product = new Product();
         $product->name = 'Android 1GB Royale A1 Fero';
-        $product->brand_id = 12;
+        $product->brand_id = 11;
         $product->features = '
         1Gb Ram,
         5,000 Mah Battery,
@@ -719,7 +719,7 @@ class ProductSeeder extends Seeder
         //44
         $product = new Product();
         $product->name = 'Android 1GB Vigitab';
-        $product->brand_id = 13;
+        $product->brand_id = 12;
         $product->features = '
         10.1" Android OS,
         1GB RAM,
@@ -737,7 +737,7 @@ class ProductSeeder extends Seeder
         //45
         $product = new Product();
         $product->name = 'Ox 20" Industrial Fan';
-        $product->brand_id = 14;
+        $product->brand_id = 13;
         $product->features = '
         20"
         ';
@@ -799,7 +799,7 @@ class ProductSeeder extends Seeder
         //49
         $product = new Product();
         $product->name = 'HP 255 4GB/500HDD Laptop';
-        $product->brand_id = 15;
+        $product->brand_id = 14;
         $product->features = '
         Memory - 4GB,
         Hard disk - 500GB,
@@ -819,7 +819,7 @@ class ProductSeeder extends Seeder
         //50
         $product = new Product();
         $product->name = 'HP 15 Celeron 4GB/500HDD Laptop';
-        $product->brand_id = 15;
+        $product->brand_id = 14;
         $product->features = ' 
         Operating System : Windows 10,
         HDD Size: 500gb RAM,

@@ -1,7 +1,8 @@
 <template>
 <div>
     <!-- Page Content -->
-    <div class="container-fluid">
+       <spinner v-if="products.length === 0"></spinner>
+    <div v-if="products.length > 0" class="container-fluid">
         <div class="row">
             <div class="col-md-3">
       <div  id="sidebar">
@@ -62,7 +63,7 @@
                         </div>
                     </div>
                     <!-- Mini Modal -->
-                    <div class="modal fade modal modal-primary" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal fade modal modal-primary" id="myModal1" ref="vuemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-lg">
                             <div class="modal-content">
                                 <div class="modal-header justify-content-center">
@@ -122,15 +123,18 @@
                                 </div>
                                 <div class="modal-footer">
                                     <div class="row">
-                                          <div class="col-md-6">
-                                              <button  type="button" class="btn btn-link btn-simple" ><i class="fa fa-undo"></i> &nbsp;Update</button> |
-                                               <button  type="button" class="btn btn-link btn-simple" > <i class="fa fa-trash"></i> &nbsp; Delete </button> |
-
-                                             <button type="button" class="btn btn-link btn-simple" data-dismiss="modal"><i class="fa fa-close"></i>&nbsp; Close </button>
+                                           <div class="col-md-4" v-if=" authState.user_id">
+                                              <router-link :to="`/product/${viewMore.id}/edit`" data-dismiss="modal" class="btn btn-link btn-simple">
+                                              <i class="fa fa-undo"></i> &nbsp;Update
+						                        </router-link>|
+                                               <button  type="button" class="btn btn-link btn-simple" data-dismiss="modal" @click="remove" :disabled="isRemoving"><i class="fa fa-trash"></i> &nbsp; Delete </button> |
+                                        </div>
+                                        <div class="col-md-2">
+                                            <button type="button" class="btn btn-link btn-simple" data-dismiss="modal"><i class="fa fa-close"></i>&nbsp; Close </button>
                                         </div>
                                         <div class="col-md-6">
 <div class="footer">
-To buy this product, Kindly visite any Altara Credit Office closest to you, or
+To buy this product, Kindly visit any Altara Credit Office closest to you, or
 Call Us : <a href="tel:08150479425" style="text-decoration:none"> 08150479425</a> for more enquiries
                                                     </div>
                                         </div>
@@ -153,14 +157,19 @@ Call Us : <a href="tel:08150479425" style="text-decoration:none"> 08150479425</a
 </template>
 
 <script>
-import { get } from '../../helpers/api'
+import Spinner from '../../components/Spinner.vue'
+import Auth from '../../store/auth'
+import { get, del } from '../../helpers/api'
 import Sidebar from '../../components/Sidebar.vue'
 export default {
     components: {
-			Sidebar
+			Sidebar,
+            Spinner
 		},
   data() {
 			return {
+                authState: Auth.state,
+                isRemoving: false,
                 route:this.$route.params.id,
                 products: [],
                 viewMore: {
@@ -216,7 +225,17 @@ get(`/api/products/${this.$route.params.id}`)
                     this.viewMore.updated_at = productData.updated_at;
                     this.viewMore.user_id = productData.user_id;
                     this.viewMore.brand = productData.brand;
-    }
+    },
+       remove() {
+				this.isRemoving = false
+				del(`/api/products/${this.$route.params.id}`)
+					.then((res) => {
+						if(res.data.deleted) {
+							Flash.setSuccess('You have successfully deleted Product!')
+							this.$router.push('/')
+						}
+					})
+			}
           }
 	}
 </script>

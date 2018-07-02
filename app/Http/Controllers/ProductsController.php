@@ -56,7 +56,7 @@ class ProductsController extends Controller
     {
         $form = $request->user()->products()
             ->findOrFail($id, [
-                'id','name','brand_id', 'category_id', 'features','features', 'price', 'user_id','rprice','popularity','image'
+                'id','name','brand_id', 'category_id','features', 'price', 'user_id','rprice','popularity','image'
             ]);
         return response()
             ->json([
@@ -83,7 +83,7 @@ class ProductsController extends Controller
 
     	$filename = $this->getFileName($request->image);
     	$request->image->move(base_path('public/images/catalog'), $filename);
-		$product = new Product($request->only('name','brand_id', 'category_id', 'features','features', 'price', 'user_id','rprice','popularity'));
+		$product = new Product($request->only('name','brand_id', 'category_id','features', 'price', 'user_id','rprice','popularity'));
     	$product->image = $filename;
     	$request->user()->products()
     		->save($product);
@@ -113,7 +113,7 @@ class ProductsController extends Controller
                 'price' => 'required|max:255',
                 'rprice' => 'required|max:255',
                 'user_id' => 'required|max:255',
-                'image' => 'required|image'
+                'image' => 'image'
         ]);
         $product = $request->user()->products()
             ->findOrFail($id);
@@ -124,13 +124,12 @@ class ProductsController extends Controller
         $product->features = $request->features;
         $product->price = $request->price;
         $product->user_id = $request->user_id;
-        $product->image = $request->image;
         // upload image
         if ($request->hasfile('image') && $request->file('image')->isValid()) {
             $filename = $this->getFileName($request->image);
             $request->image->move(base_path('/public/images/catalog'), $filename);
             // remove old image
-            File::delete(base_path('/public/images/catalog/'.$product->image));
+           // File::delete(base_path('/public/images/catalog/'.$product->image));
             $product->image = $filename;
         }
         $product->save();
