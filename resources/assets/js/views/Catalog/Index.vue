@@ -14,9 +14,8 @@
                                     <h4 class="card-text">
                                         {{product.name}}  <span style=" float:right;font-size:12px;color:#777777"> {{product.brand}}</span>
                                     </h4>
-                                    <hr>
-                                    <div class="info">
-                                        <div class="row">
+                                    <div class="info" style="border: 1px solid #E1E1E1;border-radius:10px;">
+                                        <!-- <div class="row">
                                             <div class="tag-price col-md-6">
                                                 <h5>First Installment</h5>
                                             </div>
@@ -34,12 +33,31 @@
                                                 <h5 class="price-text-color">
                                                    &#8358; {{product.rprice}}</h5>
                                             </div>
-                                        </div>
+                                        </div> -->
+                                          <table id="" style="font-size:12px;" class="table  ">
+                   <thead>
+                     <th>Plan</th>
+                     <th>First Installment</th>
+                      <th>Repayment</th>
+                   </thead>
+    <tbody>
+    <tr>
+    <td>lite</td>
+    <td>12,000</td>
+    <td>20,000</td>
+    </tr>
+    <tr>
+    <td>bronze</td>
+    <td>12,000</td>
+    <td>20,000</td>
+    </tr>
+     </tbody>
+        
+</table>
                                     </div>
-                                    <hr>
                                      <div class="row">
-                                         <div class="col-md-12 text-center">
-<button @click="showMore(product)" data-toggle="modal" class="btn btn-small btn-primary" data-target="#myModal1">More details</button>
+                                         <div style="margin-top:10px;" class="col-md-12 text-center">
+<button @click="showMore(product)" data-toggle="modal" class="btn btn-small btn-primary btn-front" data-target="#myModal1">More details</button>
                                          </div>
                                     </div>
 
@@ -331,6 +349,31 @@ border-right: 1px solid #ccc;
 .modal-lg{
     max-width:80%;
 }
-
-
+.table td, .table th {
+    padding: .2rem;
+    vertical-align: top;
+    border-top: 1px solid #e9ecef;
+}
+.btn-front {
+    display: inline-block;
+    font-weight: 300;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .3rem .6rem;
+    font-size: .75rem;
+    line-height: 1.25;
+    border-radius: .25rem;
+    transition: all .15s ease-in-out;
+}
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.0rem;
+}
 </style>

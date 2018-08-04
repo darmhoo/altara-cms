@@ -1,5 +1,12 @@
 let mix = require('laravel-mix');
 
+mix.webpackConfig({
+    resolve: {
+        alias: {
+            moment$: 'moment/moment.js'
+        }
+    }
+});
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
