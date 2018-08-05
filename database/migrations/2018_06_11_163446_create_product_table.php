@@ -20,10 +20,10 @@ class CreateProductTable extends Migration
             $table->integer('category_id')->unsigned()->index();
             $table->integer('popularity')->index();
             $table->text('features');
-            $table->string('price');
+            $table->double('fourty_price');
             $table->string('image');
             $table->integer('user_id');//the id of the agent that added the product.
-            $table->string('rprice');
+            $table->double('twenty_price');
             $table->timestamps();
             $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
             $table->foreign('brand_id')->references('id')->on('brands')->onDelete('cascade');

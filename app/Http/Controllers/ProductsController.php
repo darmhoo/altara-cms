@@ -56,7 +56,7 @@ class ProductsController extends Controller
     {
         $form = $request->user()->products()
             ->findOrFail($id, [
-                'id','name','brand_id', 'category_id','features', 'price', 'user_id','rprice','popularity','image'
+                'id','name','brand_id', 'category_id','features', 'fourty_price', 'user_id','twenty_price','popularity','image'
             ]);
         return response()
             ->json([
@@ -71,8 +71,8 @@ class ProductsController extends Controller
             'category_id' => 'required|max:255',
             'popularity' => 'required|max:255',
             'features' => 'required|max:3000',
-            'price' => 'required|max:255',
-            'rprice' => 'required|max:255',
+            'fourty_price' => 'required|max:255',
+            'twenty_price' => 'required|max:255',
             'user_id' => 'required|max:255',
             'image' => 'required|image',
     	]);
@@ -83,7 +83,7 @@ class ProductsController extends Controller
 
     	$filename = $this->getFileName($request->image);
     	$request->image->move(base_path('public/images/catalog'), $filename);
-		$product = new Product($request->only('name','brand_id', 'category_id','features', 'price', 'user_id','rprice','popularity'));
+		$product = new Product($request->only('name','brand_id', 'category_id','features', 'fourty_price', 'user_id','twenty_price','popularity'));
     	$product->image = $filename;
     	$request->user()->products()
     		->save($product);
@@ -110,8 +110,8 @@ class ProductsController extends Controller
                 'category_id' => 'required|max:255',
                 'popularity' => 'required|max:255',
                 'features' => 'required|max:3000',
-                'price' => 'required|max:255',
-                'rprice' => 'required|max:255',
+                'fourty_price' => 'required|max:255',
+                'twenty_price' => 'required|max:255',
                 'user_id' => 'required|max:255',
                 'image' => 'image'
         ]);
@@ -122,7 +122,8 @@ class ProductsController extends Controller
         $product->category_id = $request->category_id;
         $product->popularity = $request->popularity;
         $product->features = $request->features;
-        $product->price = $request->price;
+        $product->fourty_price = $request->fourty_price;
+        $product->twenty_price = $request->twenty_price;
         $product->user_id = $request->user_id;
         // upload image
         if ($request->hasfile('image') && $request->file('image')->isValid()) {

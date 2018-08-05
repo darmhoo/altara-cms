@@ -25,6 +25,8 @@
     "net": "^1.0.2",
     "popper.js": "^1.14.3",
     "vue": "^2.5.16",
-    "vue-router": "^3.0.1"
+    "vue-numeric": "^2.3.0",
+    "vue-router": "^3.0.1",
+    "vue2-filters": "^0.3.0"
   }
 }
