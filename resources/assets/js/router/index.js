@@ -7,7 +7,9 @@ import Catalog from '../views/Catalog/Index.vue'
 import Category from '../views/Catalog/Category.vue'
 import Create from '../views/Catalog/Create.vue'
 import NotFound from '../views/NotFound.vue'
-
+import Vue2Filters from 'vue2-filters'
+ 
+Vue.use(Vue2Filters)
 Vue.use(VueRouter)
 const router = new VueRouter({
     mode: 'history',

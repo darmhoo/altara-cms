@@ -16,10 +16,15 @@
   "dependencies": {
     "axios": "^0.18.0",
     "bootstrap": "^4.1.1",
+    "datatables.net": "^1.10.19",
+    "datatables.net-bs4": "^1.10.19",
+    "datatables.net-responsive": "^2.2.3",
     "moment": "^2.18.1",
     "net": "^1.0.2",
     "popper.js": "^1.14.3",
     "vue": "^2.5.16",
-    "vue-router": "^3.0.1"
+    "vue-numeric": "^2.3.0",
+    "vue-router": "^3.0.1",
+    "vue2-filters": "^0.3.0"
   }
 }

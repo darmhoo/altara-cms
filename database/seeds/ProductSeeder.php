@@ -23,8 +23,8 @@ class ProductSeeder extends Seeder
         100% HFC Free & FCKW Free,
         fast freezing function
         ";
-        $product->rprice = "5,500";
-        $product->price = "44,000";
+        $product->twenty_price = "5500";
+        $product->fourty_price = "44000";
         $product->image = "polystar-fridge-3-medium.png";
         $product->user_id = 1;
         $product->category_id = 1;
@@ -41,8 +41,8 @@ class ProductSeeder extends Seeder
         100% HFC free & FCKW free,
         Manual defrost
         ";
-        $product->rprice = "5,300";
-        $product->price = "42,700";
+        $product->twenty_price = "5300";
+        $product->fourty_price = "42700";
         $product->image = "polystar-fridge-4-medium.png";
         $product->user_id = 2;
         $product->category_id = 1;
@@ -59,8 +59,8 @@ class ProductSeeder extends Seeder
         Fast freezing function,
         Fully tropicalised
         ";
-        $product->rprice = "4,900";
-        $product->price = "39,500";
+        $product->twenty_price = "4900";
+        $product->fourty_price = "39500";
         $product->image = "polystar-fridge-6-medium.png";
         $product->user_id = 1;
         $product->category_id = 1;
@@ -77,8 +77,8 @@ class ProductSeeder extends Seeder
         Fast freezing function,
         Fully tropicalised
         ";
-        $product->rprice = "4,100";
-        $product->price = "33,100";
+        $product->twenty_price = "4100";
+        $product->fourty_price = "33100";
         $product->image = "polystar-fridge-7-medium.png";
         $product->user_id = 1;
         $product->category_id = 1;
@@ -103,8 +103,8 @@ class ProductSeeder extends Seeder
         Removable Storage Basket,
         Low Voltage Technology
         ";
-        $product->rprice = "6,700";
-        $product->price = "53,600";
+        $product->twenty_price = "6700";
+        $product->fourty_price = "53600";
         $product->image = "polystar-fridge-8-medium.png";
         $product->user_id = 1;
         $product->category_id = 1;
@@ -122,8 +122,8 @@ class ProductSeeder extends Seeder
         100% HFC free & FCKW free,
         Fast freezing function
         ";
-        $product->rprice = "9,600";
-        $product->price = "77,200";
+        $product->twenty_price = "9600";
+        $product->fourty_price = "77200";
         $product->image = "polystar-fridge-9-medium.png";
         $product->user_id = 1;
         $product->category_id = 1;
@@ -147,8 +147,8 @@ class ProductSeeder extends Seeder
         Interior light,
         Easy rolling wheels
         ";
-        $product->rprice = "6,100";
-        $product->price = "49,100";
+        $product->twenty_price = "6100";
+        $product->fourty_price = "49100";
         $product->image = "midea-fridge-2-medium.png";
         $product->user_id = 1;
         $product->category_id = 2;
@@ -165,8 +165,8 @@ class ProductSeeder extends Seeder
         100% HFC Free & FCKW Free,
         High density foaming for energy saving
         ";
-        $product->rprice = "3,900";
-        $product->price = "31,600";
+        $product->twenty_price = "3900";
+        $product->fourty_price = "31600";
         $product->image = "polystar-fridge-10-medium.png";
         $product->user_id = 1;
         $product->category_id = 2;
@@ -179,8 +179,8 @@ class ProductSeeder extends Seeder
         $product->features = "
         size: 78LB
         ";
-        $product->rprice = "2,300";
-        $product->price = "18,500";
+        $product->twenty_price = "2300";
+        $product->fourty_price = "18500";
         $product->image = "polystar-fridge-1-medium.png";
         $product->user_id = 1;
         $product->category_id = 2;
@@ -197,8 +197,8 @@ class ProductSeeder extends Seeder
         CFC free,
         Outside condenser
         ";
-        $product->rprice = "3,000";
-        $product->price = "24,700";
+        $product->twenty_price = "3000";
+        $product->fourty_price = "24700";
         $product->image = "polystar-fridge-11-medium.png";
         $product->user_id = 1;
         $product->category_id = 2;
@@ -216,8 +216,8 @@ class ProductSeeder extends Seeder
         Outside condenser,
         CFC Free
         ";
-        $product->rprice = "2,900";
-        $product->price = "23,600";
+        $product->twenty_price = "2900";
+        $product->fourty_price = "23600";
         $product->image = "polystar-fridge-12-medium.png";
         $product->user_id = 1;
         $product->category_id = 2;
@@ -234,8 +234,8 @@ class ProductSeeder extends Seeder
         100% HFC free & FCKW free,
         Fast freezing function
         ";
-        $product->rprice = "2,800";
-        $product->price = "22,900";
+        $product->twenty_price = "2800";
+        $product->fourty_price = "22900";
         $product->image = "polystar-fridge-2-medium.png";
         $product->user_id = 1;
         $product->category_id = 2;
@@ -248,8 +248,8 @@ class ProductSeeder extends Seeder
         $product->features = "
         size: 10KG
         ";
-        $product->rprice = "4,000";
-        $product->price = "32,500";
+        $product->twenty_price = "4000";
+        $product->fourty_price = "32500";
         $product->image = "polystar-washin-m-2-medium.png";
         $product->user_id = 1;
         $product->category_id = 3;
@@ -262,8 +262,8 @@ class ProductSeeder extends Seeder
         $product->features = "
         size: 6.5KG
         ";
-        $product->rprice = "1,900";
-        $product->price = "15,600";
+        $product->twenty_price = "1900";
+        $product->fourty_price = "15600";
         $product->image = "polystar-washin-m-3-medium.png";
         $product->user_id = 1;
         $product->category_id = 3;
@@ -284,8 +284,8 @@ class ProductSeeder extends Seeder
         Easy to Operate,
         Washing Capacity 8KG Spin Capacity 6G
         ";
-        $product->rprice = "3,300";
-        $product->price = "27,100";
+        $product->twenty_price = "3300";
+        $product->fourty_price = "27100";
         $product->image = "century-washing-m-1-medium.png";
         $product->user_id = 1;
         $product->category_id = 3;
@@ -298,8 +298,8 @@ class ProductSeeder extends Seeder
         $product->features = "
         Capacity: 3.5KVA
         ";
-        $product->rprice = "3,900";
-        $product->price = "31,900";
+        $product->twenty_price = "3900";
+        $product->fourty_price = "31900";
         $product->image = "elepaq-generator-medium.png";
         $product->user_id = 1;
         $product->category_id = 4;
@@ -312,8 +312,8 @@ class ProductSeeder extends Seeder
         $product->features = "
         Capacity: 2.2KVA
         ";
-        $product->rprice = "3,600";
-        $product->price = "29,300";
+        $product->twenty_price = "3600";
+        $product->fourty_price = "29300";
         $product->image = "elepaq-generator-medium.png";
         $product->user_id = 1;
         $product->category_id = 4;
@@ -326,8 +326,8 @@ class ProductSeeder extends Seeder
         $product->features = "
         Capacity: 1.2KVA
         ";
-        $product->rprice = "1,600";
-        $product->price = "13,400";
+        $product->twenty_price = "1600";
+        $product->fourty_price = "13400";
         $product->image = "tiger-generator-1-medium.png";
         $product->user_id = 1;
         $product->category_id = 4;
@@ -340,8 +340,8 @@ class ProductSeeder extends Seeder
         $product->features = '
         20"
         ';
-        $product->rprice = "1,500";
-        $product->price = "12,000";
+        $product->twenty_price = "1500";
+        $product->fourty_price = "12000";
         $product->image = "polystar-fan-2-medium.png";
         $product->user_id = 1;
         $product->category_id = 5;
@@ -365,8 +365,8 @@ class ProductSeeder extends Seeder
         Tempered glass lid,
         Enameled trivet for gas burner 
         ';
-        $product->rprice = "3,500";
-        $product->price = "28,700";
+        $product->twenty_price = "3500";
+        $product->fourty_price = "28700";
         $product->image = "century-cooker-1-medium.png";
         $product->user_id = 1;
         $product->category_id = 6;
@@ -386,8 +386,8 @@ class ProductSeeder extends Seeder
         Knobs with base,
         Downside oven burner
         ';
-        $product->rprice = "3,600";
-        $product->price = "29,300";
+        $product->twenty_price = "3600";
+        $product->fourty_price = "29300";
         $product->image = "polystar-gas-c-1-medium.png";
         $product->user_id = 1;
         $product->category_id = 6;
@@ -406,8 +406,8 @@ class ProductSeeder extends Seeder
         Knobs with base,
         Downside oven burner
         ';
-        $product->rprice = "4,000";
-        $product->price = "32,500";
+        $product->twenty_price = "4000";
+        $product->fourty_price = "32500";
         $product->image = "polystar-gas-c-4-medium.png";
         $product->user_id = 1;
         $product->category_id = 6;
@@ -420,8 +420,8 @@ class ProductSeeder extends Seeder
         $product->features = '
         1.5HP
         ';
-        $product->rprice = "5,600";
-        $product->price = "45,300";
+        $product->twenty_price = "5600";
+        $product->fourty_price = "45300";
         $product->image = "polystar-ac-2-medium.png";
         $product->user_id = 1;
         $product->category_id = 7;
@@ -434,8 +434,8 @@ class ProductSeeder extends Seeder
         $product->features = '
         1HP
         ';
-        $product->rprice = "5,400";
-        $product->price = "43,400";
+        $product->twenty_price = "5400";
+        $product->fourty_price = "43400";
         $product->image = "polystar-ac-1-medium.png";
         $product->user_id = 1;
         $product->category_id = 7;
@@ -450,8 +450,8 @@ class ProductSeeder extends Seeder
         $product->features = '
         20L
         ';
-        $product->rprice = "1,500";
-        $product->price = "12,400";
+        $product->twenty_price = "1500";
+        $product->fourty_price = "12400";
         $product->image = "midea-microwave-2-medium.png";
         $product->user_id = 1;
         $product->category_id = 8;
@@ -470,8 +470,8 @@ class ProductSeeder extends Seeder
         Complete set with its accessories,
         Table stand
         ';
-        $product->rprice = "6,300";
-        $product->price = "51,000";
+        $product->twenty_price = "6300";
+        $product->fourty_price = "51000";
         $product->image = "sewing-m-1-medium.png";
         $product->user_id = 1;
         $product->category_id = 9;
@@ -484,8 +484,8 @@ class ProductSeeder extends Seeder
         $product->features = '
         40"
         ';
-        $product->rprice = "6,800";
-        $product->price = "54,900";
+        $product->twenty_price = "6800";
+        $product->fourty_price = "54900";
         $product->image = "polystar-tv-5-medium.png";
         $product->user_id = 1;
         $product->category_id = 10;
@@ -498,8 +498,8 @@ class ProductSeeder extends Seeder
         $product->features = '
         32"
         ';
-        $product->rprice = "4,400";
-        $product->price = "35,700";
+        $product->twenty_price = "4400";
+        $product->fourty_price = "35700";
         $product->image = "polystar-tv-1-medium.png";
         $product->user_id = 1;
         $product->category_id = 10;
@@ -512,8 +512,8 @@ class ProductSeeder extends Seeder
         $product->features = '
         32"
         ';
-        $product->rprice = "4,100";
-        $product->price = "33,100";
+        $product->twenty_price = "4100";
+        $product->fourty_price = "33100";
         $product->image = "polystar-tv-2-medium.png";
         $product->user_id = 1;
         $product->category_id = 10;
@@ -526,8 +526,8 @@ class ProductSeeder extends Seeder
         $product->features = '
         20"
         ';
-        $product->rprice = "2,300";
-        $product->price = "18,700";
+        $product->twenty_price = "2300";
+        $product->fourty_price = "18700";
         $product->image = "polystar-tv-3-medium.png";
         $product->user_id = 1;
         $product->category_id = 10;
@@ -546,8 +546,8 @@ class ProductSeeder extends Seeder
         Front Camera 8 MP,
         5.5 Inch Gorilla Glass
         ';
-        $product->rprice = "4,600";
-        $product->price = "37,700";
+        $product->twenty_price = "4600";
+        $product->fourty_price = "37700";
         $product->image = "infinix-zero-4-medium.png";
         $product->user_id = 1;
         $product->category_id = 11;
@@ -566,8 +566,8 @@ class ProductSeeder extends Seeder
         Camera: 8MP Rear, 5MP Front,
         Battery: 4000mAh capacity Dirac Stereo Widening. Enjoy more enthralling auditory feast. INFINIX HOT5 Lite With
         ';
-        $product->rprice = "2,900";
-        $product->price = "23,600";
+        $product->twenty_price = "2900";
+        $product->fourty_price = "23600";
         $product->image = "infinix-hot-5-2-medium.png";
         $product->user_id = 1;
         $product->category_id = 11;
@@ -586,8 +586,8 @@ class ProductSeeder extends Seeder
         Camera: 8MP Rear, 5MP Front,
         Battery: 4000mAh capacity Dirac Stereo Widening. Enjoy more enthralling auditory feast. INFINIX HOT5 Lite With
         ';
-        $product->rprice = "2,600";
-        $product->price = "21,400";
+        $product->twenty_price = "2600";
+        $product->fourty_price = "21400";
         $product->image = "infinix-hot-5-medium.png";
         $product->user_id = 1;
         $product->category_id = 11;
@@ -604,8 +604,8 @@ class ProductSeeder extends Seeder
         13MP Rear Camera, 5MP Front Camera,
         16GB Internal Memory, 1GB RAM
         ';
-        $product->rprice = "2,500";
-        $product->price = "20,700";
+        $product->twenty_price = "2500";
+        $product->fourty_price = "20700";
         $product->image = "k7-spark-medium.png";
         $product->user_id = 1;
         $product->category_id = 11;
@@ -618,8 +618,8 @@ class ProductSeeder extends Seeder
         $product->features = '
         1GB
         ';
-        $product->rprice = "3,300";
-        $product->price = "26,800";
+        $product->twenty_price = "3300";
+        $product->fourty_price = "26800";
         $product->image = "k9-plus-medium.png";
         $product->user_id = 1;
         $product->category_id = 11;
@@ -636,8 +636,8 @@ class ProductSeeder extends Seeder
         5MP Rear Camera, 2MP Front Camera,
         8GB Internal Memory, 1GB RAM
         ';
-        $product->rprice = "1,800";
-        $product->price = "14,800";
+        $product->twenty_price = "1800";
+        $product->fourty_price = "14800";
         $product->image = "p5-mini-medium.png";
         $product->user_id = 1;
         $product->category_id = 11;
@@ -650,8 +650,8 @@ class ProductSeeder extends Seeder
         $product->features = '
         16GB, 2GB
         ';
-        $product->rprice = "4,000";
-        $product->price = "32,200";
+        $product->twenty_price = "4000";
+        $product->fourty_price = "32200";
         $product->image = "infinix-note-4-medium.png";
         $product->user_id = 1;
         $product->category_id = 11;
@@ -664,8 +664,8 @@ class ProductSeeder extends Seeder
         $product->features = '
         8GB, 1GB
         ';
-        $product->rprice = "1,800";
-        $product->price = "15,100";
+        $product->twenty_price = "1800";
+        $product->fourty_price = "15100";
         $product->image = "itel-a12-medium.png";
         $product->user_id = 1;
         $product->category_id = 11;
@@ -688,8 +688,8 @@ class ProductSeeder extends Seeder
         Network Conn: 3G,
         Battery: 3,000mAh
         ';
-        $product->rprice = "2,200";
-        $product->price = "18,000";
+        $product->twenty_price = "2200";
+        $product->fourty_price = "18000";
         $product->image = "droipad-pad-medium.png";
         $product->user_id = 1;
         $product->category_id = 11;
@@ -709,8 +709,8 @@ class ProductSeeder extends Seeder
         Quad Core Processor,
         32Gb Storage
         ';
-        $product->rprice = "2,200";
-        $product->price = "18,100";
+        $product->twenty_price = "2200";
+        $product->fourty_price = "18100";
         $product->image = "royale-a1-fero-medium.png";
         $product->user_id = 1;
         $product->category_id = 11;
@@ -727,8 +727,8 @@ class ProductSeeder extends Seeder
         1GB DDR3,
         16GB On Board Storage
         ';
-        $product->rprice = "2,400";
-        $product->price = "19,700";
+        $product->twenty_price = "2400";
+        $product->fourty_price = "19700";
         $product->image = "vigitab-medium.png";
         $product->user_id = 1;
         $product->category_id = 11;
@@ -741,8 +741,8 @@ class ProductSeeder extends Seeder
         $product->features = '
         20"
         ';
-        $product->rprice = "1,500";
-        $product->price = "12,700";
+        $product->twenty_price = "1500";
+        $product->fourty_price = "12700";
         $product->image = "ox-fan-medium.png";
         $product->user_id = 1;
         $product->category_id = 5;
@@ -761,8 +761,8 @@ class ProductSeeder extends Seeder
         Hot/Cold water,
         1 Year Warranty
         ';
-        $product->rprice = "2,900";
-        $product->price = "23,300";
+        $product->twenty_price = "2900";
+        $product->fourty_price = "23300";
         $product->image = "polystar-water-d-2-medium.png";
         $product->user_id = 1;
         $product->category_id = 12;
@@ -775,8 +775,8 @@ class ProductSeeder extends Seeder
         $product->features = '
         HT520
         ';
-        $product->rprice = "3,900";
-        $product->price = "31,200";
+        $product->twenty_price = "3900";
+        $product->fourty_price = "31200";
         $product->image = "polystar-sound-s-4-medium.png";
         $product->user_id = 1;
         $product->category_id = 13;
@@ -789,8 +789,8 @@ class ProductSeeder extends Seeder
         $product->features = '
         VT607
         ';
-        $product->rprice = "2,000";
-        $product->price = "16,500";
+        $product->twenty_price = "2000";
+        $product->fourty_price = "16500";
         $product->image = "polystar-sound-s-3-medium.png";
         $product->user_id = 1;
         $product->category_id = 13;
@@ -809,8 +809,8 @@ class ProductSeeder extends Seeder
         Network - WiFi 802.11 bgn, Bluetooth,
         Webcam + Mic, 
         ';
-        $product->rprice = "6,700";
-        $product->price = "54,200";
+        $product->twenty_price = "6700";
+        $product->fourty_price = "54200";
         $product->image = "hp-255-medium.png";
         $product->user_id = 1;
         $product->category_id = 14;
@@ -826,8 +826,8 @@ class ProductSeeder extends Seeder
         RAM :4gb,
         Processor : Intel Celeron
         ';
-        $product->rprice = "7,100";
-        $product->price = "57,400";
+        $product->twenty_price = "7100";
+        $product->fourty_price = "57400";
         $product->image = "hp-15-celeron-medium.png";
         $product->user_id = 1;
         $product->category_id = 14;

@@ -48,17 +48,17 @@
                                         </div>
                                         <div class="form-group">
                                             <div class="row">
-                                                <label class="col-md-3 control-label">Down Payment:40%</label>
+                                                <label class="col-md-3 control-label">40% Price</label>
                                                 <div class="col-md-9">
-                                                    <input type="text" v-model="product.price"  class="form-control">
+                                                    <vue-numeric v-model="product.fourty_price" currency="₦"  class="form-control" separator=","></vue-numeric>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <div class="row">
-                                                <label class="col-md-3 control-label">Bi-weekly Payment Payment</label>
+                                                <label class="col-md-3 control-label">20% Price</label>
                                                 <div class="col-md-9">
-                                                    <input type="text" v-model="product.rprice"  class="form-control">
+                                                    <vue-numeric v-model="product.twenty_price"  class="form-control" currency="₦" separator=","></vue-numeric>
                                                 </div>
                                             </div>
                                         </div>
@@ -108,11 +108,13 @@
 	import { get, post } from '../../helpers/api'
 	import { toMulipartedForm } from '../../helpers/form'
     import Sidebar from '../../components/Sidebar.vue'
-  	import ImageUpload from '../../components/ImageUpload.vue'
+    import ImageUpload from '../../components/ImageUpload.vue'
+    import VueNumeric from 'vue-numeric'
 export default {
         components: {
 			Sidebar,
-            ImageUpload
+            ImageUpload,
+            VueNumeric
 		},
         data() {
 			return {
