@@ -32,7 +32,7 @@
                                           <table id="" style="font-size:12px;" class="table  ">
                    <thead>
                      <th>Plan</th>
-                     <th>First Installment</th>
+                     <th>First Payment</th>
                       <th>Repayment</th>
                    </thead>
     <tbody>
@@ -90,7 +90,7 @@
                                                                  <table id="" style="font-size:16px;" class="table  ">
                    <thead>
                      <th>Plan</th>
-                     <th>First Installment</th>
+                     <th>First Payment</th>
                       <th>Repayment</th>
                    </thead>
     <tbody>
