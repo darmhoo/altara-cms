@@ -26,12 +26,12 @@
     <td>20% </td>
     
     <td>{{ product.twenty_price *0.2 | currency('₦') }} </td>
-    <td>{{ Math.floor(((product.twenty_price - ((Math.floor((0.2 * product.twenty_price) / 100)) * 100)) / 12) / 100) * 100 | currency('₦') }}</td>
+    <td>{{ Math.round((product.twenty_price - (0.2 * product.twenty_price)) / 12) | currency('₦') }}</td>
     </tr>
     <tr>
     <td>40%</td>
     <td>{{ product.fourty_price *0.4 | currency('₦') }}</td>
-    <td>{{ Math.floor(((product.fourty_price - ((Math.floor((0.4 * product.fourty_price) / 100)) * 100)) / 12) / 100) * 100  | currency('₦') }}</td>
+    <td>{{ Math.round((product.fourty_price - (0.4 * product.fourty_price)) / 12) | currency('₦') }}</td>
     </tr>
      </tbody>
         
@@ -85,12 +85,12 @@
     <td>20% </td>
     
     <td>{{ viewMore.twenty_price *0.2 | currency('₦') }} </td>
-    <td>{{ Math.floor(((viewMore.twenty_price - ((Math.floor((0.2 * viewMore.twenty_price) / 100)) * 100)) / 12) / 100) * 100 | currency('₦') }}</td>
+    <td>{{ Math.round((viewMore.twenty_price - (0.2 * viewMore.twenty_price)) / 12) | currency('₦') }}</td>
     </tr>
     <tr>
     <td>40%</td>
     <td>{{ viewMore.fourty_price *0.4 | currency('₦') }}</td>
-    <td>{{ Math.floor(((viewMore.fourty_price - ((Math.floor((0.4 * viewMore.fourty_price) / 100)) * 100)) / 12) / 100) * 100  | currency('₦') }}</td>
+    <td>{{ Math.round((viewMore.fourty_price - (0.4 * viewMore.fourty_price)) / 12) | currency('₦') }}</td>
     </tr>
      </tbody>
         
