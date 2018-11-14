@@ -35774,17 +35774,12 @@ var render = function() {
                                               _vm._v(
                                                 _vm._s(
                                                   _vm._f("currency")(
-                                                    Math.floor(
+                                                    Math.round(
                                                       (product.twenty_price -
-                                                        Math.floor(
-                                                          (0.2 *
-                                                            product.twenty_price) /
-                                                            100
-                                                        ) *
-                                                          100) /
-                                                        12 /
-                                                        100
-                                                    ) * 100,
+                                                        0.2 *
+                                                          product.twenty_price) /
+                                                        12
+                                                    ),
                                                     "₦"
                                                   )
                                                 )
@@ -35810,17 +35805,12 @@ var render = function() {
                                               _vm._v(
                                                 _vm._s(
                                                   _vm._f("currency")(
-                                                    Math.floor(
+                                                    Math.round(
                                                       (product.fourty_price -
-                                                        Math.floor(
-                                                          (0.4 *
-                                                            product.fourty_price) /
-                                                            100
-                                                        ) *
-                                                          100) /
-                                                        12 /
-                                                        100
-                                                    ) * 100,
+                                                        0.4 *
+                                                          product.fourty_price) /
+                                                        12
+                                                    ),
                                                     "₦"
                                                   )
                                                 )
@@ -35976,20 +35966,14 @@ var render = function() {
                                                         _vm._v(
                                                           _vm._s(
                                                             _vm._f("currency")(
-                                                              Math.floor(
+                                                              Math.round(
                                                                 (_vm.viewMore
                                                                   .twenty_price -
-                                                                  Math.floor(
-                                                                    (0.2 *
-                                                                      _vm
-                                                                        .viewMore
-                                                                        .twenty_price) /
-                                                                      100
-                                                                  ) *
-                                                                    100) /
-                                                                  12 /
-                                                                  100
-                                                              ) * 100,
+                                                                  0.2 *
+                                                                    _vm.viewMore
+                                                                      .twenty_price) /
+                                                                  12
+                                                              ),
                                                               "₦"
                                                             )
                                                           )
@@ -36017,20 +36001,14 @@ var render = function() {
                                                         _vm._v(
                                                           _vm._s(
                                                             _vm._f("currency")(
-                                                              Math.floor(
+                                                              Math.round(
                                                                 (_vm.viewMore
                                                                   .fourty_price -
-                                                                  Math.floor(
-                                                                    (0.4 *
-                                                                      _vm
-                                                                        .viewMore
-                                                                        .fourty_price) /
-                                                                      100
-                                                                  ) *
-                                                                    100) /
-                                                                  12 /
-                                                                  100
-                                                              ) * 100,
+                                                                  0.4 *
+                                                                    _vm.viewMore
+                                                                      .fourty_price) /
+                                                                  12
+                                                              ),
                                                               "₦"
                                                             )
                                                           )
@@ -36713,17 +36691,12 @@ var render = function() {
                                                 _vm._v(
                                                   _vm._s(
                                                     _vm._f("currency")(
-                                                      Math.floor(
+                                                      Math.round(
                                                         (product.twenty_price -
-                                                          Math.floor(
-                                                            (0.2 *
-                                                              product.twenty_price) /
-                                                              100
-                                                          ) *
-                                                            100) /
-                                                          12 /
-                                                          100
-                                                      ) * 100,
+                                                          0.2 *
+                                                            product.twenty_price) /
+                                                          12
+                                                      ),
                                                       "₦"
                                                     )
                                                   )
@@ -36750,17 +36723,12 @@ var render = function() {
                                                 _vm._v(
                                                   _vm._s(
                                                     _vm._f("currency")(
-                                                      Math.floor(
+                                                      Math.round(
                                                         (product.fourty_price -
-                                                          Math.floor(
-                                                            (0.4 *
-                                                              product.fourty_price) /
-                                                              100
-                                                          ) *
-                                                            100) /
-                                                          12 /
-                                                          100
-                                                      ) * 100,
+                                                          0.4 *
+                                                            product.fourty_price) /
+                                                          12
+                                                      ),
                                                       "₦"
                                                     )
                                                   )
@@ -36948,21 +36916,16 @@ var render = function() {
                                                                     _vm._f(
                                                                       "currency"
                                                                     )(
-                                                                      Math.floor(
+                                                                      Math.round(
                                                                         (_vm
                                                                           .viewMore
                                                                           .twenty_price -
-                                                                          Math.floor(
-                                                                            (0.2 *
-                                                                              _vm
-                                                                                .viewMore
-                                                                                .twenty_price) /
-                                                                              100
-                                                                          ) *
-                                                                            100) /
-                                                                          12 /
-                                                                          100
-                                                                      ) * 100,
+                                                                          0.2 *
+                                                                            _vm
+                                                                              .viewMore
+                                                                              .twenty_price) /
+                                                                          12
+                                                                      ),
                                                                       "₦"
                                                                     )
                                                                   )
@@ -36997,21 +36960,16 @@ var render = function() {
                                                                     _vm._f(
                                                                       "currency"
                                                                     )(
-                                                                      Math.floor(
+                                                                      Math.round(
                                                                         (_vm
                                                                           .viewMore
                                                                           .fourty_price -
-                                                                          Math.floor(
-                                                                            (0.4 *
-                                                                              _vm
-                                                                                .viewMore
-                                                                                .fourty_price) /
-                                                                              100
-                                                                          ) *
-                                                                            100) /
-                                                                          12 /
-                                                                          100
-                                                                      ) * 100,
+                                                                          0.4 *
+                                                                            _vm
+                                                                              .viewMore
+                                                                              .fourty_price) /
+                                                                          12
+                                                                      ),
                                                                       "₦"
                                                                     )
                                                                   )
