@@ -2576,34 +2576,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 
@@ -2616,8 +2588,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 password: ''
             },
             error: {},
-            isProcessing: false
+            isProcessing: false,
+            authState: __WEBPACK_IMPORTED_MODULE_1__store_auth__["a" /* default */].state
         };
+    },
+    created: function created() {
+        if (this.authState.api_token !== null) {
+            __WEBPACK_IMPORTED_MODULE_0__helpers_flash__["a" /* default */].setError('You are signed in');
+            this.$router.push('/');
+        }
     },
 
     methods: {
