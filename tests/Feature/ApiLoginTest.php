@@ -15,12 +15,7 @@ class ApiLoginTest extends TestCase
      * @return void
      */
     use RefreshDatabase;
-    public function testUserViewLoginForm()
-    {
-        $response = $this->get('/login');
-        $response->assertSuccessful();
-        $response->assertViewIs('login');
-    }
+
     public function testUserCanLoginWithCorrectInfo(){
         $user = factory(User::class)->create([
             'password' => bcrypt($password = 'larami'),
