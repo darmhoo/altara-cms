@@ -2565,17 +2565,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 
@@ -2594,7 +2583,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
     created: function created() {
         if (this.authState.api_token !== null) {
-            __WEBPACK_IMPORTED_MODULE_0__helpers_flash__["a" /* default */].setError('You are signed in');
+            __WEBPACK_IMPORTED_MODULE_0__helpers_flash__["a" /* default */].setSuccess('You are signed in already');
             this.$router.push('/');
         }
     },
@@ -3149,6 +3138,23 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -3183,8 +3189,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 		Object(__WEBPACK_IMPORTED_MODULE_3__helpers_api__["b" /* get */])('/api/category').then(function (res) {
 			_this.brands = res.data.brands;
 			_this.categories = res.data.categories;
-			console.log(_this.brands);
-			console.log(_this.categories);
 		});
 		if (this.$route.meta.mode === 'edit') {
 			this.initializeURL = '/api/products/' + this.$route.params.id + '/edit';
@@ -3192,7 +3196,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 			this.action = 'Update';
 		}
 		Object(__WEBPACK_IMPORTED_MODULE_3__helpers_api__["b" /* get */])(this.initializeURL).then(function (res) {
-			console.log(_this.$data);
+			console.log(res);
+			//console.log('data: ' + this.$data);
 			__WEBPACK_IMPORTED_MODULE_0_vue___default.a.set(_this.$data, 'product', res.data.form);
 		});
 	},
@@ -22168,7 +22173,11 @@ var render = function() {
         _vm._v(" "),
         _c("div", { staticClass: "col-md-9" }, [
           _c("div", { staticClass: "card horizontal-form" }, [
-            _vm._m(0),
+            _c("div", { staticClass: "card-header " }, [
+              _c("h4", { staticClass: "card-title" }, [
+                _vm._v(_vm._s(_vm.action) + " Product")
+              ])
+            ]),
             _vm._v(" "),
             _c("div", { staticClass: "card-body " }, [
               _c(
@@ -22242,7 +22251,7 @@ var render = function() {
                                 }
                               ],
                               staticClass: "col-md-9 form-control",
-                              attrs: { name: "", id: "" },
+                              attrs: { name: "brand", id: "brand" },
                               on: {
                                 change: function($event) {
                                   var $$selectedVal = Array.prototype.filter
@@ -22526,23 +22535,23 @@ var render = function() {
                         ])
                       ])
                     ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "card-footer " }, [
+                    _c("div", { staticClass: "col-md-12 text-center" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass: "btn btn-fill btn-info",
+                          attrs: { type: "submit", disabled: _vm.isProcessing },
+                          on: { click: _vm.save }
+                        },
+                        [_vm._v(_vm._s(_vm.action) + " Product")]
+                      )
+                    ])
                   ])
                 ]
               )
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "card-footer " }, [
-              _c("div", { staticClass: "col-md-12 text-center" }, [
-                _c(
-                  "button",
-                  {
-                    staticClass: "btn btn-fill btn-info",
-                    attrs: { type: "submit", disabled: _vm.isProcessing },
-                    on: { click: _vm.save }
-                  },
-                  [_vm._v("Create Product")]
-                )
-              ])
             ])
           ])
         ])
@@ -22551,18 +22560,7 @@ var render = function() {
     )
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-header " }, [
-      _c("h4", { staticClass: "card-title" }, [
-        _vm._v("Product Description and Information")
-      ])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
@@ -24356,7 +24354,7 @@ var render = function() {
                                             },
                                             [
                                               _c("i", {
-                                                staticClass: "fa fa-undo"
+                                                staticClass: "fa fa-edit"
                                               }),
                                               _vm._v(
                                                 "  Update\r\n\t\t\t\t\t\t                        "

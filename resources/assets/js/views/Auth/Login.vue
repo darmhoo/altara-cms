@@ -35,18 +35,7 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="footer">
-            <div class="container">
-                <nav class="fixed-bottom">
-                   
-                    <p class="copyright text-center">
-                        ©
-                        2018
-                        <a href="http://www.altaracredit.com/">Altara</a>, Buy now, Pay small small
-                    </p>
-                </nav>
-            </div>
-        </div> -->
+
     </div>
 </template>
 <script type="text/javascript">
@@ -67,7 +56,7 @@
         },
         created(){
             if(this.authState.api_token !== null){
-                Flash.setError('You are signed in');
+                Flash.setSuccess('You are signed in already');
                 this.$router.push('/');
             }
         },
@@ -79,8 +68,8 @@
                     .then((res) => {
                         if(res.data.authenticated) {
                             // set token
-                            Auth.set(res.data.api_token, res.data.user_id)
-                            Flash.setSuccess('You have successfully logged in.')
+                            Auth.set(res.data.api_token, res.data.user_id);
+                            Flash.setSuccess('You have successfully logged in.');
                             this.$router.push('/')
                         }
                         this.isProcessing = false

@@ -33,13 +33,14 @@ class ProductsController extends Controller
 
     public function show($id)
     {
-        $products = Product::where('category_id', $id)->get();
+        $product = Product::where('id', $id)->get();
         $brands = Brand::all();
 
         return response()
             ->json([
-                'products' => $products,
-                'brands' => $brands
+                'product' => $product,
+//                'brands' => $brands
+
             ]);
     }
 
@@ -52,15 +53,11 @@ class ProductsController extends Controller
     		]);
     }
 
-    public function edit($id, Request $request)
+    public function edit(Product $product, Request $request)
     {
-        $form = $request->user()->products()
-            ->findOrFail($id, [
-                'id','name','brand_id', 'category_id','features', 'fourty_price', 'user_id','twenty_price','popularity','image'
-            ]);
         return response()
             ->json([
-                'form' => $form
+                'form' => $product,
             ]);
     }
     public function store(Request $request)
