@@ -8037,7 +8037,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "\n.card-text {\r\n  font-weight: 800;\r\n  font-size: 13px;\r\n  line-height: 17px;\n}\n.card-text h4 {\r\n  text-transform: capitalize;\n}\n.info {\r\n  padding: 5px;\r\n  border-radius: 0 0 5px 5px;\r\n  margin-top: 1px;\n}\r\n\r\n/* .info:hover {\r\n\r\n} */\n.content-right {\r\n  border-right: 1px solid #ccc;\n}\n.content-left {\r\n  margin-left: 10px;\n}\n.card-body:hover {\r\n  background-color: #e0f2ff;\n}\n.price {\r\n  /*width: 50%;*/\r\n  margin-top: 3px;\n}\n.price h5 {\r\n  margin: 0;\r\n  font-size: 13px;\n}\n.tag-price h5 {\r\n  margin: 0;\r\n  font-size: 12px;\r\n  font-weight: normal;\n}\n.view-more-price h5 {\r\n  margin: 0;\r\n  font-size: 20px;\r\n  font-weight: 900;\n}\n.view-more-tag-price h5 {\r\n  margin: 0;\r\n  font-size: 15px;\r\n  font-weight: bold;\n}\n.price-text-color {\r\n  color: #003366;\n}\n.footer {\r\n  background-color: #003366;\r\n  color: #fff;\r\n  font-size: 12px;\r\n  padding: 5px;\n}\n.separator {\r\n  border-top: 1px solid #e1e1e1;\n}\n.clear-left {\r\n  clear: left;\n}\n.separator p {\r\n  line-height: 20px;\r\n  margin-bottom: 0;\r\n  margin-top: 10px;\r\n  text-align: center;\n}\n.separator p i {\r\n  margin-right: 5px;\n}\n.btn-add {\r\n  width: 50%;\r\n  float: left;\n}\n.btn-add {\r\n  border-right: 1px solid #e1e1e1;\n}\n.btn-details {\r\n  width: 50%;\r\n  float: left;\r\n  padding-left: 10px;\n}\n.modal-lg {\r\n  max-width: 80%;\n}\n.table td,\r\n.table th {\r\n  padding: 0.2rem;\r\n  vertical-align: top;\r\n  border-top: 1px solid #e9ecef;\n}\n.btn-front {\r\n  display: inline-block;\r\n  font-weight: 300;\r\n  text-align: center;\r\n  white-space: nowrap;\r\n  vertical-align: middle;\r\n  -webkit-user-select: none;\r\n  -moz-user-select: none;\r\n  -ms-user-select: none;\r\n  user-select: none;\r\n  border: 1px solid transparent;\r\n  padding: 0.3rem 0.6rem;\r\n  font-size: 0.75rem;\r\n  line-height: 1.25;\r\n  border-radius: 0.25rem;\r\n  -webkit-transition: all 0.15s ease-in-out;\r\n  transition: all 0.15s ease-in-out;\n}\n.card-body {\r\n  -ms-flex: 1 1 auto;\r\n  -webkit-box-flex: 1;\r\n          flex: 1 1 auto;\r\n  padding: 1rem;\n}\r\n", ""]);
+exports.push([module.i, "\n.card-text {\n  font-weight: 800;\n  font-size: 13px;\n  line-height: 17px;\n}\n.card-text h4 {\n  text-transform: capitalize;\n}\n.info {\n  padding: 5px;\n  border-radius: 0 0 5px 5px;\n  margin-top: 1px;\n}\n\n/* .info:hover {\n\n} */\n.content-right {\n  border-right: 1px solid #ccc;\n}\n.content-left {\n  margin-left: 10px;\n}\n.card-body:hover {\n  background-color: #e0f2ff;\n}\n.price {\n  /*width: 50%;*/\n  margin-top: 3px;\n}\n.price h5 {\n  margin: 0;\n  font-size: 13px;\n}\n.tag-price h5 {\n  margin: 0;\n  font-size: 12px;\n  font-weight: normal;\n}\n.view-more-price h5 {\n  margin: 0;\n  font-size: 20px;\n  font-weight: 900;\n}\n.view-more-tag-price h5 {\n  margin: 0;\n  font-size: 15px;\n  font-weight: bold;\n}\n.price-text-color {\n  color: #003366;\n}\n.footer {\n  background-color: #003366;\n  color: #fff;\n  font-size: 12px;\n  padding: 5px;\n}\n.separator {\n  border-top: 1px solid #e1e1e1;\n}\n.clear-left {\n  clear: left;\n}\n.separator p {\n  line-height: 20px;\n  margin-bottom: 0;\n  margin-top: 10px;\n  text-align: center;\n}\n.separator p i {\n  margin-right: 5px;\n}\n.btn-add {\n  width: 50%;\n  float: left;\n}\n.btn-add {\n  border-right: 1px solid #e1e1e1;\n}\n.btn-details {\n  width: 50%;\n  float: left;\n  padding-left: 10px;\n}\n.modal-lg {\n  max-width: 80%;\n}\n.table td,\n.table th {\n  padding: 0.2rem;\n  vertical-align: top;\n  border-top: 1px solid #e9ecef;\n}\n.btn-front {\n  display: inline-block;\n  font-weight: 300;\n  text-align: center;\n  white-space: nowrap;\n  vertical-align: middle;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  border: 1px solid transparent;\n  padding: 0.3rem 0.6rem;\n  font-size: 0.75rem;\n  line-height: 1.25;\n  border-radius: 0.25rem;\n  -webkit-transition: all 0.15s ease-in-out;\n  transition: all 0.15s ease-in-out;\n}\n.card-body {\n  -ms-flex: 1 1 auto;\n  -webkit-box-flex: 1;\n          flex: 1 1 auto;\n  padding: 1rem;\n}\n", ""]);
 
 // exports
 
@@ -24005,7 +24005,7 @@ var render = function() {
                               _c("div", { staticClass: "card-body" }, [
                                 _c("h4", { staticClass: "card-text" }, [
                                   _vm._v(
-                                    "\r\n                                        " +
+                                    "\n                                        " +
                                       _vm._s(product.name) +
                                       "  "
                                   ),
@@ -24357,12 +24357,12 @@ var render = function() {
                                                 staticClass: "fa fa-edit"
                                               }),
                                               _vm._v(
-                                                "  Update\r\n\t\t\t\t\t\t                        "
+                                                "  Update\n\t\t\t\t\t\t                        "
                                               )
                                             ]
                                           ),
                                           _vm._v(
-                                            "|\r\n                                               "
+                                            "|\n                                               "
                                           ),
                                           _c(
                                             "button",
@@ -24384,7 +24384,7 @@ var render = function() {
                                             ]
                                           ),
                                           _vm._v(
-                                            " |\r\n                                        "
+                                            " |\n                                        "
                                           )
                                         ],
                                         1
@@ -24472,7 +24472,7 @@ var staticRenderFns = [
     return _c("div", { staticClass: "col-md-6" }, [
       _c("div", { staticClass: "footer" }, [
         _vm._v(
-          "\r\nTo buy this product, Kindly visit any Altara Credit Office closest to you, or\r\nCall Us : "
+          "\nTo buy this product, Kindly visit any Altara Credit Office closest to you, or\nCall Us : "
         ),
         _c(
           "a",
@@ -24483,7 +24483,7 @@ var staticRenderFns = [
           [_vm._v(" 08150479425")]
         ),
         _vm._v(
-          " for more enquiries\r\n                                                    "
+          " for more enquiries\n                                                    "
         )
       ])
     ])

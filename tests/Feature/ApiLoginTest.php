@@ -36,15 +36,18 @@ class ApiLoginTest extends TestCase
 
             ]);
     }
-    public function testUserCannotLoginWithWrongInfo(){
+    public function testUserCannotLoginWithWrongInfo()
+    {
         $user = factory(User::class)->create([
             'password' => bcrypt($password = 'larami'),
-
         ]);
+
         $response = $this->post('http://localhost:8000/api/login', [
             'email' => $user->email,
-            'password' => $user->password,
+            'password' => 'tope',
         ]);
+
+        $response->assertStatus(422);
         $response->assertJson([
             'email' => ['Provided email and password does not match!']
         ]);
