@@ -43,7 +43,7 @@ class ApiLoginTest extends TestCase
         ]);
         $response = $this->post('http://localhost:8000/api/login', [
             'email' => $user->email,
-            'password' => $user->password,
+            'password' => 'larmi',
         ]);
         $response->assertJson([
             'email' => ['Provided email and password does not match!']

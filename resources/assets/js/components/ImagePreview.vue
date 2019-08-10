@@ -45,3 +45,22 @@
 		}
 	}
 </script>
+<style lang="scss" scoped>
+.image__preview{
+    max-height: 250px;
+    max-width: 380px;
+    overflow: hidden;
+}
+.image__preview img{
+	overflow: hidden;
+}
+.image-close{
+	position: relative;
+    bottom: 200px;
+    left: 280px;
+
+}
+
+
+</style>
+

@@ -16,14 +16,14 @@
                                         <div class="form-group">
                                             <label>Email address</label>
                                             <input type="email" v-model="form.email" placeholder="Enter email" class="form-control">
-                                            <small class="error-control" v-if="error.email">{{error.email[0]}}</small>
+                                            <small class="error-control text-danger" v-if="error.email">{{error.email[0]}}</small>
                                         </div>
                                         <div class="form-group">
                                             <label>Password</label>
                                             <input type="password" v-model="form.password" placeholder="Password" class="form-control">
-                                            <small class="error-control" v-if="error.password">{{error.password[0]}}</small>
+                                            <small class="error-control text-danger" v-if="error.password">{{error.password[0]}}</small>
                                         </div>
-                                     
+
                                     </div>
                                 </div>
                                 <div class="card-footer ml-auto mr-auto">
@@ -38,7 +38,7 @@
         <!-- <div class="footer">
             <div class="container">
                 <nav class="fixed-bottom">
-                   
+
                     <p class="copyright text-center">
                         ©
                         2018

@@ -24,7 +24,7 @@
     <tbody>
     <tr>
     <td>20% </td>
-    
+
     <td>{{ product.twenty_price *0.2 | currency('₦') }} </td>
     <td>{{ Math.round((product.twenty_price - (0.2 * product.twenty_price)) / 12) | currency('₦') }}</td>
     </tr>
@@ -34,7 +34,7 @@
     <td>{{ Math.round((product.fourty_price - (0.4 * product.fourty_price)) / 12) | currency('₦') }}</td>
     </tr>
      </tbody>
-        
+
 </table>
                                     </div>
                                      <div class="row">
@@ -83,7 +83,7 @@
     <tbody>
     <tr>
     <td>20% </td>
-    
+
     <td>{{ viewMore.twenty_price *0.2 | currency('₦') }} </td>
     <td>{{ Math.round((viewMore.twenty_price - (0.2 * viewMore.twenty_price)) / 12) | currency('₦') }}</td>
     </tr>
@@ -93,7 +93,7 @@
     <td>{{ Math.round((viewMore.fourty_price - (0.4 * viewMore.fourty_price)) / 12) | currency('₦') }}</td>
     </tr>
      </tbody>
-        
+
 </table>
                                                         </div>
                                                     </div>
@@ -112,10 +112,11 @@
                                 <div class="modal-footer">
                                     <div class="row">
                                           <div class="col-md-4" v-if=" authState.user_id">
-                                              <router-link :to="`/product/${viewMore.id}/edit`" data-dismiss="modal" class="btn btn-link btn-simple">
-                                              <i class="fa fa-undo"></i> &nbsp;Update
+                                              <router-link :to="`/product/${viewMore.id}/edit`" data-dismiss="modal" class="btn text-info btn-link btn-simple">
+                                              <i class="fa fa-update"></i> &nbsp;Update
 						                        </router-link>|
-                                               <button  type="button" class="btn btn-link btn-simple" data-dismiss="modal" @click="remove" :disabled="isRemoving"><i class="fa fa-trash"></i> &nbsp; Delete </button> |
+                                               <button  type="button" class="btn btn-link btn-simple text-danger
+" data-dismiss="modal" @click="remove" :disabled="isRemoving"><i class="fa fa-trash"></i> &nbsp; Delete </button> |
                                         </div>
                                         <div class="col-md-2">
                                             <button type="button" class="btn btn-link btn-simple" data-dismiss="modal"><i class="fa fa-close"></i>&nbsp; Close </button>

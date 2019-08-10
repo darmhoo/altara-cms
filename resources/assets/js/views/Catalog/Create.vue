@@ -4,46 +4,55 @@
     <div class="row">
         <sidebar></sidebar>
         <div class="col-md-9">
-<div class="card horizontal-form">
-                                <div class="card-header ">
+            <div class="card horizontal-form">
+                                  <div class="card-header ">
                                     <h4 class="card-title">Product Description and Information</h4>
                                 </div>
                                 <div class="card-body ">
                                     <form class="form-horizontal" v-on:submit.prevent>
                                         <div class="row">
                                             <div class="col-md-8">
-<div class="form-group">
-                                            <div class="row">
-                                                <label class="col-md-3 control-label">Product Name</label>
-                                                <div class="col-md-9">
-                                                    <input type="text" v-model="product.name"  class="form-control">
+                                                <div class="form-group">
+                                                    <div class="row">
+                                                        <label class="col-md-3 control-label">Product Name</label>
+                                                        <div class="col-md-9">
+                                                            <input type="text" v-model="product.name"  class="form-control">
+                                                        </div>
+
+                                                    </div>
+
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="row">
-                                                <label class="col-md-3 control-label">Product Brand</label>
-                                                <select class="col-md-9 form-control" v-model="product.brand_id" name="" id="">
-                                                    <option v-for="brand in brands"  v-bind:value="brand.id" >  {{brand.brand}} </option>
+
+                                                <div class="form-group">
+                                                    <div class="row">
+                                                        <label class="col-md-3 control-label">Product Brand</label>
+                                                        <div class="col-md-9">
+                                                        <select class=" form-control" v-model="product.brand_id" name="" id="">
+                                                            <option v-for="brand in brands"  v-bind:value="brand.id" >  {{brand.brand}} </option>
                                                 </select>
+                                                        </div>
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <div class="row">
                                                 <label class="col-md-3 control-label">Degree of Demand</label>
-                                                <select class="col-md-9 form-control" v-model="product.popularity" name="" id="">
+                                                <div class="col-md-9">
+                                                <select class=" form-control" v-model="product.popularity" name="" id="">
                                                     <option  v-bind:value="1" > Low demand </option>
                                                     <option  v-bind:value="2" > Average demand </option>
                                                     <option  v-bind:value="3" > High demand </option>
                                                 </select>
+                                                </div>
                                             </div>
                                         </div>
                                          <div class="form-group">
                                             <div class="row">
                                                 <label class="col-md-3 control-label">Product Category</label>
-                                                <select class="col-md-9 form-control" v-model="product.category_id" name="" id="">
+                                                <div class="col-md-9">
+                                                <select class=" form-control" v-model="product.category_id" name="" id="">
                                                      <option v-for="category in categories" v-bind:value="category.id">  {{category.category}} </option>
                                                 </select>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="form-group">
@@ -91,13 +100,14 @@
                                 </div>
                                 <div class="card-footer ">
                                     <div class="col-md-12 text-center">
-                                        <button type="submit" @click="save" :disabled="isProcessing" class="btn btn-fill btn-info">Create Product</button>
+                                        <button type="submit" @click="save" :disabled="isProcessing" class="btn btn-fill btn-info">{{this.action}} Product</button>
                                     </div>
-                                </div>
+
                             </div>
 
                         </div>
     </div>
+</div>
 </div>
 </template>
 
@@ -199,4 +209,7 @@ export default {
 #img-upload{
     width: 100%;
 }
+    select{
+        width: calc(100% - 40px);
+    }
 </style>

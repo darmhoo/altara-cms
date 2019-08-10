@@ -16,6 +16,18 @@ class ApiRegisterTest extends TestCase
      */
     public function testRegisterAUser()
     {
-        $this->assertTrue(true);
+
+        $user = [
+            'first_name' => 'Timothy',
+            'last_name' => 'Adeniyi',
+            'role_id' => '1',
+            'email' => 'ibrahim@ter.com',
+            'password' => 'larmi',
+
+        ];
+
+        $response = $this->post('http://localhost:8000/api/register', $user);
+        $response->assertStatus('201');
+
     }
 }

@@ -34,13 +34,21 @@ class ProductsController extends Controller
     public function show($id)
     {
         $products = Product::where('category_id', $id)->get();
-        $brands = Brand::all();
 
-        return response()
-            ->json([
-                'products' => $products,
-                'brands' => $brands
-            ]);
+        if ($products){
+            return response()
+                ->json([
+                    'products' => $products,
+
+                ]);
+        }else{
+            return response()
+                ->json([
+                    'status'=> 404,
+                    'message' => 'The product does\'nt exist'
+                ]);
+        }
+
     }
 
     public function create()

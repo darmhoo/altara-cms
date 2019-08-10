@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Dotenv\Exception\ValidationException;
 use Illuminate\Http\Request;
 use App\User;
 use Hash;
@@ -14,7 +15,7 @@ class AuthController extends Controller
 	}
     public function register(Request $request)
     {
-        
+
         $this->validate($request, [
             'first_name' => 'required|max:255',
             'last_name' => 'required|max:255',
@@ -33,10 +34,15 @@ class AuthController extends Controller
     }
     public function login(Request $request)
     {
-        $this->validate($request, [
-            'email' => 'required|email',
-            'password' => 'required|between:6,25'
-        ]);
+        try{
+            $this->validate($request, [
+                'email' => 'required|email',
+                'password' => 'required'
+            ]);
+        }catch(ValidationException $e){
+            return $e;
+        }
+
         $user = User::where('email', $request->email)
             ->first();
         if($user && Hash::check($request->password, $user->password)) {
