@@ -6,26 +6,17 @@ use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
-    protected $fillable = [
-    	'name','brand_id', 'category_id', 'features', 'price','image', 'user_id','rprice','popularity'
-    ];
+    //
+    protected $fillable = ['name', 'feature', 'retail_price', 'image_url', 'brand_id', 'category_id', 'user_id'];
 
-    public function user()
+    public function brand()
     {
-    	return $this->belongsTo(User::class);
+      return $this->belongsTo(Brand::class);
     }
-    public static function form()
+
+    public function category()
     {
-        return [
-            'name' => '',
-            'brand_id' => '',
-            'category_id' => '',
-            'popularity' => '',
-            'features' => '',
-            'price' => '',
-            'rprice' => '',
-            'user_id' => '',
-            'image' => '',
-        ];
+      return $this->belongsTo(Category::class);
     }
+
 }

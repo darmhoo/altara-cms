@@ -1,7 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Category;
+
+use Illuminate\Support\Facades\DB;
 use App\Brand;
 use Illuminate\Http\Request;
 
@@ -10,20 +11,17 @@ class CategoryController extends Controller
     //
     public function __construct()
     {
-    	$this->middleware('auth:api')
-    		->except(['index', 'show']);
+
     }
 
     public function index()
     {
-        $categories = Category::all();
-        $brands = Brand::all();
+      $categories = DB::table('categories')->get();
 
-    	return response()
-    		->json([
-                'categories' => $categories,
-                'brands' => $brands
-    		]);
+      return response()->
+      json([
+        'status' => 'success',
+        'categories' => $categories
+      ]);
     }
 }
-

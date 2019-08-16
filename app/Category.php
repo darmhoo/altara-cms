@@ -7,12 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 class Category extends Model
 {
     //
-    protected $fillable = [
-    	'category'
-    ];
-
-    public function user()
+    protected $fillable = ['name'];
+    public $timestamps = false;
+    public function product()
     {
-    	return $this->belongsTo(User::class);
+      return $this->hasMany(Product::class);
     }
 }

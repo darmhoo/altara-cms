@@ -15,7 +15,7 @@
                                     <input type="text" name="search" value="" class="form-control" placeholder="Search...">
                                 </div>
                             </form>
-                            
+
                         </ul>
                         <ul class="navbar-nav">
                             <li class="nav-item" v-if="catalog">
@@ -66,9 +66,9 @@
                                         <span>
                                             <b> Danger - </b> {{flash.error}}</span>
                                     </div>
-<router-view> </router-view> 
+<router-view> </router-view>
 </div>
-         
+
 </template>
 <script type="text/javascript">
 import Auth from "./store/auth";
@@ -85,11 +85,13 @@ export default {
       flash: Flash.state
     };
   },
+
   created() {
     // global error http handler
     interceptors(err => {
       if (err.response.status === 401) {
         Auth.remove();
+
         this.$router.push("/login");
       }
 
