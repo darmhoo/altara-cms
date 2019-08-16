@@ -20,9 +20,35 @@ class ProductTest extends TestCase
        ->assertStatus(200)
        ->assertJson([
          'status' => 'success',
-         
+
        ]);
 
+     }
+     public function testGetOneProduct(){
+       $id = 1;
+       $response = $this->get('api/products/{$id}');
+       $response->assertStatus(200)->
+       assertJson([
+         'status' => 'success'
+       ]);
+     }
+
+     public function testGetProductsByCategory(){
+       $id = 1;
+       $response = $this->get('api/products-by-category/{$id}');
+       $response->assertStatus(200)->
+       assertJson([
+         'status' => 'success'
+       ]);
+     }
+
+     public function testGetProductsByBrand(){
+       $id = 1;
+       $response = $this->get('api/products-by-brand/{$id}');
+       $response->assertStatus(200)->
+       assertJson([
+         'status' => 'success'
+       ]);
      }
 
 }
