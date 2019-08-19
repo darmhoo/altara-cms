@@ -20,7 +20,7 @@ use Illuminate\Http\Request;
 Route::post('login', 'AuthController@login');
 Route::post('logout', 'AuthController@logout');
 Route::post('register', 'AuthController@register');
-Route::get('products-by-category/{product_id}', 'ProductsController@showByCategory');
+Route::get('products-by-category/{category_id}', 'ProductsController@showByCategory');
 Route::get('products-by-brand/{brand_id}', 'ProductsController@showByBrand');
 Route::resource('products', 'ProductsController');
 Route::resource('brands', 'BrandController');
