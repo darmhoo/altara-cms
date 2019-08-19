@@ -38,21 +38,41 @@ class ProductsController extends Controller
     {
       $products = Product::where('brand_id', $brand_id)
       ->get();
+      if(count($products) != 0){
+        return response()->
+        json([
+          'status' => 'success',
+          'products' => $products
+        ]);
+      }
       return response()->
       json([
-        'status' => 'success',
-        'products' => $products
+        'status' => 'failure',
+        'message'=> 'No brand with given ID'
       ]);
+
     }
 
     public function showByCategory($category_id)
     {
       $products = Product::where('category_id', $category_id)
       ->get();
-      return response()->
-      json([
-        'status' => 'success',
-        'products' => $products
-      ]);
+
+      if (count($products) != 0){
+        return response()->
+        json([
+          'status' => 'success',
+          'products' => $products
+        ]);
+      }
+        return response()->
+        json([
+          'status' => 'failure',
+          'message'=> 'No category with given ID'
+        ]);
+
+
+
+
     }
    }
