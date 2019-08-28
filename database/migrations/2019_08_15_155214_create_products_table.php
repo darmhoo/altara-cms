@@ -20,6 +20,7 @@ class CreateProductsTable extends Migration
             $table->integer('category_id')->unsigned()->index();
             $table->integer('user_id')->unsigned();
             $table->string('retail_price');
+            $table->boolean('is_active')->default(true);
             $table->text('feature');
             $table->string('image_url');
             $table->timestamps();

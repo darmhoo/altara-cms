@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-use Illuminate\Support\Facades\DB;
+use App\Brand;
 
 use Illuminate\Http\Request;
 
@@ -11,7 +11,7 @@ class BrandController extends Controller
 
     public function index()
     {
-      $brands = DB::table('brands')->get();
+      $brands = Brand::all();
 
       return response()->
       json([
